@@ -1,1 +1,26 @@
-site_name: My Docs
+site_name: Formulio
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: teal
+plugins:
+  - search
+  - i18n:
+      languages:
+        en: "English"
+        es: "Castellano"
+      default_language: 'en'
+nav:
+- index.md
+- index.es.md
+
+extra:
+  alternate:
+    - name: English
+      link: ""
+      lang: en
+
+    - name: Castellano
+      link: index.es/
+      lang: es

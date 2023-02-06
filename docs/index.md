@@ -1,4 +1,4 @@
-# Welcome to Formulio project!
+# Welcome to the Formulio project!
 ==================================
 
 
