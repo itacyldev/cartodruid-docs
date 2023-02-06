@@ -1,1 +1,1 @@
-myst-parser==0.18.1
+mkdocs==1.4.2
