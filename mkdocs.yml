@@ -4,23 +4,34 @@ theme:
   palette:
     scheme: default
     primary: teal
+
 plugins:
   - search
   - i18n:
+      default_language: 'en'
       languages:
         en: "English"
         es: "Castellano"
-      default_language: 'en'
+
 nav:
-- index.md
-- index.es.md
+  - Home: index.md
+  - Inicio: index.es.md
+  - Project structure and configuration files: project-structure.md
+  - Estructura de proyecto y ficheros de configuración: project-structure.es.md
+  - Components:
+    - Main: components/main.md
+    - Main: components/main.es.md
 
 extra:
   alternate:
     - name: English
       link: ""
       lang: en
-
     - name: Castellano
       link: index.es/
       lang: es
+
+extra_css:
+  - css/extra.css
+
+
