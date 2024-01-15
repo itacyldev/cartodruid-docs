@@ -6,6 +6,7 @@ theme:
     primary: teal
 
 plugins:
+  - include-markdown
   - search
   - i18n:
       default_language: 'en'
@@ -14,13 +15,101 @@ plugins:
         es: "Castellano"
 
 nav:
-  - Home: index.md
-  - Inicio: index.es.md
-  - Project structure and configuration files: project-structure.md
-  - Estructura de proyecto y ficheros de configuración: project-structure.es.md
-  - Components:
-    - Main: components/main.md
-    - Main: components/main.es.md
+  - 1 Home: index/index.md
+  - 1 Inicio: index/index.es.md
+  - 2 Project structure: projectStructure/project-structure.md
+  - 2 Estructura de proyecto: projectStructure/project-structure.es.md
+  - 3 Configuration file: configurationFile/configuration-file.md
+  - 3 Fichero de configuración: configurationFile/configuration-file.es.md
+  - 4 Components:
+    - 4.1 Main: components/main.md
+    - 4.1 Main: components/main.es.md
+    - 4.2 List: components/list.md
+    - 4.2 List: components/list.es.md
+    - 4.3 Edit: components/edit.md
+    - 4.3 Edit: components/edit.es.md
+    - 4.4 View: components/view.md
+    - 4.4 View: components/view.es.md
+    - 4.5 Form: components/form.md
+    - 4.5 Form: components/form.es.md
+    - 4.6 Tab: components/tab.md
+    #  - 4.6.1 Tabitem: components/tabitem.md
+    - 4.6 Tab: components/tab.es.md
+   #   - 4.7.1 Tabitem: components/tabitem.es.md
+    - 4.7 Table: components/table.md
+#      - 4.8.1 Row: components/row.md
+#      - 4.8.2 Column: components/column.md
+    - 4.7 Table: components/table.es.md
+#      - 4.9.1 Row: components/row.es.md
+#      - 4.9.2 Column: components/column.es.md
+    - 4.8 Datatable: components/datatable.md
+    - 4.8 Datatable: components/datatable.es.md
+    - 4.9 Datalist: components/datalist.md
+#      - 4.12.1 Datalistitem: components/datalistitem.md
+    - 4.9 Datalist: components/datalist.es.md
+#      - 4.13.1 Datalistitem: components/datalistitem.es.md
+    - 4.10 Imagegallery: components/imagegallery.md
+#      - 4.14.1 Imagegalleryitem: components/imagegalleryitem.md
+    - 4.10 Imagegallery: components/imagegallery.es.md
+#      - 4.15.1 Imagegalleryitem: components/imagegalleryitem.es.md
+    - 4.11 Card: components/card.md
+    - 4.11 Card: components/card.es.md
+    - 4.12 Input: components/input.md
+    - 4.12 Input: components/input.es.md
+    - 4.13 Textarea: components/textarea.md
+    - 4.13 Textarea: components/textarea.es.md
+    - 4.14 Radio: components/radio.md
+    - 4.14 Radio: components/radio.es.md
+   # - 4.15 Options: components/options.md
+   # - 4.15 Options: components/options.es.md
+   # - 4.16 Option: components/option.md
+   # - 4.16 Option: components/option.es.md
+    - 4.15 Switcher: components/switcher.es.md
+    - 4.15 Switcher: components/switcher.md
+    - 4.16 Date/Datetime: components/date.md
+    - 4.16 Date/Datetime: components/date.es.md
+    - 4.17 Select: components/select.md
+    - 4.17 Select: components/select.es.md
+    - 4.18 Autocomplete: components/autocomplete.md
+    - 4.18 Autocomplete: components/autocomplete.es.md
+    - 4.19 Image: components/image.md
+    - 4.19 Image: components/image.es.md
+    - 4.20 Buttonbar: components/buttonbar.md
+    - 4.20 Buttonbar: components/buttonbar.es.md
+    - 4.21 Button: components/button.md
+    - 4.21 Button: components/button.es.md
+    - 4.22 Link: components/link.md
+    - 4.22 Link: components/link.es.md
+    - 4.23 Paragraph: components/paragraph.md
+    - 4.23 Paragraph: components/paragraph.es.md
+    - 4.24 Divisor: components/divisor.md
+    - 4.24 Divisor: components/divisor.es.md
+    - 4.25 Script: components/script.md
+    - 4.25 Script: components/script.es.md
+    - 4.26 Param: components/param.md
+    - 4.26 Param: components/param.es.md
+    - 4.27 Validator: components/validator.md
+    - 4.27 Validator: components/validator.es.md
+    - 4.28 Action: components/action.md
+    - 4.28 Action: components/action.es.md
+      # - 4.55.1 Add: components/add.md
+      #   - 4.55.2 Add: components/add.es.md
+      #   - 4.55.3 Create: components/create.md
+      #   - 4.55.4 Create: components/create.es.md
+      #   - 4.55.5 Update: components/update.md
+      #   - 4.55.6 Update: components/update.es.md
+      #   - 4.55.7 Save: components/save.md
+      #   - 4.55.8 Save: components/save.es.md
+      #   - 4.55.9 Cancel: components/cancel.md
+      #   - 4.55.10 Cancel: components/cancel.es.md
+      #   - 4.55.11 Delete: components/delete.md
+      #   - 4.55.12 Delete: components/delete.es.md
+      #   - 4.55.13 Nav: components/nav.md
+      #   - 4.55.14 Nav: components/nav.es.md
+      #   - 4.55.15 Js: components/js.md
+      #   - 4.55.16 Js: components/js.es.md
+
+
 
 extra:
   alternate:

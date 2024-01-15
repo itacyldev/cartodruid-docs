@@ -1,2 +1,1 @@
-# Components
-- Main content for the Components section.
+# 4.1 Main

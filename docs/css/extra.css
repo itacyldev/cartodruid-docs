@@ -1,0 +1,16 @@
+h1, h2, h3, h4, h5, h6 {
+    background-color: #f0f0f0; /* Color de fondo gris */
+    padding: 6px; /* Espaciado interno para mejorar la legibilidad */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    white-space: nowrap;
+}
