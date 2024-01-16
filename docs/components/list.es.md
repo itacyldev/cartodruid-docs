@@ -46,3 +46,9 @@
     </main>
 
 ![Imagen 1](../img/list1.png){: width="240"} | ![Imagen 2](../img/list2.png){: width="240"} |
+
+## 4.2.1 Datatable
+Ver [4.8. Datatable](datatable.es.md)
+
+## 4.2.2 Buttonbar
+Ver [4.20. Buttonbar](buttonbar.es.md)

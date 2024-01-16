@@ -53,3 +53,10 @@
     </main>
 
 ![img.png](../img/main.png){: .center }
+
+## 4.1.1 List
+Ver [4.2. List](list.es.md)
+
+## 4.1.2 Edit
+Ver [4.1.2. Edit](edit.es.md)
+

@@ -131,3 +131,6 @@
     </table>
 
 ![img.png](../img/table_row.png){: .center }
+
+## 4.7.2 Componentes del table-row
+ {% include "./common/components.es.md" %}

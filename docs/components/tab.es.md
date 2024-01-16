@@ -49,3 +49,6 @@
     </tab>
 
 ![img.png](../img/tabs.png){: .center }
+
+## 4.6.2 Componentes del tab-tabitem
+ {% include "./common/components.es.md" %}

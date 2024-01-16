@@ -33,8 +33,8 @@
 
 ![img.png](../img/form.png){: .center }
 
-# 4.5.1 Componentes del formulario
-<ul>
+## 4.5.1 Componentes del formulario
+<ul class="three-columns">
     <li><a href="../tab.es">4.6 Tab</a></li>
     <li><a href="../table.es">4.7 Table</a></li>
 	<li><a href="../datatable.es">4.8 Datatable</a></li>

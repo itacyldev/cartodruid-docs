@@ -14,3 +14,8 @@ td.vertical-text {
     transform: rotate(180deg);
     white-space: nowrap;
 }
+
+.three-columns {
+      column-count: 3;
+      column-gap: 20px;
+    }

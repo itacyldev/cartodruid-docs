@@ -14,7 +14,7 @@
     </tbody>
 </table>
 
-# 4.9.1 Datalistitem
+## 4.9.1 Datalistitem
 <table border="1">
     <thead>
         <tr>
@@ -29,7 +29,7 @@
     </tbody>
 </table>
 
-# 4.9.2 Repofilter
+## 4.9.2 Repofilter
 {% include "./common/repofilter.es.md" %}
 
     <datalist id="datalistProvincia" repo="provinciaRepo">
@@ -47,4 +47,7 @@
     </datalist>
 
 ![Imagen 1](../img/datalist.png){: .center }
+
+## 4.9.3 Componentes del datalist-datalistitem
+ {% include "./common/components.es.md" %}
 
