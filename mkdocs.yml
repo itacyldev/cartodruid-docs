@@ -15,8 +15,8 @@ plugins:
         es: "Castellano"
 
 nav:
-  - 1 Home: index/index.md
-  - 1 Inicio: index/index.es.md
+  - 1 Home: index.md
+  - 1 Inicio: index.es.md
   - 2 Project structure: projectStructure/project-structure.md
   - 2 Estructura de proyecto: projectStructure/project-structure.es.md
   - 3 Configuration file: configurationFile/configuration-file.md
