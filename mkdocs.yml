@@ -117,7 +117,7 @@ extra:
       link: ""
       lang: en
     - name: Castellano
-      link: index.es/
+      link: /index/index.es/
       lang: es
 
 extra_css:

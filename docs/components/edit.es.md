@@ -18,9 +18,20 @@
     </tbody>
 </table>
 
-    <main id="prueba3" name="Name prueba 3" description="Description prueba 3" repo="pruebaRepo" mainForm="true">
-        <list name="Name prueba 3" description="Description prueba 3" id="listPrueba3"/>
-        <edit id="editPrueba3"/>
+    <main id="formEdit" name="Edit" repo="provinciaRepo" >
+        <edit id="editProvincias">
+        </edit>
     </main>
+
+![img.png](../img/edit.png){: .center }
+
+## 4.3.1 Form
+Ver [4.5. Form](form.es.md)
+
+## 4.3.2 Script
+Ver [4.25. Script](script.es.md)
+
+## 4.3.3 Buttonbar
+Ver [4.20. Buttonbar](buttonbar.es.md)
 
 
