@@ -1,4 +1,6 @@
 # 4.12 Input
+Un elemento para ingresar y modificar texto.
+
 <table border="1">
     <thead>
         <tr>
