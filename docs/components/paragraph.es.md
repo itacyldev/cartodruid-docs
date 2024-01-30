@@ -1,4 +1,7 @@
 # 4.23 Paragraph
+<div style="text-align: justify;">
+<p>Componente Paragraph diseñado para mostrar texto con diversas opciones de estilo y formato.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

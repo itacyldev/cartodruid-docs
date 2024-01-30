@@ -1,4 +1,10 @@
 # 4.14 Radio
+<div style="text-align: justify;">
+<p>El componente Radio proporciona a los usuarios la capacidad de seleccionar una única opción exclusiva entre varias alternativas. Su funcionalidad principal se centra en presentar un conjunto de opciones mutuamente excluyentes, donde al seleccionar una opción, automáticamente se deseleccionan las demás opciones dentro del mismo grupo. Este comportamiento garantiza que siempre haya solo una opción activa dentro del grupo.</p>
+<p>El componente Radio ofrece flexibilidad en su presentación, permitiendo dos orientaciones distintas: vertical y horizontal. Puedes configurar la disposición de las opciones según tus necesidades de diseño y espacio en la interfaz de usuario.</p>
+<p>Además, el atributo "weights" proporciona una manera de distribuir el espacio entre las opciones. Al especificar porcentajes separados por comas, puedes ajustar la proporción de ocupación de cada opción dentro del componente. Esto ofrece un control detallado sobre la presentación visual, permitiendo que ciertas opciones ocupen más espacio que otras según tus preferencias de diseño.</p>
+<p>En resumen, el componente Radio no solo ofrece la capacidad de selección exclusiva, sino que también brinda opciones de personalización visual a través de la orientación y la distribución de pesos, lo que facilita su adaptación a diferentes diseños de interfaz de usuario.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

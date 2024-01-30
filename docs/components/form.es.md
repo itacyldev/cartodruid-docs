@@ -1,4 +1,9 @@
 # 4.5 Form
+<div style="text-align: justify;">
+<p>El componente Form se utiliza para crear formularios.</p>
+<p>Facilita la interacción entre el usuario y la aplicación al proporcionar un medio estructurado para recopilar datos.</p>
+<p>El componente Form puede contener diversos elementos que permiten construir formularios ricos y adaptados a las necesidades de la aplicación.</p>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -54,4 +59,6 @@
     <li><a href="../paragraph.es">4.23 Paragraph</a></li>
     <li><a href="../divisor.es">4.24 Divisor</a></li>
 </ul>
+
+
 

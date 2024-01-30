@@ -1,5 +1,9 @@
 # 4.7 Table
-
+<div style="text-align: justify;">
+<p>El componente Table actúa como un contenedor organizado diseñado para exhibir datos en formato de tabla, facilitando la presentación estructurada de información a través de múltiples filas y columnas. Su principal objetivo es mejorar la experiencia del usuario al ofrecer una visualización ordenada y fácil de entender de conjuntos de datos complejos.</p>
+<p>Al utilizar el componente Table, los usuarios pueden acceder y analizar datos de manera eficiente, ya que la disposición en forma de cuadrícula facilita la identificación de patrones y relaciones. Además, la capacidad de personalizar la apariencia de la tabla mediante atributos como 'headerText', 'weights', y 'border', proporciona flexibilidad en la presentación y mejora la usabilidad según los requisitos específicos de la aplicación.</p>
+<p>Las opciones de personalización permiten ajustar la tabla según las necesidades del usuario, ya sea eliminando bordes, asignando pesos a las columnas, o especificando textos para las celdas de cabecera. Esta versatilidad hace que el componente Table sea una herramienta valiosa para la presentación clara y efectiva de datos tabulares.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

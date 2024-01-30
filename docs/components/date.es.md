@@ -1,5 +1,9 @@
 # 4.16 Date/Datetime
-
+<div style="text-align: justify;">
+<p>El componente Date se utiliza para mostrar y recibir fechas. El componente DateTime amplía esta funcionalidad para incluir tanto la fecha como la información horaria.</p>
+<p>Con el atributo "pattern", los usuarios pueden especificar el formato en el que desean que se represente la fecha o la fecha y hora. Si se utiliza la hora del epoch de Unix, están disponibles los patrones "seconds" y "milliseconds". Para campos de texto, se pueden aplicar formatos de fecha de Java, como "yyyy-MM-dd".</p>
+<p>El atributo "hasTodayButton", que se establece en true por defecto, determina si se debe mostrar el botón "Hoy" (para Date) o el botón "Ahora" (para DateTime), permitiendo a los usuarios llenar fácilmente el campo con la fecha o fecha y hora actual.</p>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -49,8 +53,6 @@
         pattern="yyyy/MM/dd" value="${entity.fecha_text}" />
 
 
-![Imagen 1](../img/date.png){: width="240"} | ![Imagen 2](../img/datetime.png){: width="240"} | 
-
-
-
-
+![Image 1](../img/date.png){: width="180"}     | ![Image 2](../img/date2.png){: width="180"} 
+<br/>
+![Image 3](../img/datetime.png){: width="180"} | ![Image 4](../img/datetime2.png){: width="180"} | ![Image 5](../img/datetime3.png){: width="180"} 

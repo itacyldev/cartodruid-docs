@@ -2,5 +2,5 @@
     <td colspan="2"><strong>label</strong></td>
     <td>null</td>
     <td>String</td>
-    <td>Etiqueta que se mostrará.</td>
+    <td style="text-align: justify;">Etiqueta que se mostrará.</td>
 </tr>

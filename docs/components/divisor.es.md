@@ -1,4 +1,7 @@
 # 4.24 Divisor
+<div style="text-align: justify;">
+<p>El componente divisor es una línea que se utiliza para separar o dividir visualmente secciones de contenido.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

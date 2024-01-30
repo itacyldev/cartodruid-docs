@@ -1,4 +1,16 @@
 # 4.20 Buttonbar
+<div style="text-align: justify;">
+<p>
+En el formulario de edición y en el de listado la configuración los botones de acción se pueden mostrar en:
+</p>
+<ul>
+<li>BottomBar</li>
+<li>FabBar</li>
+</ul>
+<p>
+Para determinar qué botones/opciones mostrar y qué acciones ejecutar se utilizará un buttonbar con atributo "type" con valores "bottom" y "fab" si es una botonera que se tiene que mostrar en el contenido de la vista.
+</p>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -14,10 +26,10 @@
             <td colspan="2"><strong>type</strong></td>
             <td>null</td>
             <td>String</td>
-            <td>Tipo de la botonera: Fab, bottom.</td>
+            <td style="text-align: justify;">Tipo de la botonera: Fab, bottom.</td>
         </tr>
     </tbody>
-</table>    
+</table>
 
     <main id="formButtonbar" name="Buttonbar" repo="pruebaRepo">
         <list name="Buttonbar">

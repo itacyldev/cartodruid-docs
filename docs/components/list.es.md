@@ -1,4 +1,11 @@
 # 4.2 List
+<div style="text-align: justify;">
+    <p>El componente List se emplea para diseñar formularios de listado, proporcionando una manera eficiente de mostrar conjuntos de datos organizados y permitiendo la interacción con los mismos.</p>
+    <p>Estos formularios pueden incluir acciones que indican operaciones específicas a realizar entre diferentes formularios, mejorando la capacidad de gestión y navegación del usuario.</p>
+    <p>Los datos del List se presentan a través de un <a href="../datatable.es">Datatable</a>, componente utilizado para organizar y visualizar conjuntos de datos tabulares de manera estructurada. El <a href="../datatable.es">Datatable</a> está asociado a un repositorio definido en el atributo "repo", lo que permite una vinculación directa de datos para su presentación.</p>
+    <p>Adicionalmente, el <a href="../datatable.es">Datatable</a> ofrece funcionalidades avanzadas, como la capacidad de filtrar y ordenar los datos según criterios predefinidos. Esto mejora la eficiencia en la búsqueda y visualización de información, permitiendo a los usuarios interactuar de manera efectiva con los datos presentados.</p>
+    <p>La personalización del número de filas visibles y la selección de propiedades de entidad proporcionan flexibilidad para adaptar el <a href="../datatable.es">Datatable</a> a diversas necesidades de presentación y contenido, permitiendo una experiencia de usuario más personalizada.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

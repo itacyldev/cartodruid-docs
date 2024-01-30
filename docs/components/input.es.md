@@ -1,5 +1,7 @@
 # 4.12 Input
-Un elemento para ingresar y modificar texto.
+<div style="text-align: justify;">
+    <p>Un elemento para ingresar y modificar texto.</p>
+</div>
 
 <table border="1">
     <thead>

@@ -1,4 +1,8 @@
 # 4.22 Link
+<div style="text-align: justify;">
+    <p>El componente Link se utiliza para crear enlaces en la aplicación.</p>
+    <p>Este componente es útil para crear una navegación fácil entre diferentes formularios o secciones de la aplicación. Al hacer clic en el enlace, la aplicación se dirigirá al formulario especificado en el atributo route.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

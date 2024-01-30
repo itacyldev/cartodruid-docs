@@ -1,5 +1,8 @@
 # 4.6 Tab
-
+<div style="text-align: justify;">
+<p>El componente Tab funciona como un contenedor organizado para mostrar múltiples elementos de pestaña, permitiendo a los usuarios navegar entre diferentes secciones de contenido. Mejora la experiencia del usuario al presentar información de manera segmentada.</p>
+<p>Cada pestaña, representada por un Tabitem, puede contener información específica o funcionalidades relacionadas entre sí. Esto permite una presentación ordenada y facilita que los usuarios encuentren rápidamente lo que están buscando. Además, el diseño segmentado proporciona una visión clara de la estructura de la aplicación, mejorando la comprensión y la usabilidad.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

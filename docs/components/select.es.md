@@ -1,4 +1,8 @@
 # 4.17 Select
+<div style="text-align: justify;">
+<p>El componente Select proporciona un elemento de interfaz de usuario para elegir una opción única de una lista predefinida. Se utiliza comúnmente para representar menús desplegables, permitiendo a los usuarios seleccionar una opción de varias posibilidades.</p>
+<p>Este componente es especialmente útil cuando se requiere que el usuario elija una opción exclusiva de un conjunto predeterminado. Al interactuar con el componente, se despliega una lista de opciones, y el usuario puede seleccionar una de ellas.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

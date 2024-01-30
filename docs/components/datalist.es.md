@@ -1,4 +1,14 @@
 # 4.9 Datalist
+<div style="text-align: justify;">
+<p>Componente tipo lista utilizado para organizar y presentar conjuntos de datos relacionados.</p> 
+<p>Cada elemento en esta lista, conocido como "datalistitem", tiene la capacidad de contener diversos elementos 
+como tablas, inputs, imágenes y otros componentes.</p>
+<p>Este componente está asociado a un repositorio definido en "repo", permitiendo la vinculación directa de datos.</p>
+<p>Además presenta la funcionalidad de ser filtrado a través del componente "repofilter", lo que proporciona la capacidad de mostrar datos específicos basados en criterios de filtrado predefinidos.</p>
+<p>Esta versatilidad permite la creación de listas interactivas y
+personalizables que pueden incorporar una variedad de elementos según los requisitos específicos de la interfaz de usuario y la funcionalidad de la aplicación.
+</p>
+</div>
 <table border="1">
     <thead>
         <tr>

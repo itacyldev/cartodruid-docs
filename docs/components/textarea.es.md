@@ -1,5 +1,7 @@
 # 4.13 Textarea
-Un elemento para ingresar y modificar texto.
+<div style="text-align: justify;">
+    <p>El componente Textarea proporciona una interfaz para ingresar y modificar texto.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

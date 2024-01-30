@@ -16,6 +16,10 @@ td.vertical-text {
 }
 
 .three-columns {
-      column-count: 3;
-      column-gap: 20px;
-    }
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.i18n-link {
+    display: none !important;
+}

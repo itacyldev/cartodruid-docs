@@ -1,4 +1,9 @@
 # 4.3 Edit
+<div style="text-align: justify;">
+<p>El componente edit se utiliza para crear formularios de edición.</p>
+<p>Pueden tener acciones para indicar operaciones entre formularios.
+Si no se indica ninguna acción, por defecto se dan de alta estas acciones: save y cancel.</p>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -18,7 +23,7 @@
     </tbody>
 </table>
 
-    <main id="formEdit" name="Edit" repo="provinciaRepo" >
+    <main id="formEdit" name="Edit" repo="provinciaRepo">
         <edit id="editProvincias">
         </edit>
     </main>

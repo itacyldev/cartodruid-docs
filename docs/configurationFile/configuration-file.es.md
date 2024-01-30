@@ -1,5 +1,10 @@
 # 3. Fichero de configuración: repos.xml
-<u>/data/repos.xml</u>
+<div style="text-align: justify;">
+<p>
+Fichero de configuración del repositorio. Una vez tenemos definida nuestra/s base/s de datos de la aplicación, fichero/s *.sqlite en el directorio data, necesitamos un fichero de configuración del repositorio.
+</p>
+</div>
+Ejemplo: <u>/data/repos.xml</u>
 
     <repos>
         <repo dbFile="inspeccionesvinedo.sqlite" id="variedadRepo" dbTable="variedad"/>
@@ -35,7 +40,7 @@
         
     </repos>
 
-<u>/data/inspeccionesvinedo.sqlite</u>
+Base de datos: <u>/data/inspeccionesvinedo.sqlite</u>
    
     CREATE TABLE "variedad" (
         variedad_id integer primary key AUTOINCREMENT,
@@ -107,20 +112,21 @@
     <tbody>
         <tr>
             <td><strong>id</strong></td>
-            <td>Identificador único del componente, si no está definido, se utilizará el nombre del archivo base. Este identificador es el que vamos a usar en los formularios para indicar sobre qué tabla (dbTable) de la base de datos (dbFile) vamos a tomar los datos o guardar los datos del componente del formulario.</td>
+            <td style="text-align: justify;">Identificador único del componente, si no está definido, se utilizará el nombre del archivo base. Este identificador es el que vamos a usar en los formularios para indicar sobre qué tabla (dbTable) de la base de datos (dbFile) vamos a tomar los datos o guardar los datos del componente del formulario.</td>
         </tr>    
 		<tr>
             <td><strong>dbFile</strong></td>
-            <td>Hace referencia a la base de datos, fichero *.sqlite de la carpeta /data.</td>
+            <td style="text-align: justify;">Hace referencia a la base de datos, fichero *.sqlite de la carpeta /data.</td>
         </tr>  
 		<tr>
             <td><strong>dbTable</strong></td>
-            <td>Tabla como base para consultar/almacenar entidades.</td>
+            <td style="text-align: justify;">Tabla como base para consultar/almacenar entidades.</td>
         </tr>  
     </tbody>
 </table>
 
-     <repo dbFile="inspeccionesvinedo.sqlite" id="variedadRepo" dbTable="variedad"/>
+
+    <repo dbFile="inspeccionesvinedo.sqlite" id="variedadRepo" dbTable="variedad"/>
 
 ### 3.1.1 Tag mapping
 
@@ -134,31 +140,31 @@
     <tbody>
         <tr>
             <td><strong>id</strong></td>
-            <td>Identificador único del componente, si no está definido, se utilizará el nombre del archivo base. Este identificador es el que vamos a usar en los formularios para indicar sobre qué tabla (dbTable) de la base de datos (dbFile) vamos a tomar los datos o guardar los datos del componente del formulario.</td>
+            <td style="text-align: justify;">Identificador único del componente, si no está definido, se utilizará el nombre del archivo base. Este identificador es el que vamos a usar en los formularios para indicar sobre qué tabla (dbTable) de la base de datos (dbFile) vamos a tomar los datos o guardar los datos del componente del formulario.</td>
         </tr>    
 		<tr>
             <td><strong>fk</strong></td>
-            <td>Clave foránea.</td>
+            <td style="text-align: justify;">Clave foránea.</td>
         </tr>  
 		<tr>
             <td><strong>property</strong></td>
-            <td>Nombre de la propiedad de la entidad principal en la que se almacenará la entidad relacionada.</td>
+            <td style="text-align: justify;">Nombre de la propiedad de la entidad principal en la que se almacenará la entidad relacionada.</td>
         </tr>  
         <tr>
             <td><strong>repo</strong></td>
-            <td>Identificador del repositorio.</td>
+            <td style="text-align: justify;">Identificador del repositorio.</td>
         </tr>  
         <tr>
             <td><strong>insertable</strong></td>
-            <td>Por defecto=verdadero. Si es true, cuando se inserta la entidad principal, también se inserta la entidad relacionada.</td>
+            <td style="text-align: justify;">Por defecto=verdadero. Si es true, cuando se inserta la entidad principal, también se inserta la entidad relacionada.</td>
         </tr>  
         <tr>
             <td><strong>updatable</strong></td>
-            <td>Por defecto=verdadero. Si es true, cuando se almacena la entidad principal, también se actualiza la entidad relacionada.</td>
+            <td style="text-align: justify;">Por defecto=verdadero. Si es true, cuando se almacena la entidad principal, también se actualiza la entidad relacionada.</td>
         </tr>  
         <tr>
             <td><strong>deletable</strong></td>
-            <td>Por defecto=false. Si es true, cuando se elimina la entidad principal, se elimina la entidad relacionada.</td>
+            <td style="text-align: justify;">Por defecto=false. Si es true, cuando se elimina la entidad principal, se elimina la entidad relacionada.</td>
         </tr>  
     </tbody>
 </table>
@@ -178,9 +184,9 @@
     <tbody>
         <tr>
             <td><strong>type</strong></td>
-            <td>Estrategia de generación de clave de entidad. Posibles valores: 
+            <td style="text-align: justify;">Estrategia de generación de clave de entidad. Posibles valores: 
                 <ul>
-                    <li><em>MAXROWID</em>: La nueva clave para la entidad será el valor máximo de rowid incrementado en 1.</li></li>
+                    <li><em>MAXROWID</em>: La nueva clave para la entidad será el valor máximo de rowid incrementado en 1.</li>
                 </ul>
                 <ul>
                     <li><em>TIMESTAMP</em>: La nueva clave para la entidad será la fecha actual en formato timestamp.</li>
@@ -209,27 +215,35 @@
     <tbody>
         <tr>
             <td><strong>name</strong></td>
-            <td></td>
+            <td style="text-align: justify;">Nombre de la propiedad de la entidad.</td>
         </tr>    
         <tr>
             <td><strong>expression</strong></td>
-            <td></td>
+            <td style="text-align: justify;"></td>
         </tr>  
         <tr>
             <td><strong>columnName</strong></td>
-            <td></td>
+            <td style="text-align: justify;">Nombre de la propiedad de la entidad.</td>
         </tr>
         <tr>
             <td><strong>expressionType</strong></td>
-            <td></td>
+            <td style="text-align: justify;">Tipo utilizado para representar el valor de columna recuperado.</td>
         </tr>
         <tr>
             <td><strong>converter</strong></td>
-            <td></td>
+            <td style="text-align: justify;">Instancia del conversor a aplicar a la propiedad de la entidad.</td>
+        </tr>
+        <tr>
+            <td><strong>evalOn</strong></td>
+            <td style="text-align: justify;">select,insert,update</td>
+        </tr>
+        <tr>
+            <td><strong>calculated</strong></td>
+            <td style="text-align: justify;">jext|sql</td>
         </tr>
         <tr>
             <td><strong>pattern</strong></td>
-            <td></td>
+            <td style="text-align: justify;">Patrón para convertir los valores calculados (sólo los calculados) antes de insertarlos en la BD.</td>
         </tr>
     </tbody>
 </table>
@@ -247,17 +261,18 @@
     <tbody>
         <tr>
             <td><strong>id</strong></td>
-            <td>Identificador único del componente.</td>
+            <td style="text-align: justify;">Identificador único del componente.</td>
         </tr>
         <tr>
             <td><strong>folder</strong></td>
-            <td>Carpeta base que contiene las imágenes del repositorio. Si es relativa, la url se interpreta desde la carpeta del proyecto.</td>
+            <td style="text-align: justify;">Carpeta base que contiene las imágenes del repositorio. Si es relativa, la url se interpreta desde la carpeta del proyecto.</td>
         </tr>
         <tr>
             <td><strong>defaultExtension</strong></td>
-            <td>Extensión por defecto</td>
+            <td style="text-align: justify;">Extensión por defecto</td>
         </tr>
     </tbody>
 </table>
+
 
     <filerepo defaultExtension="jpg" folder="pictures/estado_fen" id="estadoFenImages" />

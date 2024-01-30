@@ -1,4 +1,10 @@
 # 4.8 Datatable
+<div style="text-align: justify;">
+<p>Componente de tabla, utilizado para organizar y presentar conjuntos de datos tabulares de manera estructurada y visualmente efectiva.</p>
+<p>Este componente está asociado a un repositorio definido en "repo", lo que permite la vinculación directa de datos.</p>
+<p>Además, presenta funcionalidades como la capacidad de filtrar y ordenar los datos según criterios predefinidos, lo que mejora la eficiencia en la búsqueda y visualización de información.</p>
+<p>La personalización del número de filas visibles y la selección de propiedades de entidad contribuyen a adaptar el datatable a diversas necesidades de presentación y contenido.</p>
+</div>
 <table border="1">
     <thead>
         <tr>

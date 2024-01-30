@@ -1,6 +1,6 @@
-# 4.28 Action(Create, Save, Cancel, Delete, Nav, Js, Job)
+# 4.27 Action(Create, Save, Cancel, Delete, Nav, Js, Job)
 
-## 4.28.1 Atributos 
+## 4.27.1 Atributos 
 
 <table border="1">
     <thead>
@@ -17,31 +17,31 @@
             <td colspan="2"><strong>route</strong></td>
             <td>null</td>
             <td>String</td>
-            <td>Si la acción implica una navegación, identificador del formulario de destino.</td>
+            <td style="text-align: justify;">Si la acción implica una navegación, identificador del formulario de destino.</td>
         </tr>
         <tr>
             <td colspan="2"><strong>type</strong></td>
             <td></td>
             <td>String</td>
-            <td>Tipo de acción: Create, Save, Cancel, Delete, Nav, Js, Job</td>
+            <td style="text-align: justify;">Tipo de acción: Create, Save, Cancel, Delete, Nav, Js, Job</td>
         </tr>
         <tr>
             <td colspan="2"><strong>controller</strong></td>
             <td>null</td>
             <td>String</td>
-            <td>Una lista separada por comas de ids de los widgetControllers que se utilizarán para ejecutar la acción. Si no se establece, por defecto se utiliza el mainForm para ejecutar la acción.</td>
+            <td style="text-align: justify;">Una lista separada por comas de ids de los widgetControllers que se utilizarán para ejecutar la acción. Si no se establece, por defecto se utiliza el mainForm para ejecutar la acción.</td>
         </tr>
         <tr>
             <td colspan="2"><strong>registerInHistory</strong></td>
             <td>true</td>
             <td>Boolean</td>
-            <td>Si la acción tiene una ruta para realizar una navegación, este atributo define si la ruta debe registrarse en el historial del enrutador.</td>
+            <td style="text-align: justify;">Si la acción tiene una ruta para realizar una navegación, este atributo define si la ruta debe registrarse en el historial del enrutador.</td>
         </tr>
         <tr>
             <td colspan="2"><strong>refresh</strong></td>
             <td>all</td>
             <td>String</td>
-            <td>Indica qué parte de la vista actual debe volver a renderizarse tras la ejecución de la acción:
+            <td style="text-align: justify;">Indica qué parte de la vista actual debe volver a renderizarse tras la ejecución de la acción:
 <ul><li>this: sólo el ViewContextHolder actual</li>
 <li>all: toda la vista</li>
 <li>componentId: widget seleccionado por su id.</li></ul>
@@ -51,13 +51,13 @@ Este atributo es incompatible con "route", si se establece refresh.</td>
             <td colspan="2"><strong>restoreView</strong></td>
             <td>false</td>
             <td>Boolean</td>
-            <td>Indica si, tras navegar a la vista referenciada por "ruta", debe restaurarse el último estado de la vista.</td>
+            <td style="text-align: justify;">Indica si, tras navegar a la vista referenciada por "ruta", debe restaurarse el último estado de la vista.</td>
         </tr>
         <tr>
             <td colspan="2"><strong>popHistory</strong></td>
             <td>0</td>
             <td>Integer</td>
-            <td>Determina si después de completar la acción se debe saltar un registro del historial para evitar volver a la vista actual utilizando la navegación "atrás".</td>
+            <td style="text-align: justify;">Determina si después de completar la acción se debe saltar un registro del historial para evitar volver a la vista actual utilizando la navegación "atrás".</td>
         </tr>
    </tbody>
 </table>
@@ -66,7 +66,7 @@ Este atributo es incompatible con "route", si se establece refresh.</td>
         <param name="entityId" value="${params.entity_id}" />
     </action>
 
-## 4.28.2 Puntos de invocación de acciones
+## 4.27.2 Puntos de invocación de acciones
 La invocación de acciones se puede realizar desde distintos puntos:
 
 <ul>
@@ -164,9 +164,9 @@ La invocación de acciones se puede realizar desde distintos puntos:
 
 ![Imagen 1](../img/actions8.png){: width="180"} | ![Imagen 2](../img/actions9.png){: width="180"}
 
-## 4.28.3 Tipos de acciones
+## 4.27.3 Tipos de acciones
 
-### 4.28.3.1 Create 
+### 4.27.3.1 Create 
     <button label="CRT">
         <create route="formActions-listActions">
             <param name="repo" value="pruebaRepo"/>
@@ -180,7 +180,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
             <param name="repo" value="pruebaRepo"/>
           </action>
     </button>
-### 4.28.3.2 Save
+### 4.27.3.2 Save
     <button label="SAV">
         <save route="formActions-listActions"/>
     </button>
@@ -189,7 +189,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         <action type="save" route="formActions-listActions">
         </action>
     </button>
-### 4.28.3.3 Cancel 
+### 4.27.3.3 Cancel 
     <button label="CNL">
         <cancel route="formActions-listActions"/>
     </button>
@@ -198,7 +198,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         <action type="cancel" route="formActions-listActions">
         </action>
     </button>
-### 4.28.3.4 Delete 
+### 4.27.3.4 Delete 
     <button label="DEL">
         <delete route="formActions-listActions"/>
     </button>
@@ -207,7 +207,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         <action type="delete" route="formActions-listActions">
         </action>
     </button>
-### 4.28.3.5 Nav 
+### 4.27.3.5 Nav 
     <button label="NAV">
         <nav route="formActions-listActions"/>
     </button>
@@ -216,7 +216,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         <action type="nav" route="formActions-listActions">
         </action>
     </button>
-### 4.28.3.6 Js 
+### 4.27.3.6 Js 
     ...
     <script>
         function accionBotonFormulario(msg) {
@@ -240,7 +240,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         </action>
     </button>
 
-### 4.28.3.6 Job 
+### 4.27.3.6 Job 
     <button action="job" label="JOB">
         <param name="jobId" value="job_prueba" />
         <param name="prueba_id" value="${entity.prueba_id}" />

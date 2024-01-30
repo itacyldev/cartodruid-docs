@@ -1,4 +1,9 @@
 # 4.1 Main
+<div style="text-align: justify;">
+<p>
+Elemento principal de una definición de formulario xml que agrupa un conjunto relacionado de formularios.
+</p>
+</div>
 <table border="1">
     <thead>
         <tr>
@@ -13,26 +18,26 @@
             <td colspan="2"><strong>id</strong></td>
             <td>null</td>
             <td>String</td>
-            <td>Identificador único del componente; si no se define, se utilizará el nombre del archivo base.</td>
+            <td style="text-align: justify;">Identificador único del componente; si no se define, se utilizará el nombre del archivo base.</td>
         </tr>
         <tr>
             <td colspan="2"><strong>name</strong></td>
             <td>null</td>
             <td>String</td>
-            <td>Nombre descriptivo del grupo de formularios.</td>
+            <td style="text-align: justify;">Nombre descriptivo del grupo de formularios.</td>
         </tr>
         <tr>
             <td colspan="2"><strong>description</strong></td>
             <td>null</td>
             <td>String</td>
-            <td>Descripción del grupo de formularios.</td>
+            <td style="text-align: justify;">Descripción del grupo de formularios.</td>
         </tr>
         {% include "./common/repo.es.md" %}
         <tr>
             <td colspan="2"><strong>mainForm</strong></td>
             <td>true</td>
             <td>Boolean</td>
-            <td>Indica si este formulario se mostrará en el listado principal de formularios.</td>
+            <td style="text-align: justify;">Indica si este formulario se mostrará en el listado principal de formularios.</td>
         </tr>
     </tbody>
 </table>

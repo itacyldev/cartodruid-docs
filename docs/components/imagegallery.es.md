@@ -1,5 +1,10 @@
 # 4.10 Imagegallery
-
+<div style="text-align: justify;">
+<p>El componente galería de imágenes permite a los usuarios visualizar y gestionar de manera conveniente conjuntos de imágenes relacionadas.</p>
+<p>Cada elemento de la galería de imágenes es llamado Imagegalleryitem.</p>
+<p>Este componente está asociado a un repositorio definido en "repo", permitiendo la vinculación directa de datos.</p>
+<p>Además presenta la funcionalidad de ser filtrado a través del componente "repofilter", lo que proporciona la capacidad de mostrar datos específicos basados en criterios de filtrado predefinidos.</p>
+</div>
 <table border="1">
     <thead>
         <tr>
