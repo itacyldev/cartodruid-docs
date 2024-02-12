@@ -33,25 +33,15 @@ nav:
     - 4.5 Form: components/form.md
     - 4.5 Form: components/form.es.md
     - 4.6 Tab: components/tab.md
-    #  - 4.6.1 Tabitem: components/tabitem.md
     - 4.6 Tab: components/tab.es.md
-   #   - 4.7.1 Tabitem: components/tabitem.es.md
     - 4.7 Table: components/table.md
-#      - 4.8.1 Row: components/row.md
-#      - 4.8.2 Column: components/column.md
     - 4.7 Table: components/table.es.md
-#      - 4.9.1 Row: components/row.es.md
-#      - 4.9.2 Column: components/column.es.md
     - 4.8 Datatable: components/datatable.md
     - 4.8 Datatable: components/datatable.es.md
     - 4.9 Datalist: components/datalist.md
-#      - 4.12.1 Datalistitem: components/datalistitem.md
     - 4.9 Datalist: components/datalist.es.md
-#      - 4.13.1 Datalistitem: components/datalistitem.es.md
     - 4.10 Imagegallery: components/imagegallery.md
-#      - 4.14.1 Imagegalleryitem: components/imagegalleryitem.md
     - 4.10 Imagegallery: components/imagegallery.es.md
-#      - 4.15.1 Imagegalleryitem: components/imagegalleryitem.es.md
     - 4.11 Card: components/card.md
     - 4.11 Card: components/card.es.md
     - 4.12 Input: components/input.md
@@ -60,10 +50,6 @@ nav:
     - 4.13 Textarea: components/textarea.es.md
     - 4.14 Radio: components/radio.md
     - 4.14 Radio: components/radio.es.md
-   # - 4.15 Options: components/options.md
-   # - 4.15 Options: components/options.es.md
-   # - 4.16 Option: components/option.md
-   # - 4.16 Option: components/option.es.md
     - 4.15 Switcher: components/switcher.es.md
     - 4.15 Switcher: components/switcher.md
     - 4.16 Date/Datetime: components/date.md
@@ -90,24 +76,8 @@ nav:
     - 4.26 Param: components/param.es.md
     - 4.27 Action: components/action.md
     - 4.27 Action: components/action.es.md
-      # - 4.27.1 Add: components/add.md
-      #   - 4.27.2 Add: components/add.es.md
-      #   - 4.27.3 Create: components/create.md
-      #   - 4.27.4 Create: components/create.es.md
-      #   - 4.27.5 Update: components/update.md
-      #   - 4.27.6 Update: components/update.es.md
-      #   - 4.27.7 Save: components/save.md
-      #   - 4.27.8 Save: components/save.es.md
-      #   - 4.27.9 Cancel: components/cancel.md
-      #   - 4.27.10 Cancel: components/cancel.es.md
-      #   - 4.27.11 Delete: components/delete.md
-      #   - 4.27.12 Delete: components/delete.es.md
-      #   - 4.27.13 Nav: components/nav.md
-      #   - 4.27.14 Nav: components/nav.es.md
-      #   - 4.27.15 Js: components/js.md
-      #   - 4.27.16 Js: components/js.es.md
-
-
+  - 5 Contexts: context/context.md
+  - 5 Contextos: context/context.es.md
 
 extra:
   alternate:
