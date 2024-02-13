@@ -46,4 +46,4 @@
         </options>
     </select>
 
-![img.png](../img/select.png){: .center } 
+![img.png](../img/select.png){: width="240" .center } 

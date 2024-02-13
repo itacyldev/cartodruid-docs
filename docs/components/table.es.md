@@ -69,7 +69,7 @@
             </row>
         </table>
 
-![img.png](../img/table.png){: .center }
+![img.png](../img/table.png){: width="240" .center }
 
 ## 4.7.1 Row
 
@@ -134,7 +134,7 @@
         </row>
     </table>
 
-![img.png](../img/table_row.png){: .center }
+![img.png](../img/table_row.png){: width="240" .center }
 
 ## 4.7.2 Componentes del table-row
  {% include "./common/components.es.md" %}

@@ -38,7 +38,7 @@ El componente View contenedor para varios subcomponentes que mejoran la presenta
         </view>
     </main>
     
-![img.png](../img/view.png){: .center }
+![img.png](../img/view.png){: width="240" .center }
 
 ## 4.4.1 Componentes del View
 <ul class="three-columns">

@@ -31,7 +31,7 @@
         </edit>
     </main>
 
-![img.png](../img/form.png){: .center }
+![img.png](../img/form.png){: width="240" .center }
 
 ## 4.5.1 Form Components
 <ul class="three-columns">

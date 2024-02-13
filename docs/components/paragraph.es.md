@@ -73,4 +73,4 @@
     <p uppercase="true" value="Mayúsculas"/>
     <p underlined="true" value="Subrayado"/>
 
-![img.png](../img/paragraph.png){: .center } 
+![img.png](../img/paragraph.png){: width="240" .center } 

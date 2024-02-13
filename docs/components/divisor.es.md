@@ -49,4 +49,4 @@
     <divisor color="#0000FF" strokeWidth="24" />
     <p/>
 
-![img.png](../img/divisor.png){: .center }
+![img.png](../img/divisor.png){: width="240" .center }

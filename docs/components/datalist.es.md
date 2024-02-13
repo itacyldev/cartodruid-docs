@@ -56,7 +56,7 @@ personalizables que pueden incorporar una variedad de elementos según los requi
        </repofilter>
     </datalist>
 
-![Imagen 1](../img/datalist.png){: .center }
+![Imagen 1](../img/datalist.png){: width="240" .center }
 
 ## 4.9.3 Componentes del datalist-datalistitem
  {% include "./common/components.es.md" %}

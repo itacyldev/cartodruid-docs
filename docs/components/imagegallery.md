@@ -65,4 +65,4 @@
         <imagegalleryitem converter="b64Image" value="${entity.image}" />
     </imagegallery>
 
-![img.png](../img/imagegallery.png){: .center } 
+![img.png](../img/imagegallery.png){: width="240" .center } 

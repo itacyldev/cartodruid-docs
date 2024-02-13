@@ -27,4 +27,4 @@
     <switcher label="Switcher true: " value="true" />
     <switcher label="Switcher false: " value="false" />
 
-![img.png](../img/switcher.png){: .center } 
+![img.png](../img/switcher.png){: width="240" .center } 

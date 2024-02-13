@@ -55,7 +55,7 @@ Datalist is a list-type component used to organize and present sets of related d
        </repofilter>
     </datalist>
 
-![Image 1](../img/datalist.png){: .center }
+![Image 1](../img/datalist.png){: width="240" .center }
 
 ## 4.9.3 Components of datalist-datalistitem
  {% include "./common/components.md" %}

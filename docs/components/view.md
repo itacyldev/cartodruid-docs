@@ -37,7 +37,7 @@ The View component serves as a container for various subcomponents that enhance 
         </view>
     </main>
 
-![img.png](../img/view.png){: .center }
+![img.png](../img/view.png){: width="240" .center }
 
 ## 4.4.1 View Components
 <ul class="three-columns">

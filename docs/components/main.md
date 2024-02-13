@@ -56,7 +56,7 @@
         <edit id="editPrueba3"/>
     </main>
 
-![img.png](../img/main.png){: .center }
+![img.png](../img/main.png){: width="240" .center }
 
 ## 4.1.1 List
 See [4.2. List](list.md)

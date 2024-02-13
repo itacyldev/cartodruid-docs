@@ -28,7 +28,7 @@
         </edit>
     </main>
 
-![img.png](../img/edit.png){: .center }
+![img.png](../img/edit.png){: width="240" .center }
 
 ## 4.3.1 Form
 See [4.5. Form](form.md)

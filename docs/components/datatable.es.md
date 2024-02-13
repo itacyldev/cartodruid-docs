@@ -35,7 +35,7 @@
     <datatable id="datatableProvincia" repo="provinciaRepo" numVisibleRows="5" properties="c_provincia_id, d_provincia">
     </datatable>
 
-![Imagen 1](../img/datatable1.png){: .center }
+![Imagen 1](../img/datatable1.png){: width="240" .center }
 
 ## 4.8.1 Column
 <table border="1">

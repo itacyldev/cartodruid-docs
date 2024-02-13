@@ -28,7 +28,7 @@ Si no se indica ninguna acción, por defecto se dan de alta estas acciones: save
         </edit>
     </main>
 
-![img.png](../img/edit.png){: .center }
+![img.png](../img/edit.png){: width="240" .center }
 
 ## 4.3.1 Form
 Ver [4.5. Form](form.es.md)

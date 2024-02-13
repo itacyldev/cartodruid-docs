@@ -31,4 +31,4 @@
     <textarea label="HasDeleteButton: " hasDeleteButton="false"  value="${entity.d_prueba}"/>
     <textarea label="Converter: " converter="integer" value="${entity.d_prueba}"/>
 
-![img.png](../img/textarea.png){: .center } 
+![img.png](../img/textarea.png){: width="240" .center } 

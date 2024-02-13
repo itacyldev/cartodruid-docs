@@ -65,4 +65,4 @@
         </options>
     </radio>
 
-![img.png](../img/radio.png){: .center } 
+![img.png](../img/radio.png){: width="240" .center } 

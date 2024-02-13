@@ -96,4 +96,4 @@
         </list>
     </main>
 
-![img.png](../img/card.png){: .center }
+![img.png](../img/card.png){: width="240" .center }

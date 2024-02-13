@@ -51,7 +51,7 @@
         </tabitem>
     </tab>
 
-![img.png](../img/tabs.png){: .center }
+![img.png](../img/tabs.png){: width="240" .center }
 
 ## 4.6.2 Components of the Tab-Tabitem
  {% include "./common/components.md" %}
