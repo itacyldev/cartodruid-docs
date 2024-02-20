@@ -53,8 +53,8 @@
     <datetime converter="string" label="Fecha string: "
         pattern="yyyy/MM/dd" value="${entity.fecha_text}" />
 
-![Image 1](../img/date.png){: width="180"}     | ![Image 2](../img/date2.png){: width="180"} 
+![Image 1](../img/date.png){: width="180"} ![Image 2](../img/date2.png){: width="180"} 
 <br/>
-![Image 3](../img/datetime.png){: width="180"} | ![Image 4](../img/datetime2.png){: width="180"} | ![Image 5](../img/datetime3.png){: width="180"} 
+![Image 3](../img/datetime.png){: width="180"} ![Image 4](../img/datetime2.png){: width="180"} ![Image 5](../img/datetime3.png){: width="180"} 
 
 

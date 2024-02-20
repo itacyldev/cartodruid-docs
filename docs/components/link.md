@@ -31,4 +31,4 @@
 
     <link route="formLink-list" value="link"/>
 
-![Image 1](../img/link1.png){: width="240"} | ![Image 2](../img/link2.png){: width="240"} |
+![Image 1](../img/link1.png){: width="240"} ![Image 2](../img/link2.png){: width="240"}

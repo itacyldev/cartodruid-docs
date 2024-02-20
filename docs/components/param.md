@@ -106,4 +106,4 @@
         </edit>
     </main>
 
-![Imagen 1](../img/param1.png){: width="180"} | ![Imagen 2](../img/param2.png){: width="180"} | ![Imagen 2](../img/param3.png){: width="180"} |
+![Imagen 1](../img/param1.png){: width="180"} ![Imagen 2](../img/param2.png){: width="180"} ![Imagen 2](../img/param3.png){: width="180"}

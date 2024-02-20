@@ -1,6 +1,7 @@
 site_name: Formulio
 theme:
   name: material
+  logo: img/logo.png
   palette:
     scheme: default
     primary: teal
@@ -78,6 +79,14 @@ nav:
     - 4.27 Action: components/action.es.md
   - 5 Contexts: context/context.md
   - 5 Contextos: context/context.es.md
+  - 6 Installation: installation/installation.md
+  - 6 Instalación: installation/installation.es.md
+  - 7 Exportation: exportation/exportation.md
+  - 7 Exportación: exportation/exportation.es.md
+  - 8 Projects and forms: forms/forms.md
+  - 8 Proyectos y formularios: forms/forms.es.md
+  - 9 Configuration: configuration/configuration.md
+  - 9 Configuración: configuration/configuration.es.md
 
 extra:
   alternate:

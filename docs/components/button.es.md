@@ -60,7 +60,7 @@ Elemento de la interfaz que el usuario puede tocar o pulsar para realizar una ac
 
     <button label="Button confirmation" route="formLink-list" confirmation="true" labelConfirmation="¿Desea realizar esta acción?"/>
 
-![Imagen 1](../img/button1.png){: width="240"} | ![Imagen 2](../img/button2.png){: width="240"} |
+![Imagen 1](../img/button1.png){: width="240"} ![Imagen 2](../img/button2.png){: width="240"}
 
 ## 4.21.1 Action
  Ver [4.27. Action](action.es.md)

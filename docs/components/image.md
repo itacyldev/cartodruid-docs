@@ -85,4 +85,4 @@
     <image converter="b64Image" embedded="true" label="Imagen 7: " value="${entity.image}" inputType="6"/>
     <image converter="b64Image" embedded="true" label="Imagen 8: " value="${entity.image}" inputType="7"/>
 
-![Imagen 2](../img/imagen1.png){: width="170"} | ![Imagen 3](../img/imagen2.png){: width="170"} | ![Imagen 3](../img/imagen3.png){: width="170"} | ![Imagen 3](../img/imagen4.png){: width="170"} |
+![Imagen 2](../img/imagen1.png){: width="170"} ![Imagen 3](../img/imagen2.png){: width="170"} ![Imagen 3](../img/imagen3.png){: width="170"} ![Imagen 3](../img/imagen4.png){: width="170"}

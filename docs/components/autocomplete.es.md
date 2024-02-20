@@ -59,4 +59,4 @@ Componente interactivo que proporciona sugerencias en tiempo real al usuario mie
         </repofilter>
     </autocomplete>
 
-![Imagen 1](../img/autocomplete1.png){: width="240"} | ![Imagen 2](../img/autocomplete2.png){: width="240"} |
+![Imagen 1](../img/autocomplete1.png){: width="240"} ![Imagen 2](../img/autocomplete2.png){: width="240"}

@@ -58,4 +58,4 @@ An interactive component that provides real-time suggestions to the user while t
         </repofilter>
     </autocomplete>
 
-![Imagen 1](../img/autocomplete1.png){: width="240"} | ![Imagen 2](../img/autocomplete2.png){: width="240"} |
+![Imagen 1](../img/autocomplete1.png){: width="240"} ![Imagen 2](../img/autocomplete2.png){: width="240"}

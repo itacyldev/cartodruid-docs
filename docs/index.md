@@ -10,6 +10,7 @@ The refresh mechanism between components is based on a reactive mechanism, imple
 <p>
 Formulio also includes a configurable background process execution module called jayjobs, which allows defining steps to execute in JSON for tasks such as exporting data, synchronizing data with a remote REST API, etc.
 </p>
+<p>Download the example project: <a href="../project/DOC_PROJECT.fml">DOC_PROJECT.fml</a>.</p>
 </div>
 
 

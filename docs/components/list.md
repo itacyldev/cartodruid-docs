@@ -52,7 +52,7 @@
         </list>
     </main>
 
-![Image 1](../img/list1.png){: width="240"} | ![Image 2](../img/list2.png){: width="240"} |
+![Image 1](../img/list1.png){: width="240"} ![Image 2](../img/list2.png){: width="240"}
 
 ## 4.2.1 Datatable
 See [4.8. Datatable](datatable.md)

@@ -85,7 +85,7 @@ Actions can be invoked from different points:
         </action>
     </button>
 
-![Image 1](../img/actions1.png){: width="180"} | ![Image 2](../img/actions2.png){: width="180"}
+![Image 1](../img/actions1.png){: width="180"} ![Image 2](../img/actions2.png){: width="180"}
 
 <ul>
     <li><strong><u>From a component:</u></strong></li>
@@ -103,7 +103,7 @@ Actions can be invoked from different points:
         </action>
     </input>
 
-![Image 1](../img/actions3.png){: width="180"} | ![Image 2](../img/actions4.png){: width="180"}
+![Image 1](../img/actions3.png){: width="180"} ![Image 2](../img/actions4.png){: width="180"}
 
 <ul>
     <li><strong><u>From the main form toolbar:</u></strong></li>
@@ -125,7 +125,7 @@ Actions can be invoked from different points:
         <button label="Cancel" route="back"/>
     </buttonbar>
 
-![Image 1](../img/actions5.png){: width="180"} | ![Image 2](../img/actions6.png){: width="180"}
+![Image 1](../img/actions5.png){: width="180"} ![Image 2](../img/actions6.png){: width="180"}
 
     <buttonbar type="fab">
         <button id="btnFab">
@@ -135,7 +135,7 @@ Actions can be invoked from different points:
         </button>
     </buttonbar>
 
-![Image 1](../img/actions7.png){: width="180"} | ![Image 2](../img/actions1.png){: width="180"}
+![Image 1](../img/actions7.png){: width="180"} ![Image 2](../img/actions1.png){: width="180"}
 
 <strong><u>Actions can be concatenated:</u></strong>
 
@@ -162,7 +162,7 @@ Actions can be invoked from different points:
         </action>
     </button>
 
-![Image 1](../img/actions8.png){: width="180"} | ![Image 2](../img/actions9.png){: width="180"}
+![Image 1](../img/actions8.png){: width="180"} ![Image 2](../img/actions9.png){: width="180"}
 
 ## 4.27.3 Action Types
 
@@ -282,4 +282,4 @@ File /jobs/job_test.json:
         ]
 }
 
-![Image 1](../img/actions10.png){: width="180"} | ![Image 2](../img/actions11.png){: width="180"} ![Image 2](../img/actions12.png){: width="180"}
+![Image 1](../img/actions10.png){: width="180"} ![Image 2](../img/actions11.png){: width="180"} ![Image 2](../img/actions12.png){: width="180"}

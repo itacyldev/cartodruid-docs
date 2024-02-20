@@ -11,6 +11,7 @@ El mecanismo de refresco entre componentes se basa en un mecanismo reactivo, imp
 <p>
 Formulio también incluye un módulo de ejecución de procesos en segundo plano configurable llamado jayjobs, que permite definir en json pasos a ejecutar para realizar una exportación, sincronizar datos con un api REST remota, etc.
 </p>
+<p>Descárgate el proyecto de ejemplo: <a href="../project/DOC_PROJECT.fml">DOC_PROJECT.fml</a>.</p>
 </div>
 
 

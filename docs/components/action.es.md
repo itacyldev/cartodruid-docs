@@ -85,7 +85,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         </action>
     </button>
 
-![Imagen 1](../img/actions1.png){: width="180"} | ![Imagen 2](../img/actions2.png){: width="180"}
+![Imagen 1](../img/actions1.png){: width="180"} ![Imagen 2](../img/actions2.png){: width="180"}
 
 <ul>
     <li><strong><u>Desde un componente:</u></strong></li>
@@ -103,7 +103,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         </action>
     </input>
 
-![Imagen 1](../img/actions3.png){: width="180"} | ![Imagen 2](../img/actions4.png){: width="180"}
+![Imagen 1](../img/actions3.png){: width="180"} ![Imagen 2](../img/actions4.png){: width="180"}
 
 <ul>
     <li><strong><u>Desde la botonera principal del formulario:</u></strong></li>
@@ -125,7 +125,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         <button label="Cancel" route="back"/>
     </buttonbar>
 
-![Imagen 1](../img/actions5.png){: width="180"} | ![Imagen 2](../img/actions6.png){: width="180"}
+![Imagen 1](../img/actions5.png){: width="180"} ![Imagen 2](../img/actions6.png){: width="180"}
 
     <buttonbar type="fab">
         <button id="btnFab">
@@ -135,7 +135,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         </button>
     </buttonbar>
 
-![Imagen 1](../img/actions7.png){: width="180"} | ![Imagen 2](../img/actions1.png){: width="180"}
+![Imagen 1](../img/actions7.png){: width="180"} ![Imagen 2](../img/actions1.png){: width="180"}
 
 <strong><u>Se pueden concatenar acciones:</u></strong>
 
@@ -162,7 +162,7 @@ La invocación de acciones se puede realizar desde distintos puntos:
         </action>
     </button>
 
-![Imagen 1](../img/actions8.png){: width="180"} | ![Imagen 2](../img/actions9.png){: width="180"}
+![Imagen 1](../img/actions8.png){: width="180"} ![Imagen 2](../img/actions9.png){: width="180"}
 
 ## 4.27.3 Tipos de acciones
 
@@ -277,4 +277,4 @@ Fichero /jobs/job_prueba.json:
         ]
 }
 
-![Imagen 1](../img/actions10.png){: width="180"} | ![Imagen 2](../img/actions11.png){: width="180"} ![Imagen 2](../img/actions12.png){: width="180"}
+![Imagen 1](../img/actions10.png){: width="180"} ![Imagen 2](../img/actions11.png){: width="180"} ![Imagen 2](../img/actions12.png){: width="180"}

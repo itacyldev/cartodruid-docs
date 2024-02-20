@@ -26,5 +26,5 @@
     <input label="HasDeleteButton: " hasDeleteButton="false"  value="${entity.d_prueba}"/>
     <input label="Converter: " converter="integer" value="${entity.d_prueba}"/>
 
-![Imagen 1](../img/input1.png){: width="240"} | ![Imagen 2](../img/input2.png){: width="240"} | ![Imagen 3](../img/input3.png){: width="240"} | 
+![Imagen 1](../img/input1.png){: width="240"} ![Imagen 2](../img/input2.png){: width="240"} ![Imagen 3](../img/input3.png){: width="240"} 
 

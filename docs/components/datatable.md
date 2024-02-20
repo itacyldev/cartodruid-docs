@@ -146,4 +146,4 @@
         </repofilter>
     </datatable>
 
-![Image 2](../img/datatable2.png){: width="240"} | ![Image 3](../img/datatable3.png){: width="240"} |
+![Image 2](../img/datatable2.png){: width="240"} ![Image 3](../img/datatable3.png){: width="240"}
