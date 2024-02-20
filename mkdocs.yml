@@ -1,4 +1,5 @@
 site_name: Formulio
+site_url: http://www.formulio.es
 theme:
   name: material
   logo: img/logo.png
