@@ -2,7 +2,8 @@ site_name: Formulio
 site_url: http://www.formulio.es
 theme:
   name: material
-  logo: img/logo.png
+  logo: img/logo2.png
+  favicon: img/logo.png
   palette:
     scheme: default
     primary: teal
