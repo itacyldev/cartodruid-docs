@@ -91,14 +91,12 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
         <h2 class="section-title">Desarrollo de formularios dinámicos con <b>Formulio</b></h2>
-        <p class="section-intro">Permita a los desarrolladores crear aplicaciones basadas en formularios de forma eficaz y sin esfuerzo diseñando la interfaz con plantillas XML y codificando la lógica de la aplicación con JavaScript. <b>Cree sus formularios de encuesta o de recogida de datos con una codificación mínima.</b></p>
+        <p class="section-intro">Permite a los desarrolladores crear aplicaciones basadas en formularios de forma eficaz y sin esfuerzo diseñando la interfaz con plantillas XML y codificando la lógica de la aplicación con JavaScript. <b>Cree sus formularios de encuesta o de recogida de datos con una codificación mínima.</b></p>
         <p class="section-intro">La aplicación incluye componentes de interfaz para cubrir la mayoría de los casos que surgen al implementar un proceso de recogida de datos. El marco de trabajo utiliza un sistema de "contexto" para acceder a la información de forma coherente desde diferentes fuentes (base de datos, archivos, API REST, información del dispositivo, etc.) y admite la vinculación automática entre las entidades recuperadas del repositorio y los componentes de la pantalla. El mecanismo de actualización entre componentes se basa en un mecanismo reactivo, implementado a partir de dependencias entre componentes de pantalla o entre componentes y contextos.</p>
         <p class="section-intro">Formulio también incluye un módulo configurable de ejecución de procesos en segundo plano llamado <b>jayjobs</b>, que permite definir pasos a ejecutar en JSON para tareas como exportar datos, sincronizar datos con una API REST remota, etc.</p>
       </div>
       <div class="col-md-12 text-center overview-video">
-        <video width="72%" controls>
-          <source src="images/formulio.mp4" type="video/mp4">
-        </video>
+        <iframe width="72%" height="auto" src="https://www.youtube.com/embed/q7poDbsDdDg" frameborder="0" allowfullscreen></iframe>
     </div>
     </div>
 
@@ -113,7 +111,7 @@
   <div class="col-md-4 col-sm-12">
     <i class="fas fa-puzzle-piece" style="font-size: 36px;"></i>
     <div class="overview-content">
-      <h4>Código abierto</h4>
+      <h4>Open source</h4>
       <p style="text-align: justify;">Desarrollado con bibliotecas de código abierto y utilizando estándares y protocolos abiertos para que puedas integrarlo con tus aplicaciones según lo necesites.</p>
     </div>
   </div>
@@ -256,6 +254,7 @@
 </section>
 <!-- Sección de suscripción -->
 
+<!--contact section -->
 <section id="contact" class="section text-center">
   <div class="container">
     <div class="row">
@@ -264,15 +263,11 @@
         <p class="section-intro">No dudes en contactarnos. Completa el formulario de contacto para enviarnos tus consultas, comentarios, sugerencias o cualquier otra información que puedas necesitar. Nos comprometemos a responder de manera rápida y proporcionarte la asistencia que requieras.</p>
       </div>
     </div>
-
-    <!--inicio del formulario de contacto-->
-    <div class="col-md-6 col-md-offset-3 conForm">
-      <!--el iframe -->
-      <iframe frameborder="0" height="100%" src="/es/widget/web/guest/formulario-contacto-formulio/-/com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet_INSTANCE_01dRykxoQXwH" width="100%"></iframe>
-
-
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <input type="submit" name="send" value="Formulario de contacto" id="contactButton" class="submitBnt" />
+      </div>
     </div>
-    <!--contact form end-->
   </div>
 </section>
 <!--contact section -->
@@ -312,5 +307,6 @@
 <script src="js/jquery.subscribe.js"></script>
 <script src="js/jquery.contact.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

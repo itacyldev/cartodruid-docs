@@ -9,7 +9,7 @@
 /* ------------------------------------------------------------------------------
 	Typography
 -------------------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700);
 
 p {
 	font-size: 14px;
@@ -319,6 +319,9 @@ ul li {
 	background-image: url('../images/fondo.png');
 	min-height: 750px;
 }
+.bannerContact {
+	min-height: 0px;
+}
 .overlay {
 	background-color: rgba(38, 166, 154, 0.9);
 	height: 100%;
@@ -625,7 +628,7 @@ ul li {
 	font-size:15px;
 	border:#dedede 1px solid;
 }
-.conForm .submitBnt {
+.submitBnt {
 	background:#00766c;
 	color: #fff;
 	padding: 15px 40px;
@@ -639,8 +642,8 @@ ul li {
 	display: inline-block;
 	text-transform: uppercase;
 }
-.conForm .submitBnt:hover {
-	background:#3d3d3d;
+.submitBnt:hover {
+	background:#26a69a;
 	color:#fff;
 }
 .error_message {

@@ -57,3 +57,22 @@ $(document).ready(function() {
 		nav.toggleClass('open');
 	});
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Selecciona el botón por su ID
+  var contactButton = document.getElementById('contactButton');
+
+  // Agrega un evento de clic al botón
+  if (contactButton) {
+    contactButton.addEventListener('click', function() {
+      // Determina la URL de redirección basada en la página actual
+      var currentUrl = window.location.href;
+
+      if (currentUrl.includes('index-en.html')) {
+        window.location.href = 'contact-en.html#contact';
+      } else if (currentUrl.includes('index.html')) {
+        window.location.href = 'contact.html#contact';
+      }
+    });
+  }
+});
