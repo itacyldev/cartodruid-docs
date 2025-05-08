@@ -1,30 +1,226 @@
-h1, h2, h3, h4, h5, h6 {
-    background-color: #f0f0f0; /* Color de fondo gris */
-    padding: 6px; /* Espaciado interno para mejorar la legibilidad */
+/* ========================
+   ESTILOS GENERALES
+======================== */
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: #f0f0f0;
+    padding: 6px;
 }
 
+/* Centrar elementos */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Texto vertical en celdas */
 td.vertical-text {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     white-space: nowrap;
 }
 
+/* Tres columnas */
 .three-columns {
     column-count: 3;
     column-gap: 20px;
 }
 
+/* Ocultar enlaces de idiomas */
 .i18n-link {
     display: none !important;
 }
 
-.md-header__button.md-logo img, .md-header__button.md-logo svg {
-    height: 2.4rem;
-    width: 2.4rem;
+/* ========================
+   CABECERA
+======================== */
+
+/* Cabecera */
+.md-header {
+    background-image: url('../img/intro-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+/* Logo cabecera */
+.md-header__button.md-logo {
+    display: inline-block;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.8), -10px -10px 30px rgba(255, 255, 255, 0.8);
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* Título cabecera */
+.md-header__title {
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    top: -5px;
+    left: 40px;
+}
+
+/* ========================
+   TEXTO Y TABLAS
+======================== */
+
+.justify,
+.md-typeset p {
+    text-align: justify;
+}
+
+table,
+th,
+td {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    color: inherit !important;
+    line-height: inherit !important;
+    vertical-align: bottom;
+}
+
+table td {
+    font-size: 0.8em;
+    line-height: 1.2;
+    height: 30px;
+    padding: 4px 8px;
+}
+
+table td p,
+table td ul {
+    font-size: 0.8em;
+}
+
+td img {
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100%;
+    height: auto;
+}
+
+/* Tablas con bordes más oscuros */
+table.bordered {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    border: 2px solid #c1a18b !important;
+    /* Borde más oscuro que #d4c1b1 */
+}
+
+table.bordered th,
+table.bordered td {
+    border: 2px solid #c1a18b !important;
+    /* Borde más oscuro que #d4c1b1 */
+    padding: 6px !important;
+    font-size: 0.8em !important;
+    text-align: justify;
+}
+
+table.bordered td p {
+    text-align: justify;
+}
+
+table.bordered td ul {
+    font-size: 0.8em !important;
+    text-align: justify;
+}
+
+table.bordered td li {
+    text-align: justify;
+}
+
+/* Encabezados */
+table.bordered thead tr {
+    background-color: #805133 !important;
+    color: white !important;
+}
+
+/* Fila de título marrón */
+table.bordered tr.section-title {
+    background-color: #d4c1b1 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Código en celdas */
+table.bordered td code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+
+@media (max-width: 768px) {
+    .md-header {
+        height: 120px;
+    }
+
+    .md-header__title {
+        font-size: 3em;
+        left: 10px;
+    }
+}
+
+/* ========================
+   HAMBURGUESA
+======================== */
+
+.md-nav__button.md-logo img {
+    display: none !important;
+}
+
+.md-nav__button.md-logo {
+    background-image: url('../img/ic_cartodruid.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+}
+
+/* ========================
+   Fondo de la primera columna (solo para una tabla específica)
+======================== */
+
+/* Aplica el fondo #d4c1b1 en la primera columna de la tabla específica */
+table.bordered td.first-column {
+    background-color: #d4c1b1 !important;
+    color: white !important;
+}
+
+table.bordered td.centered-cell {
+    text-align: center;
 }

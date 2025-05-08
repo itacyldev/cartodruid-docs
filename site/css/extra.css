@@ -1,6 +1,13 @@
-h1, h2, h3, h4, h5, h6 {
-    background-color: #f0f0f0; /* Color de fondo gris */
-    padding: 6px; /* Espaciado interno para mejorar la legibilidad */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: #f0f0f0;
+    /* Color de fondo gris */
+    padding: 6px;
+    /* Espaciado interno para mejorar la legibilidad */
 }
 
 .center {
@@ -13,4 +20,73 @@ td.vertical-text {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     white-space: nowrap;
+}
+
+.three-columns {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.i18n-link {
+    display: none !important;
+}
+
+.md-header__button.md-logo {
+    display: inline-block;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    /* Fondo blanco con un toque más blanco (opacidad 0.7) */
+    padding: 12px;
+    /* Espacio alrededor del logo */
+    border-radius: 50%;
+    /* Mantiene la forma circular */
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.8),
+        -10px -10px 30px rgba(255, 255, 255, 0.8);
+    /* Sombra más blanca y difusa */
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 5rem;
+    /* Tamaño del logo */
+    width: 5rem;
+    /* Tamaño del logo */
+    border-radius: 50%;
+    /* Forma circular */
+}
+
+.md-header {
+    background-image: url('../img/intro-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+.md-header__title {
+    font-size: 6em;
+    /* Tamaño grande del texto */
+    font-weight: bold;
+    /* Poner el texto en negrita para mayor énfasis */
+    color: white;
+    /* Color de relleno blanco */
+    text-align: center;
+    /* Alineación centrada del título */
+    text-transform: uppercase;
+    /* Convierte todo el texto a mayúsculas */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra difusa del texto */
+    margin: 0;
+    /* Elimina cualquier margen */
+    padding: 5px;
+    /* Un poco de espacio alrededor del texto */
+    font-family: 'Arial', sans-serif;
+    /* Puedes elegir el tipo de fuente que prefieras */
+
+    position: relative;
+    /* Necesario para mover el texto */
+    top: -5px;
+    /* Mueve el texto hacia arriba */
+    left: 40px;
+    /* Mueve el texto hacia la derecha */
 }

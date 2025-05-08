@@ -1,18 +1,12 @@
-# 1. What is formulio?
+# 1. Introduction
 <div style="text-align: justify;">
 <p>
-Formulio is an application for the development of dynamic forms on Android. The goal is to quickly and easily build applications based on forms by designing the presentation using XML templates and implementing the application logic using JavaScript.
+CartoDruid is an application developed at the <a href="https://www.itacyl.es">Instituto Tecnológico Agrario de Castilla y León (ITACyL)</a>, designed as a support tool for fieldwork. It aims to solve the problem of editing georeferenced information on devices without a data connection.
 </p>
 <p>
-The application includes interface components to cover most cases that arise when implementing a data collection process. The framework uses a "context" system to access information consistently from different sources (database, files, REST APIs, device information, etc.) and supports automatic binding between entities retrieved from the repository and screen components.
-The refresh mechanism between components is based on a reactive mechanism, implemented from dependencies between screen components or between components and contexts.
+In many rural areas, mobile network coverage is either nonexistent or insufficient for efficient work. CartoDruid addresses this issue by allowing users to view vector and raster layers downloaded onto the device itself, and to create geometries either by drawing directly on the screen or using the GPS.
 </p>
 <p>
-Formulio also includes a configurable background process execution module called jayjobs, which allows defining steps to execute in JSON for tasks such as exporting data, synchronizing data with a remote REST API, etc.
+CartoDruid does not require prior GIS knowledge to operate and is easy to configure and use. This makes it accessible for anyone to manage information in the field and later export the recorded data for use in other applications.
 </p>
-<p>Download the example project: <a href="../project/DOC_PROJECT.fml">DOC_PROJECT.fml</a>.</p>
 </div>
-
-
-
-

@@ -1,21 +1,19 @@
-# 1. ¿Qué es Formulio?
+# 1. Introducción
 <div style="text-align: justify;">
 <p>
-Formulio es una aplicación para el desarrollo de formularios dinámicos en Android. El objetivo es construir de forma rápida y sencilla aplicaciones basadas en formularios desarrollando la presentación mediante plantillas XML e implementando la lógica de la aplicación mediante JavaScript.
+CartoDruid es una aplicación desarrollada en el <a href="https://www.itacyl.es">Instituto Tecnológico Agrario de Castilla y León 
+(ITACyL)</a> pensada como herramienta de apoyo para el trabajo en campo, que busca resolver el 
+problema de la edición de información georeferenciada sin conexión de datos en el dispositivo.
 </p>
 <p>
-La aplicación incluye componentes de interfaz para cubrir la mayoría de casos que surgen a la hora de implementar un proceso de recogida de datos. 
-El framework utiliza un sistema de "contextos" para acceder de forma uniforme a la información procedente de diferentes fuentes (base de datos, ficheros, apis REST, información del dispositivo, etc.) y soporta binding automático entre las entidades recuperadas del repositorio y los componetes de pantalla.
-El mecanismo de refresco entre componentes se basa en un mecanismo reactivo, implementado a partir de las dependencias entre componentes de la pantalla o entre componentes y contextos.
+En muchas zonas de campo la cobertura de redes móviles es inexistente o insuficiente para trabajar 
+de forma eficaz, CartoDruid da solución a este problema permitiendo visualizar capas vectoriales y 
+raster descargadas en el propio dispositivo y crear geometrías dibujándolas directamente en la 
+pantalla o utilizando el GPS.
 </p>
 <p>
-Formulio también incluye un módulo de ejecución de procesos en segundo plano configurable llamado jayjobs, que permite definir en json pasos a ejecutar para realizar una exportación, sincronizar datos con un api REST remota, etc.
+CartoDruid no requiere de conocimientos GIS previos para su manejo y es fácil de configurar y 
+utilizar, lo que abre la puerta a que cualquier persona pueda usarla para manejar información en 
+campo y después exportar los datos grabados para utilizarlos en otras aplicaciones
 </p>
-<p>Descárgate el proyecto de ejemplo: <a href="../project/DOC_PROJECT.fml">DOC_PROJECT.fml</a>.</p>
 </div>
-
-
-
-
-
-
