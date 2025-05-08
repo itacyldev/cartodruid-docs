@@ -1,6 +1,2 @@
-# Formulio
-<div style="text-align: justify;">
-    <p>Empower developers to efficiently and effortlessly create form-based applications by designing the interface with XML templates and coding the application logic with JavaScript. <b>Build your survey or data collection forms with minimal coding.</p>
-    <p>La aplicación incluye componentes de interfaz para cubrir la mayoría de los casos que surgen al implementar un proceso de recogida de datos. El marco de trabajo utiliza un sistema de "contexto" para acceder a la información de forma coherente desde diferentes fuentes (base de datos, archivos, API REST, información del dispositivo, etc.) y admite la vinculación automática entre las entidades recuperadas del repositorio y los componentes de la pantalla. El mecanismo de actualización entre componentes se basa en un mecanismo reactivo, implementado a partir de dependencias entre componentes de pantalla o entre componentes y contextos.</p>
-    <p>Formulio también incluye un módulo configurable de ejecución de procesos en segundo plano llamado jayjobs, que permite definir pasos a ejecutar en JSON para tareas como exportar datos, sincronizar datos con una API REST remota, etc.</p>
-</div>
+# cartodruid
+CartoDruid Reference Manual 
