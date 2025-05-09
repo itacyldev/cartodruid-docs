@@ -17,7 +17,7 @@ Requisitos que debe cumplir una capa spatialite para poder ser utilizada en Cart
     update inspeccion set Geometry = CastToMultiPolygon(Geometry);
     ```
 
-### 9.2 Nomenclatura de los nombres de campos de las tablas
+### 9.2 Nomenclatura de los nombres de campos de las tablas {#nomenclatura-nombres-campos-tablas}
 
 * Para mostrar un componente de tipo checkbox en un formulario, el nombre del campo deberá comenzar por "B_", y se definirá en la tabla como tipo entero. CartoDruid almacenará el valor del checkbox como 1 o 0. En este caso el tipo del campo de la Base de datos será INTEGER.
 
