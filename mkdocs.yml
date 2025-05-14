@@ -15,7 +15,7 @@ plugins:
       default_language: 'en'
       languages:
         en: "English"
-        es: "Castellano"
+        es: "Español"
 
 nav:
   - 1 Introduction: index.md
@@ -43,7 +43,7 @@ extra:
     - name: English
       link: ""
       lang: en
-    - name: Castellano
+    - name: Español
       link: /index/index.es/
       lang: es
 

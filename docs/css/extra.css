@@ -49,35 +49,31 @@ td.vertical-text {
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
 
-/* Contenedor de la cabecera */
+/* Contenedor de elementos de cabecera */
 .md-header__inner {
     display: flex;
     align-items: center;
-    height: 100%;
-    padding: 0 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Contenedor de logo y título */
+.md-header__left {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
-/* Logo cabecera */
-.md-header__button.md-logo {
-    display: inline-block;
-    background: none;
-    padding: 0;
-    border-radius: 50%;
-    box-shadow: none;
-    height: auto;
-    width: auto;
-}
-
-/* Imagen del logo */
+/* Logo */
 .md-header__button.md-logo img {
-    height: 10rem;
-    width: 10rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
-    box-shadow: none;
-    display: block;
     object-fit: contain;
 }
 
@@ -94,30 +90,79 @@ td.vertical-text {
     margin-left: 125px !important;
 }
 
+/* Contenedor de opciones (idiomas y lupa) */
+.md-header__options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* Selector de idioma */
 .md-header__option {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: auto;
+}
+
+/* Iconos de banderas */
+.md-header__option [lang]::before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.md-header__option [lang="en"]::before {
+    background-image: url("../img/gb.png");
+}
+
+.md-header__option [lang="es"]::before {
+    background-image: url("../img/es.png");
 }
 
 /* Responsive cabecera */
 @media (max-width: 768px) {
     .md-header {
-        height: 120px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
     }
 
-    .md-header__button.md-logo img {
-        height: 6rem;
-        width: 6rem;
+    .md-header__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .md-header__left {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 
     .md-header__title {
         font-size: 3em;
-        margin-left: 10px;
+        margin-left: 0;
+        /* Remover margen izquierdo en móviles */
+        text-align: center;
+        /* Centrar título en pantallas pequeñas */
+        margin-bottom: 10px;
+        /* Añadir espacio debajo del título */
+        padding: 0;
+        /* Remover padding en pantallas pequeñas */
+    }
+
+    .md-header__options {
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
+
+
 
 /* ========================
    TEXTO Y TABLAS
@@ -258,4 +303,34 @@ table.bordered td.first-column {
 
 table.bordered td.centered-cell {
     text-align: center;
+}
+
+/* Iconos de banderas delante de los idiomas en el selector */
+.md-select__list .md-select__item [hreflang="en"]::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/gb.png");
+    /* Asegúrate de que la ruta sea correcta */
+    background-size: 100% 110%;
+    /* Aumenta la altura de la bandera (proporción 100% ancho, 120% alto) */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 16px;
+    /* Ajusta la altura que prefieras */
+    margin-right: 6px;
+    vertical-align: middle;
+    background-position: center;
+    /* Mantener la bandera centrada */
+}
+
+.md-select__list .md-select__item [hreflang="es"]::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/es.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: middle;
 }

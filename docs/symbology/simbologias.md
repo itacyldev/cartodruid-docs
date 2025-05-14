@@ -80,7 +80,7 @@ For labels, the symbology must be of the polygon type, and will have an associat
 
 The following diagram shows the relationship between symbologies and styles.
 
-![Simbología](../img/simbologia/simbologia_6_2.png){: .center}
+![Simbología](../img/simbologia/simbologia_6_2_en.png){: .center}
 
 ### 6.3 Styles and Symbologies for Points
 
