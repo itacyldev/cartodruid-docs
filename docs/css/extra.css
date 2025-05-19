@@ -71,8 +71,8 @@ td.vertical-text {
 
 /* Logo */
 .md-header__button.md-logo img {
-    height: 6rem;
-    width: 6rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
     object-fit: contain;
 }
