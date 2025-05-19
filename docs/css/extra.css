@@ -334,3 +334,8 @@ table.bordered td.centered-cell {
     margin-right: 6px;
     vertical-align: middle;
 }
+
+.img-medium {
+    width: 70%;
+    height: auto;
+}

@@ -80,7 +80,8 @@ Para el caso de las etiquetas, la simbología debe ser de tipo polígono, y tend
 
 En el siguiente esquema se muestra la relación entre las simbologías y los estilos.
 
-![Simbología](../img/simbologia/simbologia_6_2_es.png){: .center}
+![Simbología](../img/simbologia/simbologia_6_2_es.png){: .center .img-medium}
+
 
 ### 6.3 Estilos y simbologías para puntos
 
