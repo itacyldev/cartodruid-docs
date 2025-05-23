@@ -459,7 +459,7 @@ GROUP BY c_parvit;
 
 For raster layers, it is only necessary to specify a data source descriptor. Each raster format or service supported by CartoDruid will have its own descriptor.
 
-**Configuration of Rasterlite and MBTiles Layers**
+##### 5.4.2.1 Configuration of Rasterlite and MBTiles Layers
 
 Similarly to vector layers, we will have different descriptors depending on whether we want to reference the database directly by the file name or by referencing its cartographic characteristics:
 
@@ -534,7 +534,7 @@ Similarly to vector layers, we will have different descriptors depending on whet
 </entry>
 ```
 
-**TMS Service (Tile Map Service) Configuration**
+##### 5.4.2.2 TMS Service (Tile Map Service) Configuration
 
 CartoDruid can consume online TMS services, but it can also serve tiles from the device’s file system, as long as they are stored in a structure similar to that maintained by TMS servers (<code>base_cache/nivel_zoom/x/y</code>).
 
@@ -573,7 +573,7 @@ For more information about these differences: <a href="http://www.maptiler.org/g
 </es.jcyl.ita.crtcyl.client.dao.source.TMSServiceDescriptor>
 ```
 
-**WMS Service (Web Map Service) Configuration**
+##### 5.4.2.3 WMS Service (Web Map Service) Configuration
 
 CartoDruid supports a minimal implementation for accessing WMS services. The current version does not support GetCapabilities queries to check the server's capabilities, but almost all parameters of a WMS request can be configured.
 

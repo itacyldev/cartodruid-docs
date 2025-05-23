@@ -461,7 +461,7 @@ GROUP BY c_parvit;
 
 En el caso de las capas raster solo es necesario indicar un descriptor de origen de datos. Cada formato o servicio raster soportado por CartoDruid tendrá su propio descriptor.
 
-**Configuración de capas rasterlite y MBTiles**
+##### 5.4.2.1 Configuración de capas rasterlite y MBTiles
 
 De forma similar a las capas vectoriales, tendremos descriptores distintos en función de si queremos referenciar la BD directamente por el nombre del fichero o por la referencia a sus características cartográficas:
 
@@ -536,7 +536,7 @@ De forma similar a las capas vectoriales, tendremos descriptores distintos en fu
 </entry>
 ```
 
-**Configuración de servicio TMS (Tile Map Service)**
+##### 5.4.2.2 Configuración de servicio TMS (Tile Map Service)
 
 CartoDruid puede consumir servicios TMS online, pero también puede servir teselas desde el sistema de ficheros del dispositivo, siempre que estén almacenadas con una estructura similar a la que mantienen los servidores TMS (<code>base_cache/nivel_zoom/x/y</code>).
 
@@ -574,7 +574,7 @@ Para más información sobre estas diferencias: <a href="http://www.maptiler.org
 </es.jcyl.ita.crtcyl.client.dao.source.TMSServiceDescriptor>
 ```
 
-**Configuración de servicio WMS (Web Map Service)**
+##### 5.4.2.3 Configuración de servicio WMS (Web Map Service)
 
 CartoDruid soporta una implementación mínima del acceso a servicios WMS. La versión actual no soporta consultas de tipo GetCapabilities para comprobar capacidades del servidor, pero se pueden configurar prácticamente todos los parámetros de una petición WMS.
 
