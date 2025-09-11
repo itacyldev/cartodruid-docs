@@ -614,6 +614,15 @@ CartoDruid soporta una implementación mínima del acceso a servicios WMS. La ve
       <td>Parámetro QUALITY para la petición WMS.</td>
     </tr>
     <tr>
+      <td>invertAxisOrientation</td>
+      <td>Indica si es necesario invertir el orden de los ejes en función del sistema de referencia.
+        <ul>
+          <li>Para sistemas de coordenadas <strong>geográficas</strong>, generalmente el valor debe ser "Y", aunque hay casos que invierten los ejes y debería ser "N".</li>
+          <li>Para sistemas de coordenadas <strong>proyectadas</strong>, no es necesario invertir los ejes, por lo que el valor debe ser "N".</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td>wmsVersion</td>
       <td>Versión de wms a utilizar.</td>
     </tr>
@@ -629,30 +638,31 @@ Un ejemplo de configuración de una capa que consulta un servicio WMS:
 <entry>
  <string>pnoa_wms</string>
  <es.jcyl.ita.crtcyl.core.model.RasterLayer>
- <descripcion>PNOA WMS ITACyL</descripcion>
- <id>pnoa_wms</id>
- <name>pnoa_wms</name>
- <sources>
-<es.jcyl.ita.crtcyl.client.dao.source.WMSServiceDescriptor>
- <layerName>Ortofoto_CyL</layerName>
- <format>image/png</format>
- <request>GetMap</request>
- <EPSG>4326</EPSG>
- <quality>50</quality>
- <transparent>true</transparent>
- <wmsVersion>1.0.0</wmsVersion>
- <endPointList>
- <es.jcyl.ita.crtcyl.core.model.source.EndPoint>
- <URL>http://orto.wms.itacyl.es/WMS</URL>
- </es.jcyl.ita.crtcyl.core.model.source.EndPoint>
- </endPointList>
-</es.jcyl.ita.crtcyl.client.dao.source.WMSServiceDescriptor>
- </sources>
- <zOrder>14</zOrder>
- <range>
-<max>21</max>
-<min>0</min>
- </range>
+  <descripcion>PNOA WMS ITACyL</descripcion>
+  <id>pnoa_wms</id>
+  <name>pnoa_wms</name>
+  <sources>
+  <wms>
+    <layerName>Ortofoto_CyL</layerName>
+    <format>image/png</format>
+    <request>GetMap</request>
+    <EPSG>4326</EPSG>
+    <quality>50</quality>
+    <invertAxisOrientation>Y</invertAxisOrientation>
+    <transparent>true</transparent>
+    <wmsVersion>1.3.0</wmsVersion>
+    <endPointList>
+    <es.jcyl.ita.crtcyl.core.model.source.EndPoint>
+      <URL>https://orto.wms.itacyl.es/WMS</URL>
+    </es.jcyl.ita.crtcyl.core.model.source.EndPoint>
+    </endPointList>
+  </wms>
+  </sources>
+  <zOrder>14</zOrder>
+  <range>
+  <max>21</max>
+  <min>0</min>
+  </range>
  </es.jcyl.ita.crtcyl.core.model.RasterLayer>
 </entry>
 ```
