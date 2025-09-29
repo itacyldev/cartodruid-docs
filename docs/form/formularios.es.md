@@ -64,7 +64,9 @@ Un ejemplo de la organización del fichero XML:
     </tr>
     <tr>
       <td>inputType</td>
-      <td>Tipo de componente del campo <code>TEXT</code>: configurable en función de <a href="http://developer.android.com/reference/android/text/InputType.html" target="_blank">http://developer.android.com/reference/android/text/InputType.html</a>. <br>Por ejemplo, para configurar un campo numérico, con signo y decimal, se pondría <code>12290</code> (2 + 4096 + 8192), equivalente a sumar: <br>• <code>InputType.TYPE_CLASS_NUMBER</code> (2) <br>• <code>InputType.TYPE_NUMBER_FLAG_SIGNED</code> (4096) <br>• <code>InputType.TYPE_NUMBER_FLAG_DECIMAL</code> (8192)</td>
+      <td>Tipo de componente del campo <code>TEXT</code>: configurable en función de <a href="http://developer.android.com/reference/android/text/InputType.html" target="_blank">http://developer.android.com/reference/android/text/InputType.html</a>. <br><br>Por ejemplo, para configurar un campo numérico, con signo y decimal, se pondría <code>12290</code> (2 + 4096 + 8192), equivalente a sumar: <br>• <code>InputType.TYPE_CLASS_NUMBER</code> (2) <br>• <code>InputType.TYPE_NUMBER_FLAG_SIGNED</code> (4096) <br>• <code>InputType.TYPE_NUMBER_FLAG_DECIMAL</code> (8192)
+      <br><br>
+  Para configurar un <code>textarea</code> se utilizaría el número <code>131073</code> (1 + 131072).</td>
     </tr>
     <tr>
       <td>regexp</td>
@@ -109,6 +111,100 @@ Un ejemplo de la organización del fichero XML:
     <tr>
       <td>choicesByQuery</td>
       <td>Consulta SQL para cargar los valores del desplegable. Se debe indicar el fichero de base de datos con <code>&lt;dbFile&gt;</code> (ruta relativa o absoluta) y la consulta con <code>&lt;query&gt;</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplos de configuración del campo <code>inputType</code> en función del texto a recoger:</strong></p>
+
+<table class="bordered">
+  <thead>
+    <tr>
+      <th style="text-align:left;">Campo típico</th>
+      <th>Constantes usadas</th>
+      <th style="text-align:right;">Valor entero</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left;"><strong>Texto multilínea</strong> (textarea)</td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_MULTI_LINE (131072)</code></td>
+      <td style="text-align:right;"><strong>131073</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Número entero</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code></td>
+      <td style="text-align:right;"><strong>2</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Número con signo y decimales</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_FLAG_SIGNED (4096)</code> + <code>TYPE_NUMBER_FLAG_DECIMAL (8192)</code></td>
+      <td style="text-align:right;"><strong>12290</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Teléfono</strong></td>
+      <td><code>TYPE_CLASS_PHONE (3)</code></td>
+      <td style="text-align:right;"><strong>3</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Email</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_EMAIL_ADDRESS (32)</code></td>
+      <td style="text-align:right;"><strong>33</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>URL</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_URI (16)</code></td>
+      <td style="text-align:right;"><strong>17</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Contraseña (texto)</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_PASSWORD (128)</code></td>
+      <td style="text-align:right;"><strong>129</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Contraseña visible temporalmente</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_VISIBLE_PASSWORD (144)</code></td>
+      <td style="text-align:right;"><strong>145</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Contraseña numérica (PIN)</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_VARIATION_PASSWORD (16)</code></td>
+      <td style="text-align:right;"><strong>18</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Nombre propio</strong> (capitalización de palabras)</td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_CAP_WORDS (8192)</code></td>
+      <td style="text-align:right;"><strong>8193</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Texto con autocorrección</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_AUTO_CORRECT (32768)</code></td>
+      <td style="text-align:right;"><strong>32769</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Texto con sugerencias desactivadas</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)</code></td>
+      <td style="text-align:right;"><strong>524289</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Campo de fecha</strong></td>
+      <td><code>TYPE_CLASS_DATETIME (4)</code> + <code>TYPE_DATETIME_VARIATION_DATE (16)</code></td>
+      <td style="text-align:right;"><strong>20</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Campo de hora</strong></td>
+      <td><code>TYPE_CLASS_DATETIME (4)</code> + <code>TYPE_DATETIME_VARIATION_TIME (32)</code></td>
+      <td style="text-align:right;"><strong>36</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Número con decimales (sin signo)</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_FLAG_DECIMAL (8192)</code></td>
+      <td style="text-align:right;"><strong>8194</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Código / NIF en mayúsculas</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_CAP_CHARACTERS (4096)</code> + <code>TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)</code></td>
+      <td style="text-align:right;"><strong>528385</strong></td>
     </tr>
   </tbody>
 </table>

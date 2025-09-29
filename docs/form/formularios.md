@@ -64,7 +64,8 @@ An example of the organization of the XML file:
     </tr>
     <tr>
       <td>inputType</td>
-      <td>Type of TEXT field component: configurable according to <a href="http://developer.android.com/reference/android/text/InputType.html" target="_blank">http://developer.android.com/reference/android/text/InputType.html</a>. <br>For example, to configure a numeric field with sign and decimal, use <code>12290</code> (2 + 4096 + 8192), equivalent to adding: <br>• <code>InputType.TYPE_CLASS_NUMBER</code> (2) <br>• <code>InputType.TYPE_NUMBER_FLAG_SIGNED</code> (4096) <br>• <code>InputType.TYPE_NUMBER_FLAG_DECIMAL</code> (8192)</td>
+      <td>Type of TEXT field component: configurable according to <a href="http://developer.android.com/reference/android/text/InputType.html" target="_blank">http://developer.android.com/reference/android/text/InputType.html</a>. <br>For example, to configure a numeric field with sign and decimal, use <code>12290</code> (2 + 4096 + 8192), equivalent to adding: <br>• <code>InputType.TYPE_CLASS_NUMBER</code> (2) <br>• <code>InputType.TYPE_NUMBER_FLAG_SIGNED</code> (4096) <br>• <code>InputType.TYPE_NUMBER_FLAG_DECIMAL</code> (8192)
+      <br><br>To configure a <code>textarea</code>, use the number <code>131073</code> (1 + 131072).</td>
     </tr>
     <tr>
       <td>regexp</td>
@@ -112,6 +113,101 @@ An example of the organization of the XML file:
     </tr>
   </tbody>
 </table>
+
+<p><strong>Examples of <code>inputType</code> configuration depending on the text to be collected:</strong></p>
+
+<table class="bordered">
+  <thead>
+    <tr>
+      <th style="text-align:left;">Typical field</th>
+      <th>Constants used</th>
+      <th style="text-align:right;">Integer value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left;"><strong>Multiline text</strong> (textarea)</td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_MULTI_LINE (131072)</code></td>
+      <td style="text-align:right;"><strong>131073</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Integer number</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code></td>
+      <td style="text-align:right;"><strong>2</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Signed decimal number</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_FLAG_SIGNED (4096)</code> + <code>TYPE_NUMBER_FLAG_DECIMAL (8192)</code></td>
+      <td style="text-align:right;"><strong>12290</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Phone</strong></td>
+      <td><code>TYPE_CLASS_PHONE (3)</code></td>
+      <td style="text-align:right;"><strong>3</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Email</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_EMAIL_ADDRESS (32)</code></td>
+      <td style="text-align:right;"><strong>33</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>URL</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_URI (16)</code></td>
+      <td style="text-align:right;"><strong>17</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Password (text)</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_PASSWORD (128)</code></td>
+      <td style="text-align:right;"><strong>129</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Visible password (temporarily)</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_VISIBLE_PASSWORD (144)</code></td>
+      <td style="text-align:right;"><strong>145</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Numeric password (PIN)</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_VARIATION_PASSWORD (16)</code></td>
+      <td style="text-align:right;"><strong>18</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Proper name</strong> (capitalize words)</td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_CAP_WORDS (8192)</code></td>
+      <td style="text-align:right;"><strong>8193</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Text with autocorrect</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_AUTO_CORRECT (32768)</code></td>
+      <td style="text-align:right;"><strong>32769</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Text with suggestions disabled</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)</code></td>
+      <td style="text-align:right;"><strong>524289</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Date field</strong></td>
+      <td><code>TYPE_CLASS_DATETIME (4)</code> + <code>TYPE_DATETIME_VARIATION_DATE (16)</code></td>
+      <td style="text-align:right;"><strong>20</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Time field</strong></td>
+      <td><code>TYPE_CLASS_DATETIME (4)</code> + <code>TYPE_DATETIME_VARIATION_TIME (32)</code></td>
+      <td style="text-align:right;"><strong>36</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Decimal number (unsigned)</strong></td>
+      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_FLAG_DECIMAL (8192)</code></td>
+      <td style="text-align:right;"><strong>8194</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;"><strong>Code / ID in uppercase</strong></td>
+      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_CAP_CHARACTERS (4096)</code> + <code>TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)</code></td>
+      <td style="text-align:right;"><strong>528385</strong></td>
+    </tr>
+  </tbody>
+</table>
+
 
 <strong>Note</strong>: Using the <code>SEPARATOR</code> type, it is possible to create intermediate headers for the data, either empty (a horizontal line), or with text (filling in the <code>name</code> attribute).
 
