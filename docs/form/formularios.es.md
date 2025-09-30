@@ -121,11 +121,11 @@ Un ejemplo de la organización del fichero XML:
     <tr>
       <th style="text-align:left;">Campo típico</th>
       <th>Constantes usadas</th>
-      <th style="text-align:right;">Valor entero</th>
+      <th style="text-align:right; white-space: nowrap;">Valor entero</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td colspan="3"><strong>Números</strong></td></tr>
+    <tr class="section-title"><td colspan="3" >Números</td></tr>
     <tr>
       <td style="text-align:left;">Número entero</td>
       <td>`TYPE_CLASS_NUMBER (2)`</td>
@@ -146,7 +146,7 @@ Un ejemplo de la organización del fichero XML:
       <td>`TYPE_CLASS_PHONE (3)`</td>
       <td style="text-align:right;">3</td>
     </tr>
-    <tr><td colspan="3"><strong>Texto</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Texto</td></tr>
     <tr>
       <td style="text-align:left;">Texto multilínea (textarea)</td>
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_MULTI_LINE (131072)`</td>
@@ -182,13 +182,13 @@ Un ejemplo de la organización del fichero XML:
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)`</td>
       <td style="text-align:right;">524289</td>
     </tr>
-    <tr><td colspan="3"><strong>Códigos / IDs</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Códigos / IDs</td></tr>
     <tr>
       <td style="text-align:left;">Código / ID en mayúsculas</td>
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_CAP_CHARACTERS (4096)` + `TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)`</td>
       <td style="text-align:right;">528385</td>
     </tr>
-    <tr><td colspan="3"><strong>Contraseñas</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Contraseñas</td></tr>
     <tr>
       <td style="text-align:left;">Contraseña numérica (PIN)</td>
       <td>`TYPE_CLASS_NUMBER (2)` + `TYPE_NUMBER_VARIATION_PASSWORD (16)`</td>
@@ -204,7 +204,7 @@ Un ejemplo de la organización del fichero XML:
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_VISIBLE_PASSWORD (144)`</td>
       <td style="text-align:right;">145</td>
     </tr>
-    <tr><td colspan="3"><strong>Fecha / Hora</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Fecha / Hora</td></tr>
     <tr>
       <td style="text-align:left;">Campo de fecha</td>
       <td>`TYPE_CLASS_DATETIME (4)` + `TYPE_DATETIME_VARIATION_DATE (16)`</td>

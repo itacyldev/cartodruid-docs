@@ -121,11 +121,11 @@ An example of the organization of the XML file:
     <tr>
       <th style="text-align:left;">Typical field</th>
       <th>Constants used</th>
-      <th style="text-align:right;">Integer value</th>
+      <th style="text-align:right; white-space: nowrap;">Integer value</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td colspan="3"><strong>Numbers</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Numbers</td></tr>
     <tr>
       <td style="text-align:left;">Integer number</td>
       <td>`TYPE_CLASS_NUMBER (2)`</td>
@@ -146,7 +146,7 @@ An example of the organization of the XML file:
       <td>`TYPE_CLASS_PHONE (3)`</td>
       <td style="text-align:right;">3</td>
     </tr>
-    <tr><td colspan="3"><strong>Text</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Text</td></tr>
     <tr>
       <td style="text-align:left;">Multiline text (textarea)</td>
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_MULTI_LINE (131072)`</td>
@@ -182,13 +182,13 @@ An example of the organization of the XML file:
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)`</td>
       <td style="text-align:right;">524289</td>
     </tr>
-    <tr><td colspan="3"><strong>Codes / IDs</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Codes / IDs</td></tr>
     <tr>
       <td style="text-align:left;">Code / ID in uppercase</td>
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_CAP_CHARACTERS (4096)` + `TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)`</td>
       <td style="text-align:right;">528385</td>
     </tr>
-    <tr><td colspan="3"><strong>Passwords</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Passwords</td></tr>
     <tr>
       <td style="text-align:left;">Numeric password (PIN)</td>
       <td>`TYPE_CLASS_NUMBER (2)` + `TYPE_NUMBER_VARIATION_PASSWORD (16)`</td>
@@ -204,7 +204,7 @@ An example of the organization of the XML file:
       <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_VISIBLE_PASSWORD (144)`</td>
       <td style="text-align:right;">145</td>
     </tr>
-    <tr><td colspan="3"><strong>Date / Time</strong></td></tr>
+    <tr class="section-title"><td colspan="3">Date / Time</td></tr>
     <tr>
       <td style="text-align:left;">Date field</td>
       <td>`TYPE_CLASS_DATETIME (4)` + `TYPE_DATETIME_VARIATION_DATE (16)`</td>
