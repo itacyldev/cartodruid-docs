@@ -114,7 +114,7 @@ An example of the organization of the XML file:
   </tbody>
 </table>
 
-<p><strong>Examples of <code>inputType</code> configuration depending on the text to be collected:</strong></p>
+<p><strong>Examples of configuring the <code>inputType</code> field depending on the text to collect:</strong></p>
 
 <table class="bordered">
   <thead>
@@ -125,89 +125,98 @@ An example of the organization of the XML file:
     </tr>
   </thead>
   <tbody>
+    <tr><td colspan="3"><strong>Numbers</strong></td></tr>
     <tr>
-      <td style="text-align:left;"><strong>Multiline text</strong> (textarea)</td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_MULTI_LINE (131072)</code></td>
-      <td style="text-align:right;"><strong>131073</strong></td>
+      <td style="text-align:left;">Integer number</td>
+      <td>`TYPE_CLASS_NUMBER (2)`</td>
+      <td style="text-align:right;">2</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Integer number</strong></td>
-      <td><code>TYPE_CLASS_NUMBER (2)</code></td>
-      <td style="text-align:right;"><strong>2</strong></td>
+      <td style="text-align:left;">Signed decimal number</td>
+      <td>`TYPE_CLASS_NUMBER (2)` + `TYPE_NUMBER_FLAG_SIGNED (4096)` + `TYPE_NUMBER_FLAG_DECIMAL (8192)`</td>
+      <td style="text-align:right;">12290</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Signed decimal number</strong></td>
-      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_FLAG_SIGNED (4096)</code> + <code>TYPE_NUMBER_FLAG_DECIMAL (8192)</code></td>
-      <td style="text-align:right;"><strong>12290</strong></td>
+      <td style="text-align:left;">Decimal number (unsigned)</td>
+      <td>`TYPE_CLASS_NUMBER (2)` + `TYPE_NUMBER_FLAG_DECIMAL (8192)`</td>
+      <td style="text-align:right;">8194</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Phone</strong></td>
-      <td><code>TYPE_CLASS_PHONE (3)</code></td>
-      <td style="text-align:right;"><strong>3</strong></td>
+      <td style="text-align:left;">Phone</td>
+      <td>`TYPE_CLASS_PHONE (3)`</td>
+      <td style="text-align:right;">3</td>
+    </tr>
+    <tr><td colspan="3"><strong>Text</strong></td></tr>
+    <tr>
+      <td style="text-align:left;">Multiline text (textarea)</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_MULTI_LINE (131072)`</td>
+      <td style="text-align:right;">131073</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Email</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_EMAIL_ADDRESS (32)</code></td>
-      <td style="text-align:right;"><strong>33</strong></td>
+      <td style="text-align:left;">Person name</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_PERSON_NAME (96)`</td>
+      <td style="text-align:right;">97</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>URL</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_URI (16)</code></td>
-      <td style="text-align:right;"><strong>17</strong></td>
+      <td style="text-align:left;">Email</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_EMAIL_ADDRESS (32)`</td>
+      <td style="text-align:right;">33</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Password (text)</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_PASSWORD (128)</code></td>
-      <td style="text-align:right;"><strong>129</strong></td>
+      <td style="text-align:left;">URL</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_URI (16)`</td>
+      <td style="text-align:right;">17</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Visible password (temporarily)</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_VARIATION_VISIBLE_PASSWORD (144)</code></td>
-      <td style="text-align:right;"><strong>145</strong></td>
+      <td style="text-align:left;">Postal address</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_POSTAL_ADDRESS (112)`</td>
+      <td style="text-align:right;">113</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Numeric password (PIN)</strong></td>
-      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_VARIATION_PASSWORD (16)</code></td>
-      <td style="text-align:right;"><strong>18</strong></td>
+      <td style="text-align:left;">Text with autocorrect</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_AUTO_CORRECT (32768)`</td>
+      <td style="text-align:right;">32769</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Proper name</strong> (capitalize words)</td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_CAP_WORDS (8192)</code></td>
-      <td style="text-align:right;"><strong>8193</strong></td>
+      <td style="text-align:left;">Text with suggestions disabled</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)`</td>
+      <td style="text-align:right;">524289</td>
+    </tr>
+    <tr><td colspan="3"><strong>Codes / IDs</strong></td></tr>
+    <tr>
+      <td style="text-align:left;">Code / ID in uppercase</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_FLAG_CAP_CHARACTERS (4096)` + `TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)`</td>
+      <td style="text-align:right;">528385</td>
+    </tr>
+    <tr><td colspan="3"><strong>Passwords</strong></td></tr>
+    <tr>
+      <td style="text-align:left;">Numeric password (PIN)</td>
+      <td>`TYPE_CLASS_NUMBER (2)` + `TYPE_NUMBER_VARIATION_PASSWORD (16)`</td>
+      <td style="text-align:right;">18</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Text with autocorrect</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_AUTO_CORRECT (32768)</code></td>
-      <td style="text-align:right;"><strong>32769</strong></td>
+      <td style="text-align:left;">Password (text)</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_PASSWORD (128)`</td>
+      <td style="text-align:right;">129</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Text with suggestions disabled</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)</code></td>
-      <td style="text-align:right;"><strong>524289</strong></td>
+      <td style="text-align:left;">Visible password (temporarily)</td>
+      <td>`TYPE_CLASS_TEXT (1)` + `TYPE_TEXT_VARIATION_VISIBLE_PASSWORD (144)`</td>
+      <td style="text-align:right;">145</td>
+    </tr>
+    <tr><td colspan="3"><strong>Date / Time</strong></td></tr>
+    <tr>
+      <td style="text-align:left;">Date field</td>
+      <td>`TYPE_CLASS_DATETIME (4)` + `TYPE_DATETIME_VARIATION_DATE (16)`</td>
+      <td style="text-align:right;">20</td>
     </tr>
     <tr>
-      <td style="text-align:left;"><strong>Date field</strong></td>
-      <td><code>TYPE_CLASS_DATETIME (4)</code> + <code>TYPE_DATETIME_VARIATION_DATE (16)</code></td>
-      <td style="text-align:right;"><strong>20</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align:left;"><strong>Time field</strong></td>
-      <td><code>TYPE_CLASS_DATETIME (4)</code> + <code>TYPE_DATETIME_VARIATION_TIME (32)</code></td>
-      <td style="text-align:right;"><strong>36</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align:left;"><strong>Decimal number (unsigned)</strong></td>
-      <td><code>TYPE_CLASS_NUMBER (2)</code> + <code>TYPE_NUMBER_FLAG_DECIMAL (8192)</code></td>
-      <td style="text-align:right;"><strong>8194</strong></td>
-    </tr>
-    <tr>
-      <td style="text-align:left;"><strong>Code / ID in uppercase</strong></td>
-      <td><code>TYPE_CLASS_TEXT (1)</code> + <code>TYPE_TEXT_FLAG_CAP_CHARACTERS (4096)</code> + <code>TYPE_TEXT_FLAG_NO_SUGGESTIONS (524288)</code></td>
-      <td style="text-align:right;"><strong>528385</strong></td>
+      <td style="text-align:left;">Time field</td>
+      <td>`TYPE_CLASS_DATETIME (4)` + `TYPE_DATETIME_VARIATION_TIME (32)`</td>
+      <td style="text-align:right;">36</td>
     </tr>
   </tbody>
 </table>
-
 
 <strong>Note</strong>: Using the <code>SEPARATOR</code> type, it is possible to create intermediate headers for the data, either empty (a horizontal line), or with text (filling in the <code>name</code> attribute).
 
