@@ -8,6 +8,8 @@ theme:
     scheme: default
     primary: brown
   custom_dir: overrides
+  features:
+    - content-title-meta
 
 plugins:
   - include-markdown
