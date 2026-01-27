@@ -1,3 +1,8 @@
+---
+title: SQLite-Spatialite layers in CartoDruid
+description: Guía sobre los requisitos y la nomenclatura de campos en capas espaciales para su uso en CartoDruid, incluyendo convenciones para checkboxes, fechas y firmas.
+keywords: cartodruid, capas vectoriales, requisitos, spatialite, pk_uid, Geometry, multipart, nomenclatura de campos, checkboxes, fechas, firmas, GIS, configuración XML
+---
 ### 9.1 Requirements
 
 Requirements that a spatialite layer must meet to be used in CartoDruid:
@@ -17,7 +22,7 @@ Requirements that a spatialite layer must meet to be used in CartoDruid:
     update inspeccion set Geometry = CastToMultiPolygon(Geometry);
     ```
 
-### 9.2 Nomenclature of Table Field Names {#nomenclatura-nombres-campos-tablas}
+### 9.2 Nomenclature of table field names {#nomenclatura-nombres-campos-tablas}
 
 * To display a checkbox type component in a form, the field name must begin with "B_", and it will be defined in the table as an integer type. CartoDruid will store the checkbox value as 1 or 0. In this case, the field type in the database will be INTEGER.
 

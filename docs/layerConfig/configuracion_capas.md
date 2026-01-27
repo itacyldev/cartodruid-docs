@@ -1,6 +1,11 @@
+---
+title: Layer configuration in projects
+description: Detailed guide on configuring vector and raster layers in CartoDruid, including TOC behavior, symbology, permissions, and data source descriptors such as SpatiaLite, Rasterlite, MBTiles, TMS, and WMS.
+keywords: cartodruid, vector layers, raster layers, layer configuration, symbology, TOC, data sources, SpatiaLite, Rasterlite, MBTiles, TMS, WMS, GIS
+---
 CartoDruid allows the user to parameterize a limited set of options for layers and the TOC. To use the full power of the tool, manual configuration is necessary. This section describes the content and structure of the configuration files and includes practical examples of handling.
 
-### 5.1 General File Structure
+### 5.1 General file structure
 
 For each project configured in CartoDruid, there will be a `crtdrdLayer.<project_id>.xml` file in the `cartodroid/config/` folder. This file stores the reference to the layers that will be displayed in the project and their behavior (display, permissions, operations, etc.).
 
@@ -51,7 +56,7 @@ An example of this file:
 </es.jcyl.ita.crtcyl.core.config.WKSLayerConfiguration>
 ```
 
-### 5.2 Vector Layer Configuration 
+### 5.2 Vector layer configuration 
 
 The following table lists the tags that can be used within the es.jcyl.ita.crtcyl.core.model.VectorialLayer element.
 
@@ -168,7 +173,7 @@ The following example shows the minimum XML that must be defined to configure a 
 </layers>
 ```
 
-### 5.3 Raster Layer Configuration
+### 5.3 Raster layer configuration
 
 <table class="bordered">
   <thead>
@@ -212,7 +217,7 @@ The following example shows the minimum XML that must be defined to configure a 
   </tbody>
 </table>
 
-### 5.4 Data Source Configuration
+### 5.4 Data source configuration
 
 To define the data source that CartoDruid should use to read the information of a layer, a `<sources>` tag must be nested within the layer definition tag, whether it is VectorialLayer or RasterLayer.
 
@@ -220,7 +225,7 @@ Within the sources tag, we will be able to define the necessary parameters to lo
 
 On the other hand, in the layer configuration, in the attributesClassName attribute, CartoDruid is told how to process this descriptor and how to treat the layer geometries when reading them.
 
-#### 5.4.1 Data Sources for Vector Layers
+#### 5.4.1 Data sources for vector layers
 
 To establish a data source against a vector layer, we must define two things:
 
@@ -455,11 +460,11 @@ FROM subparcelas g
 GROUP BY c_parvit;
 ```
 
-#### 5.4.2 Data Sources for Raster Layers
+#### 5.4.2 Data sources for raster layers
 
 For raster layers, it is only necessary to specify a data source descriptor. Each raster format or service supported by CartoDruid will have its own descriptor.
 
-##### 5.4.2.1 Configuration of Rasterlite and MBTiles Layers
+##### 5.4.2.1 Configuration of rasterlite and MBTiles layers
 
 Similarly to vector layers, we will have different descriptors depending on whether we want to reference the database directly by the file name or by referencing its cartographic characteristics:
 
@@ -534,7 +539,7 @@ Similarly to vector layers, we will have different descriptors depending on whet
 </entry>
 ```
 
-##### 5.4.2.2 TMS Service (Tile Map Service) Configuration
+##### 5.4.2.2 TMS service (Tile Map Service) configuration
 
 CartoDruid can consume online TMS services, but it can also serve tiles from the device’s file system, as long as they are stored in a structure similar to that maintained by TMS servers (<code>base_cache/nivel_zoom/x/y</code>).
 
@@ -573,7 +578,7 @@ For more information about these differences: <a href="http://www.maptiler.org/g
 </es.jcyl.ita.crtcyl.client.dao.source.TMSServiceDescriptor>
 ```
 
-##### 5.4.2.3 WMS Service (Web Map Service) Configuration
+##### 5.4.2.3 WMS service (Web Map Service) configuration
 
 CartoDruid supports a minimal implementation for accessing WMS services. The current version does not support GetCapabilities queries to check the server's capabilities, but almost all parameters of a WMS request can be configured.
 

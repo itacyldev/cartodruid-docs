@@ -7,6 +7,7 @@ theme:
   palette:
     scheme: default
     primary: brown
+  custom_dir: overrides
 
 plugins:
   - include-markdown
@@ -20,22 +21,22 @@ plugins:
 nav:
   - 1 Introduction: index.md
   - 1 Introducción: index.es.md
-  - 2 Application File Structure: fileStructure/estructura_ficheros.md
+  - 2 Application file structure: fileStructure/estructura_ficheros.md
   - 2 Estructura de ficheros de la aplicación: fileStructure/estructura_ficheros.es.md
-  - 3 Creating Layers from CartoDruid: layer/capas.md
+  - 3 Creating layers from Cartodruid: layer/capas.md
   - 3 Creación de capas desde CartoDruid: layer/capas.es.md
-  - 4 Project Management with CRTDRD: project/proyectos.md
+  - 4 Project management with CRTDRD: project/proyectos.md
   - 4 Gestión de proyectos con CRTDRD: project/proyectos.es.md
-  - 5 Layer Configuration in Projects: layerConfig/configuracion_capas.md
+  - 5 Layer configuration in projects: layerConfig/configuracion_capas.md
   - 5 Configuración de capas en proyectos: layerConfig/configuracion_capas.es.md
-  - 6 Symbolization Configuration in Projects: symbology/simbologias.md
+  - 6 Symbolization configuration in projects: symbology/simbologias.md
   - 6 Configuración de simbologías en proyectos: symbology/simbologias.es.md
-  - 7 Configuration of Form Display: form/formularios.md
+  - 7 Configuration of form display: form/formularios.md
   - 7 Configuración de la visualización de formularios: form/formularios.es.md
-  - 8 Practical Cases of Vector Layer Parameterization: cases/casos_practicos.md
+  - 8 Practical cases of vector layer parameterization: cases/casos_practicos.md
   - 8 Casos prácticos de parametrización de capas vectoriales: cases/casos_practicos.es.md
-  - 9 About SQLite-Spatialite Layers in CartoDruid: sqliteLayers/sqllayers.md
-  - 9 Sobre las capas SQLite-Spatialite en CartoDruid: sqliteLayers/sqllayers.es.md
+  - 9 SQLite-Spatialite layers in CartoDruid: sqliteLayers/sqllayers.md
+  - 9 Capas SQLite-Spatialite en CartoDruid: sqliteLayers/sqllayers.es.md
 
  
 extra:

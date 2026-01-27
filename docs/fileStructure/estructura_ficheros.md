@@ -1,6 +1,15 @@
+---
+title: Application file structure
+description: Overview of the directory structure created by CartoDruid, including config, data, values, temp, and pictures directories for managing projects, databases, and files efficiently.
+keywords: cartodruid, directory structure, project files, GIS, data storage, config files, field app
+---
 <div class="justify">
 <p>
-After installing CartoDruid on a device, the tool configures the following directory structure:
+<p>
+After installing CartoDruid on a device, the tool configures the following directory structure: inside the <code>cartodruid</code> directory, there is a <code>projects</code> directory, and within it, all projects are stored, each in its own folder. Inside each project folder, the tool configures the following directory structure:
+</p>
+
+
 </p>
 </div>
 

@@ -1,3 +1,8 @@
+---
+title: Creating layers from CartoDruid
+description: Step-by-step guide on creating vector, raster, WMS, and TMS layers from scratch in CartoDruid, including layer configuration, symbology, and database updates.
+keywords: cartodruid, vector layer, raster layer, WMS, TMS, SQLite, spatialite, GIS, layer configuration, symbology, map layers
+---
 This section indicates how to create a vector layer from scratch with CartoDruid.
 
 1. To create layers from CRTDRD, the first thing to do is open the TOC.
@@ -31,7 +36,7 @@ This section indicates how to create a vector layer from scratch with CartoDruid
    </tr>
 </table>
 
-### 3.1 Creation of Vector Layer
+### 3.1 Creation of vector layer
 
 When selecting "Vector Layer," we will have the following options:
 
@@ -141,7 +146,7 @@ c. If we select the "ITACYL repository layer" option, a dialog appears where we 
   </tr>
 </table>
 
-### 3.2 Creation of Raster Layer
+### 3.2 Creation of raster layer
 
 For creating a "Raster Layer," we have the following options:
 
@@ -166,7 +171,7 @@ If we select MBTiles/Rasterlite file, a file explorer will open to select the co
   </tr>
 </table>
 
-#### 3.2.1 WMS Layer
+#### 3.2.1 WMS layer
 
 When we want to add a WMS layer, it must be previously added to the WMS services catalog. For this, when we press on WMS Layer, the following dialog opens:
 
@@ -226,7 +231,7 @@ When pressing "New WMS Service," the following dialog appears where we indicate 
   </tr>
 </table>
 
-#### 3.2.2 TMS Layer
+#### 3.2.2 TMS layer
 
 Similarly to WMS services, when we want to add a TMS layer, it must first be loaded into the TMS services catalog. To do this, when we click on TMS Layer, the following dialog will open:
 

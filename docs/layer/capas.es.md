@@ -1,3 +1,8 @@
+---
+title: Creación de capas desde CartoDruid
+description: Guía paso a paso para crear capas vectoriales, raster, WMS y TMS desde cero en CartoDruid, incluyendo configuración de capa, simbología y actualización de bases de datos.
+keywords: cartodruid, capa vectorial, capa raster, WMS, TMS, SQLite, spatialite, GIS, configuración de capas, simbología, mapa
+---
 En esta sección se indica cómo crear una capa vectorial desde cero con CartoDruid.
 
 1. Para la creación de capas desde CRTDRD, lo primero que debemos hacer es abrir la TOC.

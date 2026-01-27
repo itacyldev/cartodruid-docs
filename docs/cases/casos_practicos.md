@@ -1,4 +1,9 @@
-### 8.1 Configuration of Vector Layer with Multiple Files
+---
+title: Practical cases of vector layer parameterization
+description: Guide on configuring vector layers in CartoDruid, including multi-file sources, editing restrictions, dynamic labels, entity list views, reusable filters, image naming, symbology by expression, custom point markers, and linear entity arrows.
+keywords: cartodruid, vector layers, multi-sqlite, editing restrictions, dynamic labels, entity list view, definition queries, image naming, symbology expression, point markers, arrowheads, GIS, XML configuration
+---
+### 8.1 Configuration of vector layer with multiple files
 
 In this example, we use a `MultiSqlite` implementer to query several plot databases. With this configuration, CartoDruid will search for all databases with the name `recintos_25830_2016_*.sqlite` and display the information as a single layer.
 
@@ -29,7 +34,7 @@ In this example, we use a `MultiSqlite` implementer to query several plot databa
 </entry>
 ```
 
-### 8.2 Configuration of Vector Layer with Editing Restrictions
+### 8.2 Configuration of vector layer with editing restrictions
 
 In this case, we define a layer in which we don't want the information to be modified. For this, we use the tags `editable, deletable,` etc., so that the data modification options disappear from the menu.
 
@@ -66,7 +71,7 @@ In this case, we define a layer in which we don't want the information to be mod
 </entry>
 ```
 
-### 8.3 Defining a Dynamic Label
+### 8.3 Defining a dynamic label
 
 In the text that is displayed associated with a geometry on the map (label), CartoDruid by default shows the `pk_uid` field of the table. The value to display can be configured to be calculated based on the layer fields using an SQL expression.
 
@@ -82,7 +87,7 @@ But we can also apply functions so that this value is calculated based on differ
 <labelExpression>cod_municipio || '-' || desc_municipio</labelExpression>
 ```
 
-### 8.4 Changing the Identification View of an Entity
+### 8.4 Changing the identification view of an entity
 
 In this case, we will determine which fields we want to display in the identification form. For this, we can define an SQL expression directly in the `<sqlIdentify>` tag.
 
@@ -105,7 +110,7 @@ For example, in this case, we display a numeric field formatted to 2 decimal pla
   </tr>
 </table>
 
-### 8.5 Changing the Entity List View
+### 8.5 Changing the entity list view
 
 Just as `sqlIdentify` allows modifying the information to be displayed when identifying an entity, `sqlAsListView` allows modifying the presentation of the entity list.
 
@@ -143,7 +148,7 @@ as propietario
   </tr>
 </table>
 
-### 8.6 Configuring Reusable Filters for a Layer
+### 8.6 Configuring reusable filters for a layer
 
 When working with a project, it is common to have a series of reusable filters to display different groups of information.
 
@@ -178,14 +183,14 @@ Or cross with another table to establish the condition based on fields of the re
 Associated=exists(select 1 from propietario p where p.pk_uid = r.propietario_id and p.asociado = 'S')
 ```
 
-### 8.7 Configuring Names of Images Taken with CartoDruid
+### 8.7 Configuring names of images taken with cartodruid
 
 It is possible to configure the names of entity images using an SQL expression on the entity. For this, the tag `<labelPictureExpression>` can be used. This tag defines the prefix that will be associated with the image file.
 ```xml
 <labelPictureExpression>pk_uid||'-'||c_refrec</labelPictureExpression>
 ```
 
-### 8.8 Entity Symbolization by Expression
+### 8.8 Entity symbolization by expression
 
 In this case, we use the `symbologyExpression` attribute to calculate the style that should be applied to each entity based on the variety value.
 
@@ -238,7 +243,7 @@ This would be the result: a layer in which geometries are displayed with differe
   </table>
 </div>
 
-### 8.9 Changing Default Markers for Point Symbologies
+### 8.9 Changing default markers for point symbologies
 
 It is possible to modify the default symbology of markers (point entities).
 
@@ -271,7 +276,7 @@ To do this, you must place the desired icon in the symbol directory of the Carto
 </symbologyConf>
 ```
 
-### 8.10 Showing Arrowheads on Linear Entities
+### 8.10 Showing arrowheads on linear entities
 
 To show arrowheads on linear entities (to mark the recording direction), the following tag must be added to the layer:
 ```xml
