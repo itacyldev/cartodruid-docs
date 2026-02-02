@@ -3,6 +3,7 @@ title: Application file structure
 description: Overview of the directory structure created by CartoDruid, including config, data, values, temp, and pictures directories for managing projects, databases, and files efficiently.
 keywords: cartodruid, directory structure, project files, GIS, data storage, config files, field app
 ---
+
 <div class="justify">
 <p>
 <p>

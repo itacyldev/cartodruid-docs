@@ -4,8 +4,6 @@ description: Overview of how CartoDruid manages multiple projects, including cre
 keywords: cartodruid, projects, project configuration, layers, symbology, GIS, configuration files, multi-project
 ---
 
-### 4.1  Project management with CartoDruid
-
 CartoDruid is a multi-project tool that allows having several work configurations in the same installation. Each project has its own configuration files, all stored in the `/cartodroid/config` folder.
 
 From the tool itself, projects can be created and loaded with the buttons that appear at the bottom of the TOC.
