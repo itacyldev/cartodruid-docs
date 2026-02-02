@@ -19,7 +19,7 @@ After installing CartoDruid on a device, the tool configures the following direc
 <ul>
 <li><strong>config:</strong> contains the configuration files for projects, both the basic one that comes with CartoDruid and those created by users. The directory includes:
   <ul>
-    <li><code>crtdrdLayers.&lt;project_id&gt;.xml</code>: project configuration files. By default, CartoDruid installation includes an empty <code>crtdrdLayer.xml</code> file to work with the basic project.</li>
+    <li><code>crtdrdLayers.xml</code>: project layers configuration file.</li>
     <li><code>crtdrdSymbologies.&lt;project_id&gt;.xml</code>: custom symbology configuration file for the project.</li>
     <li><code>crtdrdStockSymbologies.xml</code>: configuration file for basic symbologies included in the installation.</li>
     <li><code>sigpac.properties</code>: configuration of the tables to be used for SIGPAC plot searches.</li>
