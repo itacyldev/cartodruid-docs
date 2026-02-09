@@ -2,6 +2,13 @@
 title: SQLite-Spatialite layers in CartoDruid
 description: Guía sobre los requisitos y la nomenclatura de campos en capas espaciales para su uso en CartoDruid, incluyendo convenciones para checkboxes, fechas y firmas.
 keywords: cartodruid, capas vectoriales, requisitos, spatialite, pk_uid, Geometry, multipart, nomenclatura de campos, checkboxes, fechas, firmas, GIS, configuración XML
+canonical: https://docs.cartodruid.es/es/latest/sqliteLayers/sqllayers/
+extra:
+  hreflang:
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/sqliteLayers/sqllayers/
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/sqliteLayers/sqllayers.es/
 ---
 # 9 SQLite-Spatialite layers in CartoDruid
 

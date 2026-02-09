@@ -2,6 +2,13 @@
 title: Layer configuration in projects
 description: Detailed guide on configuring vector and raster layers in CartoDruid, including TOC behavior, symbology, permissions, and data source descriptors such as SpatiaLite, Rasterlite, MBTiles, TMS, and WMS.
 keywords: cartodruid, vector layers, raster layers, layer configuration, symbology, TOC, data sources, SpatiaLite, Rasterlite, MBTiles, TMS, WMS, GIS
+canonical: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas/
+extra:
+  hreflang:
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas/
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas.es/
 ---
 # 5 Layer configuration in projects
 CartoDruid allows the user to parameterize a limited set of options for layers and the TOC. To use the full power of the tool, manual configuration is necessary. This section describes the content and structure of the configuration files and includes practical examples of handling.

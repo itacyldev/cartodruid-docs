@@ -2,6 +2,13 @@
 title: Cartodruid Reference Manual
 keywords: cartodruid, reference manual, documentation, GIS field app, offline GIS, vector layers, raster layers, GPS, georeferenced data
 description: Cartodruid is an offline GIS field application that allows users to view and edit vector and raster layers, create geometries with GPS, and manage georeferenced information efficiently.
+canonical: https://docs.cartodruid.es/es/latest/
+extra:
+  hreflang:
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/index.es/
 ---
 # 1 Introduction
 CartoDruid is an application developed at the <a href="https://www.itacyl.es">Instituto Tecnológico Agrario de Castilla y León (ITACyL)</a>, designed as a support tool for fieldwork. It aims to solve the problem of editing georeferenced information on devices without a data connection.

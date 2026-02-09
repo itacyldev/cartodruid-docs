@@ -2,6 +2,13 @@
 title: Gestión de proyectos con CartoDruid
 description: Explicación de cómo CartoDruid gestiona múltiples proyectos, incluyendo la creación, carga y configuración de capas y simbologías de cada proyecto en la carpeta /cartodroid/config.
 keywords: cartodruid, proyectos, configuración de proyectos, capas, simbología, GIS, ficheros de configuración, multiproyecto
+canonical: https://docs.cartodruid.es/es/latest/project/proyectos.es/
+extra:
+  hreflang:
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/project/proyectos.es/
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/project/proyectos/
 ---
 # 4 Gestión de proyectos con CartoDruid
 CartoDruid es una herramienta multiproyecto que permite tener varias configuraciones de trabajo en una misma instalación. Cada proyecto tiene sus propios ficheros de configuración, todos ellos almacenados en la carpeta `/cartodroid/config`.

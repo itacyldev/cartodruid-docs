@@ -2,6 +2,13 @@
 title: Practical cases of vector layer parameterization
 description: Guide on configuring vector layers in CartoDruid, including multi-file sources, editing restrictions, dynamic labels, entity list views, reusable filters, image naming, symbology by expression, custom point markers, and linear entity arrows.
 keywords: cartodruid, vector layers, multi-sqlite, editing restrictions, dynamic labels, entity list view, definition queries, image naming, symbology expression, point markers, arrowheads, GIS, XML configuration
+canonical: https://docs.cartodruid.es/es/latest/cases/casos_practicos/
+extra:
+  hreflang:
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/cases/casos_practicos/
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/cases/casos_practicos.es/
 ---
 # 8 Practical cases of vector layer parameterization
 

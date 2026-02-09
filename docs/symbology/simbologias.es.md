@@ -2,6 +2,13 @@
 title: Configuración de simbologías en proyectos
 description: Guía detallada sobre cómo CartoDruid gestiona estilos y simbologías para capas vectoriales, incluyendo puntos, líneas, polígonos y etiquetas, y cómo configurarlos en el fichero /cartodroid/config/crtdrdSymbologies.xml.
 keywords: cartodruid, capas vectoriales, estilos, simbologías, puntos, líneas, polígonos, etiquetas, simbología condicional, GIS, archivos de configuración
+canonical: https://docs.cartodruid.es/es/latest/symbology/simbologias.es/
+extra:
+  hreflang:
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/symbology/simbologias.es/
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/symbology/simbologias/
 ---
 # 6 Configuración de simbologías en proyectos
 La parametrización de cómo se visualizan las geometrías y las etiquetas de las entidades de capas vectoriales se establece en el fichero <code>cartodroid/config/crtdrdSymbologies.xml</code>.

@@ -2,6 +2,13 @@
 title: Manual de referencia Cartodruid
 keywords: cartodruid, manual de referencia, documentación, aplicación GIS, trabajo de campo, georreferenciación, capas vectoriales, capas raster, GPS
 description: Cartodruid es una aplicación GIS para trabajo de campo sin conexión, que permite visualizar y editar capas vectoriales y raster, crear geometrías con GPS y gestionar información georreferenciada fácilmente.
+canonical: https://docs.cartodruid.es/es/latest/index.es/
+extra:
+  hreflang:
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/index.es/
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/
 ---
 # 1 Introducción
 CartoDruid es una aplicación desarrollada en el <a href="https://www.itacyl.es">Instituto Tecnológico Agrario de Castilla y León 

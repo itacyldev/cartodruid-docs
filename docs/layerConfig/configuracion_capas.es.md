@@ -2,6 +2,13 @@
 title: Configuración de capas en proyectos
 description: Guía detallada sobre la parametrización de capas vectoriales y raster en CartoDruid, incluyendo TOC, simbologías, permisos y descriptores de origen de datos como SpatiaLite, Rasterlite, MBTiles, TMS y WMS.
 keywords: cartodruid, capas vectoriales, capas raster, configuración de capas, simbología, TOC, orígenes de datos, SpatiaLite, Rasterlite, MBTiles, TMS, WMS, GIS
+canonical: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas.es/
+extra:
+  hreflang:
+    - lang: es
+      url: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas.es/
+    - lang: en
+      url: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas/
 ---
 # 5 Configuración de capas en proyectos
 CartoDruid permite al usuario parametrizar un conjunto limitado de opciones sobre las capas y la TOC. Para poder utilizar toda la potencia de la herramienta hay que recurrir a la configuración manual. En este apartado se describe el contenido y estructura de los ficheros de configuración y se incluyen ejemplos prácticos de manejo.
