@@ -60,8 +60,6 @@ extra_javascript:
 markdown_extensions:
   - attr_list
 
-extra_files:
-  - google445a6e1c12af94dc.html
 
 
 
