@@ -4,11 +4,7 @@ description: Tras la instalación de CartoDruid en un dispositivo, la herramient
 keywords: cartodruid, estructura de directorios, configuración, bases de datos, GIS, fotos
 ---
 # 2 Estructura de ficheros de la aplicación
-<div class="justify">
-<p>
 Después de instalar CartoDruid en un dispositivo, la herramienta configura la siguiente estructura de directorios: dentro del directorio <code>cartodruid</code>, existe un directorio <code>projects</code>, y dentro de él se encuentran todos los proyectos, cada uno en su propia carpeta. En el interior de cada carpeta de proyecto la herramienta configura la siguiente estructura de directorios:
-</p>
-</div>
 
 ![Estructura de ficheros](../img/fileStructure.png)
 
