@@ -3,6 +3,8 @@ title: Casos prácticos de parametrización de capas vectoriales
 description: Guía sobre la configuración de capas vectoriales en CartoDruid, incluyendo fuentes múltiples, restricciones de edición, etiquetas dinámicas, vistas de lista de entidades, filtros reutilizables, nombres de imágenes, simbolización por expresión, markers personalizados y flechas en entidades lineales.
 keywords: cartodruid, capas vectoriales, multi-sqlite, restricciones de edición, etiquetas dinámicas, lista de entidades, definition queries, nombres de imágenes, simbolización por expresión, markers puntuales, flechas, GIS, configuración XML
 ---
+# 8 Casos prácticos de parametrización de capas vectoriales
+
 ### 8.1 Configuración de capa vectorial con múltiples ficheros
 
 En este ejemplo utilizamos un implementador `MultiSqlite` para consultar varias bases de datos de recintos. Con esta configuración, CartoDruid buscará todas las bases de datos con el nombre `recintos_25830_2016_*.sqlite` y mostrará la información como una única capa.

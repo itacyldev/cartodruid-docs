@@ -3,6 +3,7 @@ title: Symbolization configuration in projects
 description: Detailed guide on how CartoDruid manages symbologies and styles for vector layers, including points, lines, polygons, and labels, and how to configure them in the /cartodroid/config/crtdrdSymbologies.xml file.
 keywords: cartodruid, vector layers, styles, symbologies, points, lines, polygons, labels, conditional symbology, GIS, configuration files
 ---
+# 6 Symbolization configuration in projects
 The parametrization of how geometries and entity labels of vector layers are visualized is established in the file <code>cartodroid/config/crtdrdSymbologies.xml</code>.
 
 ### 6.1 General structure of the file

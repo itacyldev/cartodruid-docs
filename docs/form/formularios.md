@@ -3,6 +3,7 @@ title: Configuration of form display
 description: Guide on creating and configuring custom alphanumeric editing forms in CartoDruid, including field types, validation rules, tabs, dropdowns, boolean fields, and signature fields, using the layer-specific AlphaEdit XML files.
 keywords: cartodruid, forms, alphaEditFinisher, field validation, dropdowns, boolean fields, signature fields, alphanumeric editing, XML configuration, GIS
 ---
+# 7 Configuration of form display
 CartoDruid allows defining the visualization you want to give to a form, and defining rules to determine what fields the user can edit or what validation rules to apply.
 
 To create a custom alphanumeric editing form for a layer, it is necessary to set the <code>alphaEditFinisher</code> attribute of the layer as follows:

@@ -3,6 +3,8 @@ title: Practical cases of vector layer parameterization
 description: Guide on configuring vector layers in CartoDruid, including multi-file sources, editing restrictions, dynamic labels, entity list views, reusable filters, image naming, symbology by expression, custom point markers, and linear entity arrows.
 keywords: cartodruid, vector layers, multi-sqlite, editing restrictions, dynamic labels, entity list view, definition queries, image naming, symbology expression, point markers, arrowheads, GIS, XML configuration
 ---
+# 8 Practical cases of vector layer parameterization
+
 ### 8.1 Configuration of vector layer with multiple files
 
 In this example, we use a `MultiSqlite` implementer to query several plot databases. With this configuration, CartoDruid will search for all databases with the name `recintos_25830_2016_*.sqlite` and display the information as a single layer.
