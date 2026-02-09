@@ -123,6 +123,10 @@ td.vertical-text {
     background-image: url("../img/es.png");
 }
 
+.md-content p {
+    text-align: justify;
+}
+
 /* Responsive cabecera */
 @media (max-width: 768px) {
     .md-header {
