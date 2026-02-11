@@ -3,12 +3,6 @@ title: Estructura de ficheros de la aplicación
 description: Tras la instalación de CartoDruid en un dispositivo, la herramienta configura la estructura de directorios incluyendo config, data, values, temp y pictures.
 keywords: cartodruid, estructura de directorios, configuración, bases de datos, GIS, fotos
 canonical: https://docs.cartodruid.es/es/latest/fileStructure/estructura_ficheros.es/
-extra:
-  hreflang:
-    - lang: es
-      url: https://docs.cartodruid.es/es/latest/fileStructure/estructura_ficheros.es/
-    - lang: en
-      url: https://docs.cartodruid.es/es/latest/fileStructure/estructura_ficheros/
 ---
 # 2 Estructura de ficheros de la aplicación
 Después de instalar CartoDruid en un dispositivo, la herramienta configura la siguiente estructura de directorios: dentro del directorio <code>cartodruid</code>, existe un directorio <code>projects</code>, y dentro de él se encuentran todos los proyectos, cada uno en su propia carpeta. En el interior de cada carpeta de proyecto la herramienta configura la siguiente estructura de directorios:

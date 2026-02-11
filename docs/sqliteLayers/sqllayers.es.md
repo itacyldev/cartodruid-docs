@@ -3,12 +3,6 @@ title: Capas SQLite-Spatialite en CartoDruid
 description: Guía sobre los requisitos que debe cumplir una capa spatialite para ser utilizada en CartoDruid y la nomenclatura de campos para checkboxes, fechas y firmas.
 keywords: cartodruid, capas vectoriales, spatialite, requisitos, pk_uid, Geometry, multipart, nomenclatura de campos, checkboxes, fechas, firmas, GIS, configuración XML
 canonical: https://docs.cartodruid.es/es/latest/sqliteLayers/sqllayers.es/
-extra:
-  hreflang:
-    - lang: es
-      url: https://docs.cartodruid.es/es/latest/sqliteLayers/sqllayers.es/
-    - lang: en
-      url: https://docs.cartodruid.es/es/latest/sqliteLayers/sqllayers/
 ---
 # 9 Capas SQLite-Spatialite en CartoDruid
 

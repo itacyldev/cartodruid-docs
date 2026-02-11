@@ -3,12 +3,6 @@ title: Configuración de la visualización de formularios
 description: Guía sobre cómo crear y configurar formularios de edición alfanumérica personalizados en CartoDruid, incluyendo tipos de campos, validación, pestañas, desplegables, campos booleanos y de firma mediante los ficheros AlphaEdit XML específicos de cada capa.
 keywords: cartodruid, formularios, alphaEditFinisher, validación de campos, desplegables, campos booleanos, campos de firma, edición alfanumérica, configuración XML, GIS
 canonical: https://docs.cartodruid.es/es/latest/form/formularios.es/
-extra:
-  hreflang:
-    - lang: es
-      url: https://docs.cartodruid.es/es/latest/form/formularios.es/
-    - lang: en
-      url: https://docs.cartodruid.es/es/latest/form/formularios/
 ---
 # 7 Configuración de la visualización de formularios
 CartoDruid permite definir la visualización que se le quiere dar a un formulario, y definir reglas para determinar qué campos puede editar el usuario o qué reglas de validación aplicar.

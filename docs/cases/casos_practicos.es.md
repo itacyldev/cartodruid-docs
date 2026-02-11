@@ -3,12 +3,6 @@ title: Casos prácticos de parametrización de capas vectoriales
 description: Guía sobre la configuración de capas vectoriales en CartoDruid, incluyendo fuentes múltiples, restricciones de edición, etiquetas dinámicas, vistas de lista de entidades, filtros reutilizables, nombres de imágenes, simbolización por expresión, markers personalizados y flechas en entidades lineales.
 keywords: cartodruid, capas vectoriales, multi-sqlite, restricciones de edición, etiquetas dinámicas, lista de entidades, definition queries, nombres de imágenes, simbolización por expresión, markers puntuales, flechas, GIS, configuración XML
 canonical: https://docs.cartodruid.es/es/latest/cases/casos_practicos.es/
-extra:
-  hreflang:
-    - lang: es
-      url: https://docs.cartodruid.es/es/latest/cases/casos_practicos.es/
-    - lang: en
-      url: https://docs.cartodruid.es/es/latest/cases/casos_practicos/
 ---
 # 8 Casos prácticos de parametrización de capas vectoriales
 

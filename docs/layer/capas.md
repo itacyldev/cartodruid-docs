@@ -3,12 +3,6 @@ title: Creating layers from CartoDruid
 description: Step-by-step guide on creating vector, raster, WMS, and TMS layers from scratch in CartoDruid, including layer configuration, symbology, and database updates.
 keywords: cartodruid, vector layer, raster layer, WMS, TMS, SQLite, spatialite, GIS, layer configuration, symbology, map layers
 canonical: https://docs.cartodruid.es/es/latest/layer/capas/
-extra:
-  hreflang:
-    - lang: en
-      url: https://docs.cartodruid.es/es/latest/layer/capas/
-    - lang: es
-      url: https://docs.cartodruid.es/es/latest/layer/capas.es/
 ---
 # 3 Creating layers from CartoDruid
 This section indicates how to create a vector layer from scratch with CartoDruid.
