@@ -1,5 +1,5 @@
 site_name: Cartodruid
-site_url: https://docs.cartodruid.es
+site_url: https://docs.cartodruid.es/en/latest/
 theme:
   name: material
   logo: img/ic_launcher.png
