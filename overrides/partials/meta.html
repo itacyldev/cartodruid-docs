@@ -1,0 +1,10 @@
+{% extends "partials/meta.html" %}
+
+{% block canonical %}
+{% if page and page.file.src_path.endswith('.es.md') %}
+<link rel="canonical"
+    href="https://docs.cartodruid.es/es/latest/{{ page.url }}">
+{% else %}
+{{ super() }}
+{% endif %}
+{% endblock %}
