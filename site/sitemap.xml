@@ -1,73 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://www.cartodruid.es/ayuda/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/index.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/index.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/cases/casos_practicos.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/cases/casos_practicos.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/cases/casos_practicos/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/cases/casos_practicos/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/fileStructure/estructura_ficheros.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/fileStructure/estructura_ficheros.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/fileStructure/estructura_ficheros/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/fileStructure/estructura_ficheros/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/form/formularios.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/form/formularios.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/form/formularios/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/form/formularios/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/layer/capas.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/layer/capas.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/layer/capas/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/layer/capas/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/project/proyectos.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/layerConfig/configuracion_capas.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/project/proyectos/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/layerConfig/configuracion_capas/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/symbology/simbologias.es/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/project/proyectos.es/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.cartodruid.es/ayuda/symbology/simbologias/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <loc>https://docs.cartodruid.es/project/proyectos/</loc>
+         <lastmod>2026-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.cartodruid.es/sqliteLayers/sqllayers.es/</loc>
+         <lastmod>2026-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.cartodruid.es/sqliteLayers/sqllayers/</loc>
+         <lastmod>2026-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.cartodruid.es/symbology/simbologias.es/</loc>
+         <lastmod>2026-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.cartodruid.es/symbology/simbologias/</loc>
+         <lastmod>2026-02-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
