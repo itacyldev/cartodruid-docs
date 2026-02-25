@@ -3,7 +3,7 @@
 {% block canonical %}
 {% if page and page.file.src_path.endswith('.es.md') %}
 <link rel="canonical"
-    href="https://docs.cartodruid.es/es/latest/{{ page.url }}">
+    href="{{ site_url | trim('/') }}/{{ page.url | trim('/') }}">
 {% else %}
 {{ super() }}
 {% endif %}
