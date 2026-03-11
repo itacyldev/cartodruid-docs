@@ -7,46 +7,36 @@ canonical: https://docs.cartodruid.es/es/latest/layer/capas.es/
 # 3 Creación de capas desde CartoDruid
 En esta sección se indica cómo crear una capa vectorial desde cero con CartoDruid.
 
-1. Para la creación de capas desde CRTDRD, lo primero que debemos hacer es abrir la TOC.
+1. Lo primero que debemos hacer es abrir la TOC.
 
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_1_1.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_1_2.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-     <img src="../../img/capas/capas_3_1_3.png" style="width: 100%; height: auto;">
-    </td>
-   </tr>
-</table>
+    <table>
+    <tr>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_1_1.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_1_2.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_1_3.png" style="width: 100%; height: auto;">
+        </td>
+    </tr>
+    </table>
 
 2. Pulsando el botón "Añadir capa" se abrirá el diálogo para la selección del tipo de capa.
 
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_2_1.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_2_2.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-    </td>
-   </tr>
-</table>
-
-3. Al seleccionar "Capa vectorial" y tendremos las siguientes opciones:
-
-<table>
-  <tr>
-    <td style="width: 33%;" colspan="3">
-      <img src="../../img/capas/capas_3-1_0.png" style="width: 100%; height: auto;">
-    </td>
-  </tr>
-</table>
+    <table>
+    <tr>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_2_1.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_2_2.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        </td>
+    </tr>
+    </table>
 
 ### 3.1 Creación de capa vectorial
 

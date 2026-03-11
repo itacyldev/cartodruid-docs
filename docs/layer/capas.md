@@ -7,36 +7,36 @@ canonical: https://docs.cartodruid.es/es/latest/layer/capas/
 # 3 Creating layers from CartoDruid
 This section indicates how to create a vector layer from scratch with CartoDruid.
 
-1. To create layers from CRTDRD, the first thing to do is open the TOC.
+1. First, open the **TOC (Table of Contents)**.
 
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_1_1.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_1_2.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-     <img src="../../img/capas/capas_3_1_3.png" style="width: 100%; height: auto;">
-    </td>
-   </tr>
-</table>
+    <table>
+    <tr>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_1_1.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_1_2.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_1_3.png" style="width: 100%; height: auto;">
+        </td>
+    </tr>
+    </table>
 
-2. Pressing the "Add layer" button will open the dialog for selecting the layer type.
+2. Click the **"Add layer"** button to open the dialog for selecting the layer type.
 
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_2_1.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3_2_2.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 33%;">
-    </td>
-   </tr>
-</table>
+    <table>
+    <tr>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_2_1.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        <img src="../../img/capas/capas_3_2_2.png" style="width: 100%; height: auto;">
+        </td>
+        <td style="width: 33%;">
+        </td>
+    </tr>
+    </table>
 
 ### 3.1 Creation of vector layer
 
