@@ -27,18 +27,20 @@ nav:
   - 2 Estructura de ficheros de la aplicación: fileStructure/estructura_ficheros.es.md
   - 3 Creating layers from Cartodruid: layer/capas.md
   - 3 Creación de capas desde CartoDruid: layer/capas.es.md
-  - 4 Project management with CRTDRD: project/proyectos.md
-  - 4 Gestión de proyectos con CRTDRD: project/proyectos.es.md
-  - 5 Layer configuration in projects: layerConfig/configuracion_capas.md
-  - 5 Configuración de capas en proyectos: layerConfig/configuracion_capas.es.md
-  - 6 Symbolization configuration in projects: symbology/simbologias.md
-  - 6 Configuración de simbologías en proyectos: symbology/simbologias.es.md
-  - 7 Configuration of form display: form/formularios.md
-  - 7 Configuración de la visualización de formularios: form/formularios.es.md
-  - 8 Practical cases of vector layer parameterization: cases/casos_practicos.md
-  - 8 Casos prácticos de parametrización de capas vectoriales: cases/casos_practicos.es.md
-  - 9 SQLite-Spatialite layers in CartoDruid: sqliteLayers/sqllayers.md
-  - 9 Capas SQLite-Spatialite en CartoDruid: sqliteLayers/sqllayers.es.md
+  - 4 Creating layers from existing files: layer/capas_desde_fichero.md
+  - 4 Creación de capas a partir de archivos existentes: layer/capas_desde_fichero.es.md
+  - 5 Project management with CRTDRD: project/proyectos.md
+  - 5 Gestión de proyectos con CRTDRD: project/proyectos.es.md
+  - 6 Layer configuration in projects: layerConfig/configuracion_capas.md
+  - 6 Configuración de capas en proyectos: layerConfig/configuracion_capas.es.md
+  - 7 Symbolization configuration in projects: symbology/simbologias.md
+  - 7 Configuración de simbologías en proyectos: symbology/simbologias.es.md
+  - 8 Configuration of form display: form/formularios.md
+  - 8 Configuración de la visualización de formularios: form/formularios.es.md
+  - 9 Practical cases of vector layer parameterization: cases/casos_practicos.md
+  - 9 Casos prácticos de parametrización de capas vectoriales: cases/casos_practicos.es.md
+  - 10 SQLite-Spatialite layers in CartoDruid: sqliteLayers/sqllayers.md
+  - 10 Capas SQLite-Spatialite en CartoDruid: sqliteLayers/sqllayers.es.md
 
  
 extra:

@@ -4,7 +4,7 @@ description: Guide on creating and configuring custom alphanumeric editing forms
 keywords: cartodruid, forms, alphaEditFinisher, field validation, dropdowns, boolean fields, signature fields, alphanumeric editing, XML configuration, GIS
 canonical: https://docs.cartodruid.es/es/latest/form/formularios/
 ---
-# 7 Configuration of form display
+# 8 Configuration of form display
 CartoDruid allows defining the visualization you want to give to a form, and defining rules to determine what fields the user can edit or what validation rules to apply.
 
 To create a custom alphanumeric editing form for a layer, it is necessary to set the <code>alphaEditFinisher</code> attribute of the layer as follows:
@@ -17,7 +17,7 @@ By setting this parameter, CartoDruid will search within the <code>cartodroid/va
 
 Note: the file is stored in an Android file system that is case-sensitive, the file name must start with exactly the layer identifier, so if the layer has been identified as INSPECCIONES, the file must be called <code>INSPECCIONES_AlphaEdit.xml</code>.
 
-### 7.1 General structure of the file
+### 8.1 General structure of the file
 
 The form configuration XML will have the following organization:
 
@@ -47,7 +47,7 @@ An example of the organization of the XML file:
 </form>
 ```
 
-### 7.2 Form field configuration
+### 8.2 Form field configuration
 
 <table class="bordered">
   <thead>
@@ -227,7 +227,7 @@ An example of the organization of the XML file:
 
 <strong>Note</strong>: Using the <code>SEPARATOR</code> type, it is possible to create intermediate headers for the data, either empty (a horizontal line), or with text (filling in the <code>name</code> attribute).
 
-#### 7.2.1 Definition of tabs in the form
+#### 8.2.1 Definition of tabs in the form
 
 The following code snippet defines three empty tabs, the user can move from one to another by swiping sideways on the screen.
 
@@ -267,7 +267,7 @@ The following code snippet defines three empty tabs, the user can move from one 
   </table>
 </div>
 
-#### 7.2.2 Use of boolean fields
+#### 8.2.2 Use of boolean fields
 
 With the following XML snippet, we configure a section with three boolean fields for an inspection form. To display a boolean control, the table field must start with "B_", see section <a href="../../sqliteLayers/sqllayers.es/#{#nomenclatura-nombres-campos-tablas}">9.2 - <em>Nomenclature of Table Field Names</em></a>.
 
@@ -317,7 +317,7 @@ With the following XML snippet, we configure a section with three boolean fields
   </table>
 </div>
 
-#### 7.2.3 Data validation with regular expression
+#### 8.2.3 Data validation with regular expression
 
 The following code shows how to define a validation for an email field:
 
@@ -383,7 +383,7 @@ Other examples of regular expressions that may be useful:
 For more information on regular expressions:
 <a href="https://docs.oracle.com/javase/tutorial/essential/regex/">https://docs.oracle.com/javase/tutorial/essential/regex/</a>
 
-#### 7.2.4 Using dropdowns in forms {#uso-de-desplegables}
+#### 8.2.4 Using dropdowns in forms {#uso-de-desplegables}
 
 CartoDruid allows defining dropdowns in forms in three different ways:
 
@@ -483,7 +483,7 @@ In this case, the database is the same one that contains the project layers, but
 
 In the query, the first value will be used as a key (what will be stored in the database) and the second is the text that will appear in the dropdown.
 
-#### 7.2.5 Using signature fields
+#### 8.2.5 Using signature fields
 
 With the following XML snippet, we configure a signature field where a signature drawn on a pop-up screen is recorded. In the block that appears in the form, we can define the title (name), an explanatory text (hint), as well as require that the signature be made mandatory (required). A button will appear to indicate that we want to sign, and a small signature will be displayed if it has already been signed. To show a signature type control, the table field must start with "S_", see section <a href="../../sqliteLayers/sqllayers.es/#{#nomenclatura-nombres-campos-tablas}">9.2 - <em>Nomenclature of Table Field Names</em></a>.
 

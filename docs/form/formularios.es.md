@@ -4,7 +4,7 @@ description: Guía sobre cómo crear y configurar formularios de edición alfanu
 keywords: cartodruid, formularios, alphaEditFinisher, validación de campos, desplegables, campos booleanos, campos de firma, edición alfanumérica, configuración XML, GIS
 canonical: https://docs.cartodruid.es/es/latest/form/formularios.es/
 ---
-# 7 Configuración de la visualización de formularios
+# 8 Configuración de la visualización de formularios
 CartoDruid permite definir la visualización que se le quiere dar a un formulario, y definir reglas para determinar qué campos puede editar el usuario o qué reglas de validación aplicar.
 
 Para poder crear un formulario de edición alfanumérica propio para una capa es necesario establecer el atributo <code>alphaEditFinisher</code> de la capa como sigue:
@@ -17,7 +17,7 @@ Estableciendo este parámetro, CartoDruid buscará dentro de la carpeta <code>ca
 
 Nota: el fichero se almacena en un sistema de ficheros Android que es sensible a minúsculas/mayúsculas, el nombre del fichero debe empezar con exactamente el identificador de la capa, luego si la capa se ha identificado como INSPECCIONES, el fichero debe llamarse <code>INSPECCIONES_AlphaEdit.xml</code>.
 
-### 7.1 Estructura general del fichero
+### 8.1 Estructura general del fichero
 
 El XML de configuración del formulario tendrá la siguiente organización:
 
@@ -47,7 +47,7 @@ Un ejemplo de la organización del fichero XML:
 </form>
 ```
 
-### 7.2 Configuración de campos del formulario
+### 8.2 Configuración de campos del formulario
 
 <table class="bordered">
   <thead>
@@ -228,7 +228,7 @@ Un ejemplo de la organización del fichero XML:
 
 <strong>Nota</strong>: Utilizando el tipo <code>SEPARATOR</code> es posible crear cabeceras intermedias para los datos, o bien vacías (una línea horizontal), o bien con un texto (rellenando el atributo <code>name</code>).
 
-#### 7.2.1 Definición de pestañas en el formulario
+#### 8.2.1 Definición de pestañas en el formulario
 
 El siguiente trozo de código define tres pestañas vacías, el usuario podrá moverse de una a otra desplazando lateralmente la pantalla.
 
@@ -268,7 +268,7 @@ El siguiente trozo de código define tres pestañas vacías, el usuario podrá m
   </table>
 </div>
 
-#### 7.2.2 Uso de campos booleanos
+#### 8.2.2 Uso de campos booleanos
 
 Con el siguiente trozo de XML, configuramos un apartado con tres capos booleanos para un formulario de inspecciones. Para mostrar un control de tipo booleano el campo de la tabla debe empezar por "B_", ver el apartado de <a href="../../sqliteLayers/sqllayers.es/#{#nomenclatura-nombres-campos-tablas}">9.2 - <em>Nomenclatura de los nombres de campos de las tablas</em></a>.
 
@@ -318,7 +318,7 @@ Con el siguiente trozo de XML, configuramos un apartado con tres capos booleanos
   </table>
 </div>
 
-#### 7.2.3 Validación de datos con expresión regular
+#### 8.2.3 Validación de datos con expresión regular
 
 El siguiente código muestra cómo definir una validación de un campo de correo electrónico:
 
@@ -382,7 +382,7 @@ Otros ejemplos de expresiones regulares que pueden ser de utilidad:
 Para más información sobre expresiones regulares:
 <a href="https://docs.oracle.com/javase/tutorial/essential/regex/">https://docs.oracle.com/javase/tutorial/essential/regex/</a>
 
-#### 7.2.4 Uso de desplegables en formularios {#uso-de-desplegables}
+#### 8.2.4 Uso de desplegables en formularios {#uso-de-desplegables}
 
 Cartodruid permite definir desplegables en formularios de tres formas diferentes:
 
@@ -482,7 +482,7 @@ En este caso, la base de datos es la misma que contiene las capas del proyecto, 
 
 En la consulta, el primer valor se utilizará como clave (lo que se almacenará en la base de datos) y el segundo es el texto que aparecerá en el desplegable.
 
-#### 7.2.5 Uso de campos de firma
+#### 8.2.5 Uso de campos de firma
 
 Con el siguiente trozo de XML, configuramos un campo de firma en el que se queda registrada la firma que dibujemos en una pantalla emergente. En el bloque que aparece en el formulario podemos definir el título (name), un texto de aclaración (hint), así como exigir que la firma sea realizada obligatoriamente (required). Nos aparecerá un botón para indicar que queremos firmar y la firma en pequeño en caso de que ya se haya firmado. Para mostrar un control de tipo firma el campo de la tabla debe empezar por "S_", ver el apartado de <a href="../../sqliteLayers/sqllayers.es/#{#nomenclatura-nombres-campos-tablas}">9.2 - <em>Nomenclatura de los nombres de campos de las tablas</em></a>.
 

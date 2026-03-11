@@ -1,8 +1,8 @@
 ---
-title: Creación de capas desde CartoDruid
-description: Guía paso a paso para crear capas vectoriales, raster, WMS y TMS desde cero en CartoDruid, incluyendo configuración de capa, simbología y actualización de bases de datos.
-keywords: cartodruid, capa vectorial, capa raster, WMS, TMS, SQLite, spatialite, GIS, configuración de capas, simbología, mapa
-canonical: https://docs.cartodruid.es/es/latest/layer/capas.es/
+title: Creación de capas a partir de archivos existentes
+description: Guía paso a paso para crear o importar capas vectoriales en CartoDruid a partir de ficheros SQLite, Shapefile, GeoJSON, GeoCSV y CSV con referencia SIGPAC.
+keywords: cartodruid, importación de capas, shapefile, geojson, geocsv, csv sigpac, sqlite, spatialite, capa vectorial, GIS
+canonical: https://docs.cartodruid.es/es/latest/layer/capas_desde_fichero.es/
 ---
 # 3 Creación de capas desde CartoDruid
 En esta sección se indica cómo crear una capa vectorial desde cero con CartoDruid.
@@ -36,6 +36,16 @@ En esta sección se indica cómo crear una capa vectorial desde cero con CartoDr
     <td style="width: 33%;">
     </td>
    </tr>
+</table>
+
+3. Al seleccionar "Capa vectorial" y tendremos las siguientes opciones:
+
+<table>
+  <tr>
+    <td style="width: 33%;" colspan="3">
+      <img src="../../img/capas/capas_3-1_0.png" style="width: 100%; height: auto;">
+    </td>
+  </tr>
 </table>
 
 ### 3.1 Creación de capa vectorial

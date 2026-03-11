@@ -4,10 +4,10 @@ description: Guía detallada sobre la parametrización de capas vectoriales y ra
 keywords: cartodruid, capas vectoriales, capas raster, configuración de capas, simbología, TOC, orígenes de datos, SpatiaLite, Rasterlite, MBTiles, TMS, WMS, GIS
 canonical: https://docs.cartodruid.es/es/latest/layerConfig/configuracion_capas.es/
 ---
-# 5 Configuración de capas en proyectos
+# 6 Configuración de capas en proyectos
 CartoDruid permite al usuario parametrizar un conjunto limitado de opciones sobre las capas y la TOC. Para poder utilizar toda la potencia de la herramienta hay que recurrir a la configuración manual. En este apartado se describe el contenido y estructura de los ficheros de configuración y se incluyen ejemplos prácticos de manejo.
 
-### 5.1 Estructura general del fichero
+### 6.1 Estructura general del fichero
 
 Por cada proyecto que tengamos configurado en CartoDruid, existirá un fichero `crtdrdLayer.<id_proyecto>.xml` en la carpeta `cartodroid/config/`. Este fichero almacena la referencia a las capas que se visualizarán en el proyecto y el comportamiento de las mismas (visualización, permisos, operaciones, etc).
 
@@ -59,7 +59,7 @@ Un ejemplo de este fichero:
 </es.jcyl.ita.crtcyl.core.config.WKSLayerConfiguration>
 ```
 
-### 5.2 Configuración de capa Vectorial
+### 6.2 Configuración de capa Vectorial
 
 En la siguiente tabla se enumeran las etiquetas que se pueden utilizar dentro del elemento es.jcyl.ita.crtcyl.core.model.VectorialLayer.
 
@@ -174,7 +174,7 @@ En el siguiente ejemplo se muestra el mínimo XML que se debe definir para confi
 </layers>
 ```
 
-### 5.3 Configuración de capa Raster
+### 6.3 Configuración de capa Raster
 
 <table class="bordered">
   <thead>
@@ -220,7 +220,7 @@ En el siguiente ejemplo se muestra el mínimo XML que se debe definir para confi
   </tbody>
 </table>
 
-### 5.4 Configuración de orígenes de datos
+### 6.4 Configuración de orígenes de datos
 
 Para definir la fuente de datos que debe utilizar CartoDruid para leer la información de una capa se debe anidar una etiqueta `<sources>` dentro de la etiqueta de definición de la capa, ya sea VectorialLayer o RasterLayer.
 
@@ -228,7 +228,7 @@ Dentro de la etiqueta sources, vamos a poder definir los parámetros necesarios 
 
 Por otro lado, en la configuración de la capa, en el atributo attributesClassName, se le indica a CartoDruid cómo debe procesar este descriptor y cómo debe tratar las geometrías de la capa cuando las lea.
 
-#### 5.4.1 Orígenes de datos para capas vectoriales
+#### 6.4.1 Orígenes de datos para capas vectoriales
 
 Para establecer un origen de datos contra una capa vectorial, debemos definir dos cosas:
 
@@ -464,11 +464,11 @@ FROM subparcelas g
 GROUP BY c_parvit;
 ```
 
-#### 5.4.2 Orígenes de datos para capas raster
+#### 6.4.2 Orígenes de datos para capas raster
 
 En el caso de las capas raster solo es necesario indicar un descriptor de origen de datos. Cada formato o servicio raster soportado por CartoDruid tendrá su propio descriptor.
 
-##### 5.4.2.1 Configuración de capas rasterlite y MBTiles
+##### 6.4.2.1 Configuración de capas rasterlite y MBTiles
 
 De forma similar a las capas vectoriales, tendremos descriptores distintos en función de si queremos referenciar la BD directamente por el nombre del fichero o por la referencia a sus características cartográficas:
 
@@ -543,7 +543,7 @@ De forma similar a las capas vectoriales, tendremos descriptores distintos en fu
 </entry>
 ```
 
-##### 5.4.2.2 Configuración de servicio TMS (Tile Map Service)
+##### 6.4.2.2 Configuración de servicio TMS (Tile Map Service)
 
 CartoDruid puede consumir servicios TMS online, pero también puede servir teselas desde el sistema de ficheros del dispositivo, siempre que estén almacenadas con una estructura similar a la que mantienen los servidores TMS (<code>base_cache/nivel_zoom/x/y</code>).
 
@@ -581,7 +581,7 @@ Para más información sobre estas diferencias: <a href="http://www.maptiler.org
 </es.jcyl.ita.crtcyl.client.dao.source.TMSServiceDescriptor>
 ```
 
-##### 5.4.2.3 Configuración de servicio WMS (Web Map Service)
+##### 6.4.2.3 Configuración de servicio WMS (Web Map Service)
 
 CartoDruid soporta una implementación mínima del acceso a servicios WMS. La versión actual no soporta consultas de tipo GetCapabilities para comprobar capacidades del servidor, pero se pueden configurar prácticamente todos los parámetros de una petición WMS.
 

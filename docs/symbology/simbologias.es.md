@@ -4,10 +4,10 @@ description: Guía detallada sobre cómo CartoDruid gestiona estilos y simbolog�
 keywords: cartodruid, capas vectoriales, estilos, simbologías, puntos, líneas, polígonos, etiquetas, simbología condicional, GIS, archivos de configuración
 canonical: https://docs.cartodruid.es/es/latest/symbology/simbologias.es/
 ---
-# 6 Configuración de simbologías en proyectos
+# 7 Configuración de simbologías en proyectos
 La parametrización de cómo se visualizan las geometrías y las etiquetas de las entidades de capas vectoriales se establece en el fichero <code>cartodroid/config/crtdrdSymbologies.xml</code>.
 
-### 6.1 Estructura general del fichero
+### 7.1 Estructura general del fichero
 
 A la hora de definir una simbología, independientemente del tipo de geometría, se configura por separado el estilo de la simbología en sí:
 
@@ -70,7 +70,7 @@ De forma general el fichero <code>crtdrdSymbologies.xml</code> tendrá la siguie
 ```
 En los siguientes apartados se describe cómo crear una visualización a medida para cada tipo de Geometría (punto, línea, polígono).
 
-### 6.2 Relación entre estilos y simbologías
+### 7.2 Relación entre estilos y simbologías
 
 Existen cuatro tipo de estilos: texto, marker, línea y polígono.
 
@@ -90,9 +90,9 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
 ![Simbología](../img/simbologia/simbologia_6_2_es.png){: .center .img-medium}
 
 
-### 6.3 Estilos y simbologías para puntos
+### 7.3 Estilos y simbologías para puntos
 
-#### 6.3.1 Definición de estilos
+#### 7.3.1 Definición de estilos
 
 <table class="bordered">
   <thead>
@@ -125,7 +125,7 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
   </tbody>
 </table>
 
-#### 6.3.2 Definición de simbología
+#### 7.3.2 Definición de simbología
 
 <table class="bordered">
   <thead>
@@ -184,9 +184,9 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
   </tr>
 </table>
 
-### 6.4 Estilos y simbologías para líneas
+### 7.4 Estilos y simbologías para líneas
 
-#### 6.4.1 Definición de estilos
+#### 7.4.1 Definición de estilos
 
 <table class="bordered">
   <thead>
@@ -218,7 +218,7 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
   </tbody>
 </table>
 
-#### 6.4.2 Definición de simbología
+#### 7.4.2 Definición de simbología
 
 <table class="bordered">
   <thead>
@@ -280,9 +280,9 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
   </tr>
 </table>
 
-### 6.5 Estilos y simbologías para polígonos
+### 7.5 Estilos y simbologías para polígonos
 
-#### 6.5.1 Definición de estilos
+#### 7.5.1 Definición de estilos
 
 <table class="bordered">
   <thead>
@@ -318,7 +318,7 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
   </tbody>
 </table>
 
-#### 6.5.2 Definición de simbología
+#### 7.5.2 Definición de simbología
 
 <table class="bordered">
   <thead>
@@ -387,9 +387,9 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
   </tr>
 </table>
 
-### 6.6 Estilos y simbologías para etiquetas
+### 7.6 Estilos y simbologías para etiquetas
 
-#### 6.6.1 Definición de estilos
+#### 7.6.1 Definición de estilos
 
 <table class="bordered">
   <thead>
@@ -460,7 +460,7 @@ En el siguiente esquema se muestra la relación entre las simbologías y los est
 En este caso definimos una simbología de tipo polígono <code>label_rojas_symb</code> que referencia a un estilo de tipo texto <code>idTextoRojo</code> y a un estilo de tipo polígono <code>label_rojas_pol</code>. Para utilizar esta simbología, tendremos que referenciarla en la definición de la capa del siguiente modo:<br>
 <code>&lt;labelSymbId&gt;label_rojas_symb&lt;/labelSymbId&gt;</code>.
 
-### 6.7 Estilos y simbologías por defecto
+### 7.7 Estilos y simbologías por defecto
 
 Con la instalación de CartoDruid se incluye un fichero con simbologías y estilos por defecto configurados en el fichero <code>/Cartodroid/config/crtdrdSymbologies.xml</code>. Esta configuración puede ser sobrescrita por el proyecto sin más que definir en el fichero de simbologías del proyecto un estilo/simbología con el mismo identificador.
 
@@ -486,7 +486,7 @@ Por ejemplo, la siguiente simbología es utilizada por CartoDruid para definir l
 </entry>
 ```
 
-### 6.8 Simbologías condicionales
+### 7.8 Simbologías condicionales
 
 CartoDruid permite definir reglas para calcular la simbología que se debe aplicar a una entidad, tanto a su geometria como a su label, utilizando las etiquetas <code>symbologyExpression</code> y <code>labelSymbologyExpression</code> en la definición de la capa en el fichero <code>crtdrdLayers.xml</code> se puede definir una expresión SQL para determinar el identificador de la simbología a utilizar (Ver apartado de casos prácticos para ejemplos concretos).
 

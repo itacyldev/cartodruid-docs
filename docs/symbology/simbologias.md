@@ -4,10 +4,10 @@ description: Detailed guide on how CartoDruid manages symbologies and styles for
 keywords: cartodruid, vector layers, styles, symbologies, points, lines, polygons, labels, conditional symbology, GIS, configuration files
 canonical: https://docs.cartodruid.es/es/latest/symbology/simbologias/
 ---
-# 6 Symbolization configuration in projects
+# 7 Symbolization configuration in projects
 The parametrization of how geometries and entity labels of vector layers are visualized is established in the file <code>cartodroid/config/crtdrdSymbologies.xml</code>.
 
-### 6.1 General structure of the file
+### 7.1 General structure of the file
 
 When defining a symbology, regardless of the geometry type, the style of the symbology itself is configured separately:
 
@@ -70,7 +70,7 @@ In general, the <code>crtdrdSymbologies.xml</code> file will have the following 
 ```
 The following sections describe how to create a custom visualization for each Geometry type (point, line, polygon).
 
-### 6.2 Relationship between styles and symbologies
+### 7.2 Relationship between styles and symbologies
 
 There are four types of styles: text, marker, line, and polygon.
 
@@ -89,9 +89,9 @@ The following diagram shows the relationship between symbologies and styles.
 
 ![Simbología](../img/simbologia/simbologia_6_2_en.png){: .center .img-medium}
 
-### 6.3 Styles and symbologies for points
+### 7.3 Styles and symbologies for points
 
-#### 6.3.1 Style definition
+#### 7.3.1 Style definition
 
 <table class="bordered">
   <thead>
@@ -124,7 +124,7 @@ The following diagram shows the relationship between symbologies and styles.
   </tbody>
 </table>
 
-#### 6.3.2 Symbology definition
+#### 7.3.2 Symbology definition
 
 <table class="bordered">
   <thead>
@@ -183,9 +183,9 @@ The following diagram shows the relationship between symbologies and styles.
   </tr>
 </table>
 
-### 6.4 Styles and symbologies for lines
+### 7.4 Styles and symbologies for lines
 
-#### 6.4.1 Style definition
+#### 7.4.1 Style definition
 
 <table class="bordered">
   <thead>
@@ -218,7 +218,7 @@ The following diagram shows the relationship between symbologies and styles.
   </tbody>
 </table>
 
-#### 6.4.2 Symbology definition
+#### 7.4.2 Symbology definition
 
 <table class="bordered">
   <thead>
@@ -280,9 +280,9 @@ The following diagram shows the relationship between symbologies and styles.
   </tr>
 </table>
 
-### 6.5 Styles and symbologies for polygons
+### 7.5 Styles and symbologies for polygons
 
-#### 6.5.1 Style definition
+#### 7.5.1 Style definition
 
 <table class="bordered">
   <thead>
@@ -318,7 +318,7 @@ The following diagram shows the relationship between symbologies and styles.
   </tbody>
 </table>
 
-#### 6.5.2 Symbology definition
+#### 7.5.2 Symbology definition
 
 <table class="bordered">
   <thead>
@@ -387,9 +387,9 @@ The following diagram shows the relationship between symbologies and styles.
   </tr>
 </table>
 
-### 6.6 Styles and symbologies for labels
+### 7.6 Styles and symbologies for labels
 
-#### 6.6.1 Style definition
+#### 7.6.1 Style definition
 
 <table class="bordered">
   <thead>
@@ -460,7 +460,7 @@ The following diagram shows the relationship between symbologies and styles.
 In this case, we define a polygon-type symbology <code>label_rojas_symb</code> that references a text-type style <code>idTextoRojo</code> and a polygon-type style <code>label_rojas_pol</code>. To use this symbology, we will have to reference it in the layer definition as follows:<br>
 <code>&lt;labelSymbId&gt;label_rojas_symb&lt;/labelSymbId&gt;</code>.
 
-### 6.7 Default styles and symbologies
+### 7.7 Default styles and symbologies
 
 The CartoDruid installation includes a file with default symbologies and styles configured in the file <code>/Cartodroid/config/crtdrdSymbologies.xml</code>. This configuration can be overwritten by the project simply by defining a style/symbology with the same identifier in the project's symbology file.
 
@@ -486,7 +486,7 @@ For example, the following symbology is used by CartoDruid to define the present
 </entry>
 ```
 
-### 6.8 Conditional symbologies
+### 7.8 Conditional symbologies
 
 CartoDruid allows defining rules to calculate the symbology that should be applied to an entity. By using the <code>symbologyExpression</code> and <code>labelSymbologyExpression</code> tags in the layer definition in the <code>crtdrdLayers.xml</code> file, you can define an SQL expression to determine the identifier of the symbology to use (See the practical cases section for specific examples).
 

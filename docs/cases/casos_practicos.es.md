@@ -4,9 +4,9 @@ description: Guía sobre la configuración de capas vectoriales en CartoDruid, i
 keywords: cartodruid, capas vectoriales, multi-sqlite, restricciones de edición, etiquetas dinámicas, lista de entidades, definition queries, nombres de imágenes, simbolización por expresión, markers puntuales, flechas, GIS, configuración XML
 canonical: https://docs.cartodruid.es/es/latest/cases/casos_practicos.es/
 ---
-# 8 Casos prácticos de parametrización de capas vectoriales
+# 9 Casos prácticos de parametrización de capas vectoriales
 
-### 8.1 Configuración de capa vectorial con múltiples ficheros
+### 9.1 Configuración de capa vectorial con múltiples ficheros
 
 En este ejemplo utilizamos un implementador `MultiSqlite` para consultar varias bases de datos de recintos. Con esta configuración, CartoDruid buscará todas las bases de datos con el nombre `recintos_25830_2016_*.sqlite` y mostrará la información como una única capa.
 
@@ -37,7 +37,7 @@ En este ejemplo utilizamos un implementador `MultiSqlite` para consultar varias 
 </entry>
 ```
 
-### 8.2 Configuración de capa vectorial con restricciones para la edición
+### 9.2 Configuración de capa vectorial con restricciones para la edición
 
 En este caso definimos una capa en la que no queremos que se pueda modificar la información, para ello utilizamos las etiquetas `editable, deletable,` etc. de forma que desaparezcan del menú las opciones de modificación de datos.
 
@@ -74,7 +74,7 @@ En este caso definimos una capa en la que no queremos que se pueda modificar la 
 </entry>
 ```
 
-### 8.3 Definir una etiqueta dinámica
+### 9.3 Definir una etiqueta dinámica
 
 En el texto que se muestra asociado a una geometría en el mapa (etiqueta), CartoDruid por defecto muestra el campo `pk_uid` de la tabla. El valor a mostrar se puede configurar para que se calcule en base a los campos de la capa utilizando una expresión SQL.
 
@@ -90,7 +90,7 @@ Pero también podemos aplicar funciones para que este valor se calcule en funci�
 <labelExpression>cod_municipio || '-' || desc_municipio</labelExpression>
 ```
 
-### 8.4 Cambiar la vista de identificación de una entidad.
+### 9.4 Cambiar la vista de identificación de una entidad.
 
 En este caso vamos a determinar qué campos queremos mostrar en el formulario de identificación, para ello podemos definir una expresión SQL directamente en la etiqueta `<sqlIdentify>`.
 
@@ -113,7 +113,7 @@ Por ejemplo, en este caso, mostramos un campo numérico formateado a 2 decimales
   </tr>
 </table>
 
-### 8.5 Cambiar la vista de la lista de entidades.
+### 9.5 Cambiar la vista de la lista de entidades.
 
 De igual forma que `sqlIdentify` permite modificar la información a mostrar al identificar una entidad, `sqlAsListView` permite modificar la presentación del listado de entidades.
 
@@ -151,7 +151,7 @@ as propietario
   </tr>
 </table>
 
-## 8.6 Configurar filtros reutilizables para una capa
+## 9.6 Configurar filtros reutilizables para una capa
 
 A la hora de trabajar con un proyecto es común tener una serie de filtros reutilizables para mostrar distintos grupos de información.
 
@@ -186,14 +186,14 @@ O cruzar con otra tabla para establecer la condición en base a campos de la tab
 Asociados=exists(select 1 from propietario p where p.pk_uid = r.propietario_id and p.asociado = 'S')
 ```
 
-### 8.7 Configurar nombres de las imágenes tomadas con CartoDruid
+## 9.7 Configurar nombres de las imágenes tomadas con CartoDruid
 
 Es posible configurar los nombres de las imágenes de las entidades mediante una expresión SQL sobre la entidad. Para ello, se puede usar la etiqueta `<labelPictureExpression>`, esta etiqueta define el prefijo que se asociará al archivo de la imagen.
 ```xml
 <labelPictureExpression>pk_uid||'-'||c_refrec</labelPictureExpression>
 ```
 
-### 8.8 Simbolización de entidades por expresión
+## 9.8 Simbolización de entidades por expresión
 
 En este caso utilizamos el atributo `symbologyExpression` para calcular el estilo que se debe aplicar a cada entidad en función del valor variedad.
 
@@ -246,7 +246,7 @@ Este sería el resultado, una capa en la que las geometrías se muestran con dis
   </table>
 </div>
 
-### 8.9 Cambiar los markers por defecto de las simbologías puntuales
+## 9.9 Cambiar los markers por defecto de las simbologías puntuales
 
 Es posible modificar la simbología por defecto de los markers (entidades puntuales).
 
@@ -279,7 +279,7 @@ Para ello, se debe meter el icono deseado en el directorio symbol del directorio
 </symbologyConf>
 ```
 
-### 8.10 Mostrar puntas de flecha en las entidades lineales
+## 9.10 Mostrar puntas de flecha en las entidades lineales
 
 Para mostrar puntas de flecha en las entidades lineales (para marcar el sentido de grabación), se debe añadir la siguiente etiqueta en la capa:
 ```xml
