@@ -1,8 +1,8 @@
 ---
-title: Creación de capas a partir de archivos existentes
-description: Guía paso a paso para crear o importar capas vectoriales en CartoDruid a partir de ficheros SQLite, Shapefile, GeoJSON, GeoCSV y CSV con referencia SIGPAC.
-keywords: cartodruid, importación de capas, shapefile, geojson, geocsv, csv sigpac, sqlite, spatialite, capa vectorial, GIS
-canonical: https://docs.cartodruid.es/es/latest/layer/capas_desde_fichero.es/
+title: Creación de capas desde CartoDruid
+description: Guía paso a paso para crear capas vectoriales, raster, WMS y TMS desde cero en CartoDruid, incluyendo configuración de capa, simbología y actualización de bases de datos.
+keywords: cartodruid, capa vectorial, capa raster, WMS, TMS, SQLite, spatialite, GIS, configuración de capas, simbología, mapa
+canonical: https://docs.cartodruid.es/es/latest/layer/capas.es/
 ---
 # 3 Creación de capas desde CartoDruid
 En esta sección se indica cómo crear una capa vectorial desde cero con CartoDruid.
@@ -132,34 +132,6 @@ a. Seleccionamos "Nueva capa" y aparecerá el siguiente formulario:
     </td>
   </tr>
 </table>
-
-
-b. Si seleccionamos la opción "Cargar fichero sqlite", nos dará la opción de abrir un explorador de archivos para buscar el fichero .sqlite que contiene la capa que queremos cargar. Una vez seleccionado el fichero, aparecerá el siguiente formulario:
-
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3-1_b_1.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 66%;">
-      <p>Es muy parecido al caso anterior, solo que en este caso hay que <strong>seleccionar la tabla</strong> que vamos a cargar y, además, <strong>no podemos añadir ningún campo</strong>. La estructura de la tabla viene definida y no es editable desde este formulario.</p>
-    </td>
-  </tr>
-</table>
-
-
-c. Si seleccionamos la opción "Capa repositorio ITACYL", aparece un diálogo en el cual podemos seleccionar para añadir cualquiera de las capas disponibles en el repositorio del ITACyL.
-
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3-1_c_1.png" style="width: 100%; height: auto;">
-    <td style="width: 66%;">
-      <p>Al aceptar, simplemente se añade la <strong>configuración de la capa</strong> en el fichero <strong>XML de capas</strong>. Si no se tienen los datos en el dispositivo, habría que <strong>descargar los ficheros que contienen los datos</strong> desde el repositorio de Cartografía del ITACyL, disponible en este enlace: <a href="https://www.cartodruid.es/cartografia" target="_blank">https://www.cartodruid.es/cartografia</a>.</p>
-    </td>
-  </tr>
-</table>
-
 
 ### 3.2 Creación de capa raster
 

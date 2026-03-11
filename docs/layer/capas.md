@@ -123,31 +123,6 @@ a. We select "New layer" and the following form will appear:
   </tr>
 </table>
 
-b. If we select the "Load sqlite file" option, we will be given the option to open a file explorer to look for the .sqlite file containing the layer we want to load. Once the file is selected, the following form will appear:
-
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3-1_b_1.png" style="width: 100%; height: auto;">
-    </td>
-    <td style="width: 66%;">
-      <p>It is very similar to the previous one, only in this case we have to <strong>select the table</strong> we are going to load, and we <strong>cannot add any fields</strong>. The structure of the table is defined and cannot be edited from this form.</p>
-    </td>
-  </tr>
-</table>
-
-c. If we select the "ITACYL repository layer" option, a dialog appears where we can select to add any of the layers available in the ITACyL repository.
-
-<table>
-  <tr>
-    <td style="width: 33%;">
-      <img src="../../img/capas/capas_3-1_c_1.png" style="width: 100%; height: auto;">
-    <td style="width: 66%;">
-      <p>Upon accepting, the <strong>layer configuration</strong> is simply added to the <strong>XML layers file</strong>. If not already on the device, you would need to download the files containing the data from the ITACyL Cartography repository from this link: <a href="https://www.cartodruid.es/cartografia" target="_blank">https://www.cartodruid.es/cartografia</a>.</p>
-    </td>
-  </tr>
-</table>
-
 ### 3.2 Creation of raster layer
 
 For creating a "Raster Layer," we have the following options:
