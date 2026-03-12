@@ -41,6 +41,8 @@ nav:
   - 9 Casos prácticos de parametrización de capas vectoriales: cases/casos_practicos.es.md
   - 10 SQLite-Spatialite layers in CartoDruid: sqliteLayers/sqllayers.md
   - 10 Capas SQLite-Spatialite en CartoDruid: sqliteLayers/sqllayers.es.md
+  - 11 QGIS Plugin to synchronize files between a device and a QGIS project: qgisPlugin/qgis_plugin.md
+  - 11 Plugin de QGIS para sincronizar archivos entre un dispositivo y un proyecto QGIS: qgisPlugin/qgis_plugin.es.md
 
  
 extra:
