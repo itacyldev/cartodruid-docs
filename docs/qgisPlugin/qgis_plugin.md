@@ -15,7 +15,7 @@ Right now this plugin is in an early state. It is able to download/upload correc
 
 This method uses **Android Device Bridge (ADB)** for the communication. It is the fastest and safest method, but it requires some configuration on the device and on the PC. This method works for **Windows and Linux**.
 
-### Requirements
+### 11.1.1 Requirements
 
 <ul>
 <li>You need to put the device in <strong>USB debugging mode</strong>. For that you need to do the following:
@@ -44,7 +44,7 @@ This method uses **Android Device Bridge (ADB)** for the communication. It is th
 
 This method uses **Media Transfer Protocol (MTP)** for the communication. It is slower than ADB and can have problems with large files (4GB+) but it also doesn't require further configuration. This method only works on **Windows** for the moment.
 
-### Requirements
+### 11.2.1 Requirements
 
 <ul>
 <li>Just connect your device to your PC with a USB.</li>
@@ -71,7 +71,38 @@ This is the toolbar of the plugin. The buttons from left to right do the followi
 <li><strong>Gears:</strong> Open the configuration menu.</li>
 </ul>
 
-### Configuration menu
+### 11.3.1 Cartodruid Synchronization Wizard
+
+The **Cartodruid Synchronization Wizard** provides an easy way to configure the plugin and get it ready to **synchronize files** between **Cartodruid** and QGIS.  
+To use this option, you first need to **select a device** from the device combo box and then you can start the wizard.
+
+Using this wizard will create a folder called "**cartodruid**" in the same location where you saved your QGIS project.
+
+![wizard_page1.png](../img/qgisplugin/wizard_page1.png)
+
+On the first page, the projects found in **Cartodruid** will be listed. You need to **select one of them** to continue with the wizard.
+
+![wizard_page2.png](../img/qgisplugin/wizard_page2.png)
+
+Next, you need to **select which files you want to synchronize**: **configuration**, **image**, and/or **data files**.  
+This selection will copy the following information:
+
+- **Configuration files:** the "values" and "config" folders and their files will be copied into the "**cartodruid**" folder.  
+- **Image files:** the "pictures" folder and its files will be copied into the "**cartodruid**" folder.  
+- **Data files:** the "data" folder and **only the selected files** in the list will be copied into the "**cartodruid**" folder.  
+
+After this step, the **configuration** and the **selected files** will be downloaded from the mobile device so that you can proceed to the next step.
+
+![wizard_page3.png](../img/qgisplugin/wizard_page3.png)
+
+In the third and final step, you can **select the layers** from the data files you chose in the previous step to add them to the **project table of contents**. A **"cartodruid" group** will be created, and the selected layers will be placed under it.
+
+After completing the wizard, you can use the **download/upload buttons** at any time, and the files you selected will be downloaded/uploaded automatically.  
+If you want to add any other files that you forgot during the process, you can **run the wizard again**, and it will remember your previous selections.
+
+If you still need some fine-tuning afterward, refer to the next section to **edit the configuration directly**.
+
+### 11.3.2 Configuration menu
 
 ![Plugin Protocol](../img/qgisplugin/plugin_protocol.png)
 
@@ -123,13 +154,13 @@ Here you can see an example configuration:
 ]
 ```
 
-### Root folder for destination
+### 11.3.3 Root folder for destination
 
 The root folder of the destination is different between protocols. Here is a list of all possible paths and examples.
 
 Let's suppose that we want to synchronize the folder `/projects/project1` inside your device.
 
-#### ADB
+#### 11.3.3.1 ADB
 
 - **Internal memory:** `/sdcard`, `/storage/emulated/0` or `/storage/self/primary`.  
   All of them are references to the internal memory of the device.
@@ -152,7 +183,7 @@ Example:
 ```
 "destination":"/storage/0123-4567/projects/project1"
 ```
-#### MTP
+#### 11.3.3.2 MTP
 
 In this case the root value is the one that you can find in the **file explorer**.
 

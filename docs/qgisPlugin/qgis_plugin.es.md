@@ -15,7 +15,7 @@ Actualmente, este plugin se encuentra en una fase inicial. Es capaz de descargar
 
 Este método utiliza **Android Device Bridge (ADB)** para la comunicación. Es el método más rápido y seguro, pero requiere cierta configuración en el dispositivo y en el PC. Funciona en **Windows y Linux**.
 
-### Requisitos
+### 11.1.1 Requisitos
 
 <ul>
 <li>Debes poner el dispositivo en <strong>modo depuración USB</strong>. Para ello, haz lo siguiente:
@@ -44,7 +44,7 @@ Este método utiliza **Android Device Bridge (ADB)** para la comunicación. Es e
 
 Este método utiliza **Media Transfer Protocol (MTP)** para la comunicación. Es más lento que ADB y puede tener problemas con archivos grandes (4GB+) pero no requiere configuración adicional. Por el momento solo funciona en **Windows**.
 
-### Requisitos
+### 11.2.1 Requisitos
 
 <ul>
 <li>Conecta tu dispositivo al PC mediante un cable USB.</li>
@@ -71,7 +71,38 @@ Esta es la barra de herramientas del plugin. Los botones de izquierda a derecha 
 <li><strong>Engranajes:</strong> Abrir el menú de configuración.</li>
 </ul>
 
-### Menú de configuración
+### 11.3.1 Cartodruid Synchronization Wizard
+
+El **Cartodruid Synchronization Wizard** implementa un modo fácil de configurar el plugin y dejarlo listo para **sincronizar archivos** entre **Cartodruid** y QGIS.  
+Para usar esta opción, primero necesitas **seleccionar un dispositivo** desde el combo box de dispositivos y luego podrás iniciar el asistente.
+
+Usando este asistente se creará una carpeta llamada "**cartodruid**" en la misma ubicación donde guardaste el proyecto de QGIS.
+
+![wizard_page1.png](../img/qgisplugin/wizard_page1.png)
+
+En la primera página se listarán los proyectos encontrados en **Cartodruid**. Debes **seleccionar uno de ellos** para continuar con el asistente.
+
+![wizard_page2.png](../img/qgisplugin/wizard_page2.png)
+
+A continuación, debes **seleccionar qué archivos quieres sincronizar**: **configuración**, **imagen** o/ y **archivos de datos**.  
+Esta selección copiará la siguiente información:
+
+- **Archivos de configuración:** las carpetas "values" y "config" y sus archivos se copiarán dentro de la carpeta "**cartodruid**".  
+- **Archivos de imagen:** la carpeta "pictures" y sus archivos se copiarán dentro de la carpeta "**cartodruid**".  
+- **Archivos de datos:** la carpeta "data" y **solo los archivos seleccionados** en la lista se copiarán dentro de la carpeta "**cartodruid**".  
+
+Después de este paso, la **configuración** y los **archivos seleccionados** se descargarán desde el dispositivo móvil, para poder realizar el siguiente paso.
+
+![wizard_page3.png](../img/qgisplugin/wizard_page3.png)
+
+En el tercer y último paso, puedes **seleccionar las capas** de los archivos de datos que elegiste en el paso anterior para agregarlas a la **tabla de contenidos del proyecto**. Se creará un **grupo "cartodruid"** y las capas seleccionadas se ubicarán debajo de él.
+
+Después de completar el asistente, puedes usar los botones de **descarga/subida** en cualquier momento, y los archivos que seleccionaste se descargarán/subirán automáticamente.  
+Si necesitas agregar otros archivos que olvidaste durante el proceso, puedes **ejecutar el asistente nuevamente** y este recordará tus selecciones anteriores.
+
+Si después aún necesitas un ajuste más fino, consulta la siguiente sección para **cambiar la configuración directamente**.
+
+### 11.3.2 Menú de configuración
 
 ![Plugin Protocolo](../img/qgisplugin/plugin_protocol.png)
 
@@ -122,13 +153,13 @@ Ejemplo de configuración:
   }
 ]
 ```
-### Carpeta raíz de destino
+### 11.3.3 Carpeta raíz de destino
 
 La carpeta raíz del destino es diferente según el protocolo. Aquí se muestra una lista de todas las rutas posibles y ejemplos.
 
 Supongamos que queremos sincronizar la carpeta `/projects/project1` en el dispositivo.
 
-#### ADB
+#### 11.3.3.1 ADB
 
 - **Memoria interna:** `/sdcard`, `/storage/emulated/0` o `/storage/self/primary`.  
   Todas ellas son referencias a la memoria interna del dispositivo.
@@ -152,7 +183,7 @@ Ejemplo:
 "destination":"/storage/0123-4567/projects/project1"
 ```
 
-#### MTP
+#### 11.3.3.2 MTP
 
 En este caso, la ruta raíz es la que puedes ver en el **explorador de archivos**.
 
