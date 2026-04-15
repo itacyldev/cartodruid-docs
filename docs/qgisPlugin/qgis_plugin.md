@@ -7,9 +7,27 @@ canonical: https://docs.cartodruid.es/en/latest/qgisPlugin/qgis_plugin/
 
 # 11 QGIS Plugin to synchronize files between a device and a QGIS project
 
-This project contains a QGIS plugin to download/upload files between a USB-connected device and a QGIS project.
+CartoDruid Device Sync is a **QGIS plugin** designed to synchronize files between a **PC** and one or more **mobile devices**.  
+It enables fast and efficient data exchange between **QGIS projects** and the fieldwork tool **CartoDruid**, without relying on cloud services.
 
-Right now this plugin is in an early state. It is able to download/upload correctly and have a configuration to select the folder that you want to synchronize.
+Although focused on **CartoDruid projects**, the plugin is **data-agnostic** and can be used to synchronize any folder structure between a mobile device and a PC.
+
+Communication is performed via:
+
+- **ADB (Android Debug Bridge)** as the primary transport protocol, currently working only via USB cable.
+- **MTP (Media Transfer Protocol)** as a fallback when ADB is not available.
+
+ Key features:
+
+- **Automatic detection of CartoDruid projects**: scans device storage to locate projects and generate synchronization settings.
+- **Project configuration synchronization**: copies and updates CartoDruid project configuration files.
+- **Vector data synchronization**: synchronizes vector layers and automatically adds them to the QGIS Table of Contents (**TOC**).
+- **Georeferenced image synchronization**: transfers images from the device and imports them as geo-tagged photo layers.
+- **Generic folder synchronization**: allows synchronization of any folder between device and PC, not limited to CartoDruid data.
+
+This plugin enables teams to synchronize field data locally without relying on cloud services, allowing multiple technicians to collaborate efficiently through a central office PC.
+
+![Inforgrafía](../img/infografia.png)
 
 ## 11.1 ADB Method
 

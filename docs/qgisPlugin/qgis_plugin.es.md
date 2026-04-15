@@ -7,9 +7,27 @@ canonical: https://docs.cartodruid.es/es/latest/qgisPlugin/qgis_plugin.es/
 
 # 11 Plugin QGIS para sincronizar archivos entre un dispositivo y un proyecto QGIS
 
-Este proyecto contiene un plugin QGIS para descargar/subir archivos entre un dispositivo conectado por USB y un proyecto QGIS.
+CartoDruid Device Sync es un **plugin de QGIS** diseñado para sincronizar archivos entre un **PC** y uno o varios **dispositivos móviles**.  
+Permite un intercambio de datos rápido y eficiente entre proyectos de **QGIS** y la herramienta de trabajo de campo **CartoDruid**, sin depender de servicios en la nube.
 
-Actualmente, este plugin se encuentra en una fase inicial. Es capaz de descargar/subir archivos correctamente y tiene una configuración para seleccionar la carpeta que deseas sincronizar.
+Aunque está enfocado en proyectos de **CartoDruid**, el plugin es **agnóstico respecto a los datos**, por lo que puede utilizarse para sincronizar cualquier estructura de carpetas entre un dispositivo móvil y un PC.
+
+La comunicación se realiza mediante:
+
+- **ADB (Android Debug Bridge)** como protocolo principal de transporte, actualmente funcionando solo mediante cable USB.
+- **MTP (Media Transfer Protocol)** como alternativa cuando ADB no está disponible.
+
+Características principales:
+
+- **Detección automática de proyectos CartoDruid**: analiza el almacenamiento del dispositivo para localizar proyectos y generar la configuración de sincronización.
+- **Sincronización de configuración de proyectos**: copia y actualiza los archivos de configuración de los proyectos CartoDruid.
+- **Sincronización de datos vectoriales**: sincroniza capas vectoriales y las añade automáticamente al **Índice de Contenidos de QGIS (TOC)**.
+- **Sincronización de imágenes georreferenciadas**: transfiere imágenes desde el dispositivo e incorpora fotos geolocalizadas como capas en QGIS.
+- **Sincronización genérica de carpetas**: permite sincronizar cualquier carpeta entre el dispositivo y el PC, más allá de los datos específicos de CartoDruid.
+
+Este plugin permite a los equipos sincronizar datos de campo de forma local, sin depender de la nube, facilitando la colaboración entre varios técnicos a través de un PC central de oficina.
+
+![Inforgrafía](../img/infografia.png)
 
 ## 11.1 Método ADB
 
