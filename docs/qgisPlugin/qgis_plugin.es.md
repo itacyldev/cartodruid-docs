@@ -29,7 +29,7 @@ La comunicación se realiza mediante:
 
 Este plugin permite a los equipos **sincronizar datos de campo localmente sin depender de la nube**.
 
-![Inforgrafía](../img/infografia.png)
+![Inforgrafía](../img/infografia_es.png)
 
 ## 11.2 Cómo usarlo
 
