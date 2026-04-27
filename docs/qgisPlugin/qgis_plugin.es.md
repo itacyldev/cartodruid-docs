@@ -33,11 +33,7 @@ Este plugin permite a los equipos **sincronizar datos de campo localmente sin de
 
 ## 11.2 Cómo usarlo
 
-Para cargar el plugin tienes **3 opciones**:
-
-- Buscar en el repositorio de plugins de QGIS **CartoDruid Device Sync** e instalarlo desde allí.
-- Crear un **enlace simbólico (symlink)** de la carpeta `qgis-plugin` (ubicada dentro de `src`) en la carpeta de plugins de Python de QGIS.
-- Ejecutar **create_zip.py** (`python create_zip.py`) en la ruta **/src/qgis-plugin**. Esto generará una carpeta llamada **build** con un archivo ZIP que puedes cargar en QGIS como plugin.
+Para cargar el plugin, busca e instala **CartoDruid Device Sync** desde el repositorio de plugins de QGIS.
 
 ![Plugin QGIS Toolbar](../img/qgisplugin/plugin_menu.png)
 
@@ -224,7 +220,7 @@ cierta configuración en el dispositivo y en el PC. Este método funciona en Win
 
 <div style="background-color:#f2f2f2; padding:12px; border-left:4px solid #bdbdbd; font-size:0.8em; text-align:justify;">
 
-<strong>Note:</strong> Activating Developer Options and USB debugging is a standard Android feature and does not involve rooting the device or modifying its system in any invasive way. It is intended for development and testing purposes. In this context, no system-level modifications are performed, and the device remains fully secure as long as standard security practices are followed. The plugin only uses these permissions to establish a communication channel via ADB for file transfer operations.
+<strong>Nota:</strong> La activación de las Opciones de desarrollador y la depuración USB es una función estándar de Android y no implica rootear el dispositivo ni modificar el sistema de forma invasiva. Está pensada para fines de desarrollo y pruebas. En este contexto no se realizan modificaciones a nivel de sistema y el dispositivo permanece completamente seguro siempre que se sigan las prácticas de seguridad habituales. El plugin solo utiliza estos permisos para establecer un canal de comunicación mediante ADB para operaciones de transferencia de archivos.
 
 </div>
 

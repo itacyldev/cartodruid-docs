@@ -33,11 +33,7 @@ This plugin enables teams to **synchronize field data locally without relying on
 
 ## 11.2 How to use it
 
-To load the plugin you have **3 options**:
-
-- Search in the QGIS plugin repository for **CartoDruid Device Sync** and install it from there.
-- Create a **symlink** of the `qgis-plugin` folder (located inside `src`) in your QGIS python plugin folder.
-- Execute **create_zip.py** (`python create_zip.py`) in the path **/src/qgis-plugin**. This will create a folder called **build** with a zip that you can load on QGIS as a plugin.
+To load the plugin, search for and install **CartoDruid Device Sync** from the QGIS plugin repository.
 
 ![Plugin QGIS Toolbar](../img/qgisplugin/plugin_menu.png)
 
