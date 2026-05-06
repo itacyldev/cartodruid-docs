@@ -81,12 +81,11 @@ The following table lists the tags that can be used within the es.jcyl.ita.crtcy
     <tr class="section-title"><td colspan="2">Display and Symbologies</td></tr>
     <tr><td>orden</td><td>Position of the layer in the TOC layer list.</td></tr>
     <tr><td>zOrder</td><td>Determines the overlapping order of the layers when painting. The layer with the highest zOrder appears closest to the user.</td></tr>
-    <tr><td>range</td><td>Indicates the zoom levels at which the layer will be visible. To indicate it, two tags max and min must be nested to indicate the range. Ex: <br><pre><code>
-      &lt;range&gt;
-          &lt;min&gt;15&lt;/min&gt;
-          &lt;max&gt;21&lt;/max&gt;
-      &lt;/range&gt;
-      </code></pre></td></tr>
+    <tr><td>range</td><td>Indicates the zoom levels at which the layer will be visible. To indicate it, two tags max and min must be nested to indicate the range. Ex:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;range&gt;
+    &lt;min&gt;15&lt;/min&gt; 
+    &lt;max&gt;21&lt;/max&gt;
+&lt;/range&gt;
+</code></pre></td></tr>
     <tr><td>labels</td><td>If labels should be rendered by default: <code>true|false</code>.</td></tr>
     <tr><td>labelRange</td><td>Indicates the display ranges of the labels. It is configured with nested <code>min/max</code> elements similar to the range tag.</td></tr>
     <tr><td>geometrySizeRestriction</td><td>Indicates the ranges in square meters allowed for a geometry in this layer. Controls the size of new geometries, size modifications, and divisions. It is configured with nested <code>min/max</code> elements similar to the range tag.</td></tr>
@@ -137,8 +136,21 @@ The following table lists the tags that can be used within the es.jcyl.ita.crtcy
     <tr><td>attributesClassName</td><td>Class that will be used to retrieve the layer information. See data sources section for more information.</td></tr>
     <tr><td>editAfterCreation</td><td>If after an edit or creation the attribute editing form should be launched. <code>true|false</code>.</td></tr>
     <tr><td>valuesFromList <br><i>(Not recommended)</i></td><td>Relates the form fields that will display a selection dropdown with the file in which the values are. If there is more than one, they are separated with the ";" character. <br> <code>C_USO_SIGPAC=alegaciones15usoSIGPAC;b_B_SUP_COMPROBADA=siNO;</code> <br><br> For the <code>C_USO_SIGPAC</code> field of the layer, the values contained in the file <code>/cartodroid/values/alegaciones15usoSIGPAC.properties</code> will be displayed. <br><br> Which will have the format: <br><code>TA=TIERRAS ARABLES (TA)</code> <br><code>PR=PASTO ARBUSTIVO (PR)</code> <br><code>PA=PASTO CON ARBOLADO (PA)</code> <br><br> <strong>Note:</strong> since version 0.56 of CartoDroid, it is recommended to configure dropdowns directly from the form configuration. This configuration is still maintained so that previous projects work, but the recommended way to configure dropdowns is indicated in section <a href="../../form/formularios/#uso-de-desplegables">7.2.4 - <em>Using Dropdowns in Forms</em></a>.</td></tr>
-    <tr><td>sqlIdentify</td><td>Query that will be executed for identification.</td></tr>
-    <tr><td>sqlAsListView</td><td>Query that will be executed to show the list of entities.</td></tr>
+    <tr><td>sqlIdentify</td><td>Query that will be executed for identification.
+    Ex:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;sqlIdentify&gt;
+    c_uso_sigpac as "USO",
+    cap_resultante,
+    st_y(st_centroid(geometry)) as "Latitud",
+    st_x(st_centroid(geometry)) as "Longitud"
+&lt;/sqlIdentify&gt;
+</code></pre></td></tr>
+    <tr><td>sqlAsListView</td><td>Query that will be executed to show the list of entities. Ex:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;sqlAsListView&gt;
+    c_uso_sigpac as "USO",
+    cap_resultante,
+    st_y(st_centroid(geometry)) as "Latitud",
+    st_x(st_centroid(geometry)) as "Longitud"
+&lt;/sqlAsListView&gt;
+</code></pre></td></tr>
     <tr><td>definitionQuery</td><td>SQL query that will be executed to filter the entities. The text introduced within the tag is applied as a <code>where</code> clause within the data retrieval query (filter).</td></tr>
 
   </tbody>
@@ -195,12 +207,11 @@ The following example shows the minimum XML that must be defined to configure a 
     <tr class="section-title"><td colspan="2">Display and Symbologies</td></tr>
     <tr><td>orden</td><td>Position of the layer in the TOC layer list.</td></tr>
     <tr><td>zOrder</td><td>Determines the overlapping order of the layers when painting. The layer with the highest zOrder appears in the plane closest to the user.</td></tr>
-    <tr><td>range</td><td>Indicates the zoom levels at which the layer will be visible. To indicate it, two tags max and min must be nested to indicate the range. Ex: <br><pre><code>
-      &lt;range&gt;
-          &lt;min&gt;15&lt;/min&gt;
-          &lt;max&gt;21&lt;/max&gt;
-      &lt;/range&gt;
-      </code></pre></td></tr>
+    <tr><td>range</td><td>Indicates the zoom levels at which the layer will be visible. To indicate it, two tags max and min must be nested to indicate the range. Ex:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;range&gt;
+    &lt;min&gt;15&lt;/min&gt; 
+    &lt;max&gt;21&lt;/max&gt;
+&lt;/range&gt;
+</code></pre></td></tr>
 
     <!-- Permissions and Operations at Layer Level -->
     <tr class="section-title"><td colspan="2">Permissions and Operations at Layer Level</td></tr>

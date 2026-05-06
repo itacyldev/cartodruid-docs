@@ -82,13 +82,12 @@ En la siguiente tabla se enumeran las etiquetas que se pueden utilizar dentro de
     <tr class="section-title"><td colspan="2">Visualización y simbologías</td></tr>
     <tr><td>orden</td><td>Posición en la capa en el listado de capas de la TOC.</td></tr>
     <tr><td>zOrder</td><td>Determina el orden de solapamiento de las capas a la hora del pintado. La capa con mayor zOrden aparece en el plano más cercano al usuario.</td></tr>
-    <tr><td>range</td><td>Indica los niveles de zoom en los que la capa estará visible. Para indicarlo se deben anidar dos etiquetas max y min para indicar el rango. Ej:<br><pre><code>
-      &lt;range&gt;
-          &lt;min&gt;15&lt;/min&gt;
-          &lt;max&gt;21&lt;/max&gt;
-      &lt;/range&gt;
-      </code></pre>
-    </td></tr>
+    <tr><td>range</td><td>Indica los niveles de zoom en los que la capa estará visible. Para indicarlo se deben anidar dos etiquetas max y min para indicar el rango. Ej:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;range&gt;
+    &lt;min&gt;15&lt;/min&gt; 
+    &lt;max&gt;21&lt;/max&gt;
+&lt;/range&gt;
+</code></pre></td></tr>
+
     <tr><td>labels</td><td>Indica si las etiquetas deben renderizarse por defecto: <code>true|false</code>.</td></tr>
     <tr><td>labelRange</td><td>Indica los rangos de visualización de las etiquetas. Se configura con elementos anidados <code>min/max</code> de forma similar a la etiqueta range.</td></tr>
     <tr><td>geometrySizeRestriction</td><td>Indica los rangos en metros cuadrados que se permite para una geometría en esta capa. Controla el tamaño de las nuevas geometrías, de las modificaciones de tamaño y de las divisiones. Se configura con elementos anidados <code>min/max</code> de forma similar a la etiqueta range.</td></tr>
@@ -139,8 +138,21 @@ En la siguiente tabla se enumeran las etiquetas que se pueden utilizar dentro de
     <tr><td>attributesClassName</td><td>Clase que se utilizará para recuperar la información de la capa. Ver apartado de orígenes de datos para más información.</td></tr>
     <tr><td>editAfterCreation</td><td>Si después de una edición o creación se debe lanzar el formulario de edición de atributos. <code>true|false</code>.</td></tr>
     <tr><td>valuesFromList <br><i>(No recomendado)</i></td><td>Relaciona los campos del formulario que mostrarán un desplegable de selección con el fichero en el que están los valores. Si hay más de uno, se separan con el carácter ";". Ej:<br><code>C_USO_SIGPAC=alegaciones15usoSIGPAC;b_B_SUP_COMPROBADA=siNO;</code><br><br>Para el campo <code>C_USO_SIGPAC</code> de la capa se mostrarán los valores contenidos en el fichero <code>/cartodroid/values/alegaciones15usoSIGPAC.properties</code>. Que tendrá el formato:<br><code>TA=TIERRAS ARABLES (TA)</code><br><code>PR=PASTO ARBUSTIVO (PR)</code><br><code>PA=PASTO CON ARBOLADO (PA)</code><br><br><strong>Nota:</strong> Desde la versión 0.56 de CartoDroid, se recomienda configurar los desplegables directamente desde la configuración del formulario. Esta configuración se sigue manteniendo para que los proyectos anteriores funcionen, pero la forma recomendada de configurar los desplegables es la indicada en el apartado <a href="../../form/formularios.es/#uso-de-desplegables">7.2.4 - <em>Uso de Desplegables en Formularios</em></a>.</td></tr>
-    <tr><td>sqlIdentify</td><td>Consulta que se va a ejecutar para la identificación.</td></tr>
-    <tr><td>sqlAsListView</td><td>Consulta que se ejecutará para mostrar la lista de entidades.</td></tr>
+    <tr><td>sqlIdentify</td><td>Consulta que se va a ejecutar para la identificación.
+    Ej:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;sqlIdentify&gt;
+    c_uso_sigpac as "USO",
+    cap_resultante,
+    st_y(st_centroid(geometry)) as "Latitud",
+    st_x(st_centroid(geometry)) as "Longitud"
+&lt;/sqlIdentify&gt;
+</code></pre></td></tr>
+    <tr><td>sqlAsListView</td><td>Consulta que se ejecutará para mostrar la lista de entidades. Ej:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;sqlAsListView&gt;
+    c_uso_sigpac as "USO",
+    cap_resultante,
+    st_y(st_centroid(geometry)) as "Latitud",
+    st_x(st_centroid(geometry)) as "Longitud"
+&lt;/sqlAsListView&gt;
+</code></pre></td></tr>
     <tr><td>definitionQuery</td><td>Consulta sql que se ejecutará para filtrar las entidades. El texto introducido dentro de la etiqueta se aplica como una cláusula <code>where</code> dentro de la consulta de recuperación de datos (filtro).</td></tr>
   </tbody>
 </table>
@@ -194,13 +206,11 @@ En el siguiente ejemplo se muestra el mínimo XML que se debe definir para confi
     <tr class="section-title"><td colspan="2">Visualización y Simbologías</td></tr>
     <tr><td>orden</td><td>Posición en la capa en el listado de capas de la TOC.</td></tr>
     <tr><td>zOrder</td><td>Determina el orden de solapamiento de las capas a la hora del pintado. La capa con mayor zOrden aparece en el plano más cercano al usuario.</td></tr>
-    <tr><td>range</td><td>Indica los niveles de zoom en los que la capa estará visible. Para indicarlo se deben anidar dos etiquetas <code>max</code> y <code>min</code> para indicar el rango. Ej:<br><pre><code>
-      &lt;range&gt;
-          &lt;min&gt;15&lt;/min&gt;
-          &lt;max&gt;21&lt;/max&gt;
-      &lt;/range&gt;
-      </code></pre>
-    </td></tr>
+    <tr><td>range</td><td>Indica los niveles de zoom en los que la capa estará visible. Para indicarlo se deben anidar dos etiquetas <code>max</code> y <code>min</code> para indicar el rango. Ej:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;range&gt;
+    &lt;min&gt;15&lt;/min&gt; 
+    &lt;max&gt;21&lt;/max&gt;
+&lt;/range&gt;
+</code></pre></td></tr>
 
     <!-- Permisos y Operaciones -->
     <tr class="section-title"><td colspan="2">Permisos y Operaciones a Nivel de Capa</td></tr>
