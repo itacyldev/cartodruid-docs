@@ -343,3 +343,35 @@ table.bordered td.centered-cell {
     width: 70%;
     height: auto;
 }
+
+/* Ocultar barra/footer de Read the Docs */
+.rst-versions {
+    display: none !important;
+}
+
+/* Ocultar botón flotante RTD */
+.readthedocs-flyout {
+    display: none !important;
+}
+
+/* Ocultar promo/footer RTD */
+.ethical-rtd,
+.ethical-sidebar,
+.ethical-footer,
+[data-ea-publisher] {
+    display: none !important;
+}
+
+/* Cambiar icono hamburguesa */
+
+/* Fondo para hamburguesa móvil */
+.md-header__button.md-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 6px;
+}
+
+/* Icono más visible */
+.md-header__button.md-icon svg {
+    fill: white;
+}
