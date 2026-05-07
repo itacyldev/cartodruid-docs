@@ -362,7 +362,12 @@ table.bordered td.centered-cell {
     display: none !important;
 }
 
-/* Cambiar icono hamburguesa */
+readthedocs-flyout,
+.readthedocs-flyout,
+[data-testid="readthedocs-flyout"] {
+    display: none !important;
+}
+
 
 /* Fondo para hamburguesa móvil */
 .md-header__button.md-icon {
