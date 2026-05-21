@@ -32,7 +32,7 @@ Después de instalar CartoDruid en un dispositivo, la herramienta configura la s
 <li><strong>config:</strong> contiene los ficheros de configuración del proyecto. En el directorio se encuentran:
   <ul>
     <li><code>crtdrdLayers.xml</code>: fichero con la configuración de capas del proyecto.</li>
-    <li><code>crtdrdSymbologies.&lt;id_proyecto&gt;.xml</code>: fichero de configuración de simbologías personalizadas para el proyecto.</li>
+    <li><code>crtdrdSymbologies.xml</code>: fichero de configuración de simbologías personalizadas para el proyecto.</li>
     <li><code>sigpac.properties</code>: configuración de las tablas que se utilizarán para la búsqueda de recintos SIGPAC.</li>
   </ul>
 </li>

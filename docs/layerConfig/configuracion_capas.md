@@ -9,7 +9,7 @@ CartoDruid allows the user to parameterize a limited set of options for layers a
 
 ### 6.1 General file structure
 
-For each project configured in CartoDruid, there will be a `crtdrdLayer.<project_id>.xml` file in the `cartodroid/config/` folder. This file stores the reference to the layers that will be displayed in the project and their behavior (display, permissions, operations, etc.).
+For each project configured in CartoDruid, there will be a `crtdrdLayer.xml` file in the `cartodruid/projects/<proyecto>/config/` folder. This file stores the reference to the layers that will be displayed in the project and their behavior (display, permissions, operations, etc.).
 
 <table class="bordered">
   <thead>
@@ -681,5 +681,103 @@ An example of configuring a layer that queries a WMS service:
   <min>0</min>
   </range>
  </es.jcyl.ita.crtcyl.core.model.RasterLayer>
+</entry>
+```
+
+#### 6.4.3 Data Sources for Photo Layers
+
+Photo layers in CartoDruid are implemented as a special type of vector layer whose purpose is to manage geographic entities associated with images stored on the device.
+
+Unlike conventional vector layers, these layers use a specific photo descriptor that allows each entity to be linked to a physical image located in a file system path on the device.
+
+The EXIF data of each image file stores the location (geolocation) and orientation of the shot, which is the information used to display the photograph on the map.
+
+**Data Source Descriptor**
+
+The following descriptor is used for this type of layer:
+
+- `es.jcyl.ita.crtdrd.photos.dao.source.PhotoServiceDescriptor`
+
+Este descriptor define:
+
+<table class="bordered"> 
+  <thead> 
+    <tr> 
+      <th>Field</th> 
+      <th>Description</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" class="first-column centered-cell">PhotoServiceDescriptor</td> 
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Photo service identifier. It usually matches the layer ID.</td>
+    </tr>
+    <tr>
+      <td>classManager</td> 
+      <td>Class responsible for managing the photo layer within CartoDruid (<code>PhotoLayerManager</code>).</td> 
+    </tr>
+    <tr>
+      <td>path</td>
+      <td>File system path on the device where the images associated with the layer are stored.</td> 
+    </tr> 
+  </tbody>
+  </table>
+
+**Photo Layer Configuration Example**
+```xml
+<entry>
+  <string>fotos_insp</string>
+  <es.jcyl.ita.crtcyl.core.model.VectorialLayer>
+    <attributesClassName>es.jcyl.ita.crtdrd.photos.dao.impl.DefaultPhotoDAO</attributesClassName>
+
+    <id>fotos_insp</id>
+    <name>Fotos_insp</name>
+    <descripcion></descripcion>
+
+    <vectorialType>40</vectorialType>
+
+    <sources>
+      <es.jcyl.ita.crtdrd.photos.dao.source.PhotoServiceDescriptor>
+        <id>fotos_insp</id>
+        <classManager>es.jcyl.ita.crtdrd.photos.model.PhotoLayerManager</classManager>
+        <path>/storage/emulated/0/cartodroid/projects/cargaficheros/pictures/fotos_insp</path>
+      </es.jcyl.ita.crtdrd.photos.dao.source.PhotoServiceDescriptor>
+    </sources>
+
+    <symbId>FLORENCIO</symbId>
+    <crs>4326</crs>
+    <srs>4326</srs>
+
+    <showOnTOC>true</showOnTOC>
+    <visible>true</visible>
+    <editable>true</editable>
+    <identifiable>true</identifiable>
+    <selectable>true</selectable>
+
+    <canCreate>true</canCreate>
+    <canDeleteAll>true</canDeleteAll>
+    <canPaste>true</canPaste>
+    <canCopy>true</canCopy>
+
+    <layerEditable>true</layerEditable>
+    <layerRemovable>true</layerRemovable>
+
+    <editAfterCreation>true</editAfterCreation>
+
+    <range>
+      <min>0</min>
+      <max>21</max>
+    </range>
+
+    <labelRange>
+      <min>0</min>
+      <max>21</max>
+    </labelRange>
+
+    <zOrder>0</zOrder>
+  </es.jcyl.ita.crtcyl.core.model.VectorialLayer>
 </entry>
 ```

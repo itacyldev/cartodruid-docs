@@ -9,7 +9,7 @@ CartoDruid permite al usuario parametrizar un conjunto limitado de opciones sobr
 
 ### 6.1 Estructura general del fichero
 
-Por cada proyecto que tengamos configurado en CartoDruid, existirá un fichero `crtdrdLayer.<id_proyecto>.xml` en la carpeta `cartodroid/config/`. Este fichero almacena la referencia a las capas que se visualizarán en el proyecto y el comportamiento de las mismas (visualización, permisos, operaciones, etc).
+Por cada proyecto que tengamos configurado en CartoDruid, existirá un fichero `crtdrdLayer.xml` en la carpeta `cartodruid/projects/<proyecto>/config/`. Este fichero almacena la referencia a las capas que se visualizarán en el proyecto y el comportamiento de las mismas (visualización, permisos, operaciones, etc).
 
 <table class="bordered">
   <thead>
@@ -681,5 +681,103 @@ Un ejemplo de configuración de una capa que consulta un servicio WMS:
   <min>0</min>
   </range>
  </es.jcyl.ita.crtcyl.core.model.RasterLayer>
+</entry>
+```
+
+#### 6.4.3 Orígenes de datos para capas de fotos
+
+Las capas de fotos en CartoDruid se implementan como un caso particular de capa vectorial, cuyo objetivo es gestionar entidades geográficas asociadas a imágenes almacenadas en el dispositivo.
+
+A diferencia de las capas vectoriales convencionales, estas capas utilizan un descriptor específico de fotografía, que permite enlazar cada entidad con una imagen física ubicada en una ruta del sistema de archivos del dispositivo.
+
+En los datos EXIF de cada fichero de imagen se almacena la ubicación (geolocalización) y la orientación de la toma, que es la información utilizada para la representación de la fotografía en el mapa.
+
+**Descriptor de origen de datos**
+
+Para este tipo de capas se utiliza el siguiente descriptor:
+
+- `es.jcyl.ita.crtdrd.photos.dao.source.PhotoServiceDescriptor`
+
+Este descriptor define:
+
+<table class="bordered"> 
+  <thead> 
+    <tr> 
+      <th>Etiqueta</th> 
+      <th>Descripción</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" class="first-column centered-cell">PhotoServiceDescriptor</td> 
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Identificador del servicio de fotos. Normalmente coincide con el id de la capa.</td>
+    </tr>
+    <tr>
+      <td>classManager</td> 
+      <td>Clase encargada de gestionar la capa de fotos dentro de CartoDruid (<code>PhotoLayerManager</code>).</td> 
+    </tr>
+    <tr>
+      <td>path</td>
+      <td>Ruta en el sistema de archivos del dispositivo donde se almacenan las imágenes asociadas a la capa.</td> 
+    </tr> 
+  </tbody>
+  </table>
+
+**Ejemplo de configuración de capa de fotos**
+```xml
+<entry>
+  <string>fotos_insp</string>
+  <es.jcyl.ita.crtcyl.core.model.VectorialLayer>
+    <attributesClassName>es.jcyl.ita.crtdrd.photos.dao.impl.DefaultPhotoDAO</attributesClassName>
+
+    <id>fotos_insp</id>
+    <name>Fotos_insp</name>
+    <descripcion></descripcion>
+
+    <vectorialType>40</vectorialType>
+
+    <sources>
+      <es.jcyl.ita.crtdrd.photos.dao.source.PhotoServiceDescriptor>
+        <id>fotos_insp</id>
+        <classManager>es.jcyl.ita.crtdrd.photos.model.PhotoLayerManager</classManager>
+        <path>/storage/emulated/0/cartodroid/projects/cargaficheros/pictures/fotos_insp</path>
+      </es.jcyl.ita.crtdrd.photos.dao.source.PhotoServiceDescriptor>
+    </sources>
+
+    <symbId>FLORENCIO</symbId>
+    <crs>4326</crs>
+    <srs>4326</srs>
+
+    <showOnTOC>true</showOnTOC>
+    <visible>true</visible>
+    <editable>true</editable>
+    <identifiable>true</identifiable>
+    <selectable>true</selectable>
+
+    <canCreate>true</canCreate>
+    <canDeleteAll>true</canDeleteAll>
+    <canPaste>true</canPaste>
+    <canCopy>true</canCopy>
+
+    <layerEditable>true</layerEditable>
+    <layerRemovable>true</layerRemovable>
+
+    <editAfterCreation>true</editAfterCreation>
+
+    <range>
+      <min>0</min>
+      <max>21</max>
+    </range>
+
+    <labelRange>
+      <min>0</min>
+      <max>21</max>
+    </labelRange>
+
+    <zOrder>0</zOrder>
+  </es.jcyl.ita.crtcyl.core.model.VectorialLayer>
 </entry>
 ```
