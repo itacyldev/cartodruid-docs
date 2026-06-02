@@ -30,7 +30,7 @@ En este ejemplo utilizamos un implementador `MultiSqlite` para consultar varias 
  </sources>
  <symbId>GREGORIO</symbId>
  <range>
- <max>21</max>
+ <max>23</max>
  <min>17</min>
  </range>
  </es.jcyl.ita.crtcyl.core.model.VectorialLayer>
@@ -60,9 +60,9 @@ En este caso definimos una capa en la que no queremos que se pueda modificar la 
  </es.jcyl.ita.crtcyl.client.dao.source.RepoSpatiaLiteServiceDescriptor>
  </sources>
  <symbId>GREGORIO</symbId>
-<!-- la capa se visualiza en los niveles [17,21] -->
+<!-- la capa se visualiza en los niveles [17,23] -->
  <range>
- <max>21</max>
+ <max>23</max>
  <min>17</min>
  </range>
  <editable>false</editable>
@@ -214,7 +214,7 @@ En este caso utilizamos el atributo `symbologyExpression` para calcular el estil
  </es.jcyl.ita.crtcyl.client.dao.source.SpatiaLiteServiceDescriptor>
  </origenes>
  <rango>
- <max>21</max>
+ <max>23</max>
  <min>0</min>
  </rango>
  <srs>25830</srs>

@@ -62,7 +62,7 @@ a. Seleccionamos "Nueva capa" y aparecerá el siguiente formulario:
       <ul>
         <li><strong>Identificación y nombre:</strong> serán los valores que aparecerán identificando a la capa en el menú de la tabla de contenidos.</li>
         <li><strong>Tipo:</strong> debemos seleccionar el tipo de geometría con la que vamos a trabajar: punto (ej: puntos de interés, árboles, cepas, …), línea (tracks, lindes, …) o polígonos (trabajo con superficies).</li>
-        <li><strong>Escala mínima y máxima:</strong> indican los niveles de zoom a los que la capa estará visible (niveles van del 0 al 21, éste último el más cercano al suelo).</li>
+        <li><strong>Escala mínima y máxima:</strong> indican los niveles de zoom a los que la capa estará visible (niveles van del 0 al 23, éste último el más cercano al suelo).</li>
         <li><strong>Escala mínima y máxima de etiquetas:</strong> tiene el mismo significado que el anterior pero para las etiquetas de las geometrías.</li>
       </ul>
     </td>

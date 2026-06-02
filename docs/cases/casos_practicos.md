@@ -36,7 +36,7 @@ In this example, we use a `MultiSqlite` implementer to query several plot databa
  </sources>
  <symbId>GREGORIO</symbId>
  <range>
- <max>21</max>
+ <max>23</max>
  <min>17</min>
  </range>
  </es.jcyl.ita.crtcyl.core.model.VectorialLayer>
@@ -66,9 +66,9 @@ In this case, we define a layer in which we don't want the information to be mod
  </es.jcyl.ita.crtcyl.client.dao.source.RepoSpatiaLiteServiceDescriptor>
  </sources>
  <symbId>GREGORIO</symbId>
-<!-- the layer is displayed at levels [17,21] -->
+<!-- the layer is displayed at levels [17,23] -->
  <range>
- <max>21</max>
+ <max>23</max>
  <min>17</min>
  </range>
  <editable>false</editable>
@@ -220,7 +220,7 @@ In this case, we use the `symbologyExpression` attribute to calculate the style 
  </es.jcyl.ita.crtcyl.client.dao.source.SpatiaLiteServiceDescriptor>
  </origenes>
  <rango>
- <max>21</max>
+ <max>23</max>
  <min>0</min>
  </rango>
  <srs>25830</srs>

@@ -62,7 +62,7 @@ a. We select "New layer" and the following form will appear:
       <ul>
         <li><strong>Identification and name:</strong> These are the values that will appear to identify the layer in the Table of Contents menu.</li>
         <li><strong>Type:</strong> We must select the type of geometry we will work with: point (e.g., points of interest, trees, stumps, etc.), line (e.g., tracks, boundaries, etc.), or polygons (for surface work).</li>
-        <li><strong>Minimum and Maximum Scale:</strong> These indicate the zoom levels at which the layer will be visible (levels range from 0 to 21, with 21 being the closest to the ground).</li>
+        <li><strong>Minimum and Maximum Scale:</strong> These indicate the zoom levels at which the layer will be visible (levels range from 0 to 23, with 23 being the closest to the ground).</li>
         <li><strong>Minimum and Maximum Scale for Labels:</strong> This means the same as the previous but for the geometry labels.</li>
       </ul>
     </td>

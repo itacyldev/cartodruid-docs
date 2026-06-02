@@ -84,7 +84,7 @@ En la siguiente tabla se enumeran las etiquetas que se pueden utilizar dentro de
     <tr><td>zOrder</td><td>Determina el orden de solapamiento de las capas a la hora del pintado. La capa con mayor zOrden aparece en el plano más cercano al usuario.</td></tr>
     <tr><td>range</td><td>Indica los niveles de zoom en los que la capa estará visible. Para indicarlo se deben anidar dos etiquetas max y min para indicar el rango. Ej:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;range&gt;
     &lt;min&gt;15&lt;/min&gt; 
-    &lt;max&gt;21&lt;/max&gt;
+    &lt;max&gt;23&lt;/max&gt;
 &lt;/range&gt;
 </code></pre></td></tr>
 
@@ -178,7 +178,7 @@ En el siguiente ejemplo se muestra el mínimo XML que se debe definir para confi
 </sources> 
 <symbId>REBECA</symbId>
  <range>
- <max>21</max>
+ <max>23</max>
  <min>0</min>
  </range>
  </es.jcyl.ita.crtcyl.core.model.VectorialLayer>
@@ -208,7 +208,7 @@ En el siguiente ejemplo se muestra el mínimo XML que se debe definir para confi
     <tr><td>zOrder</td><td>Determina el orden de solapamiento de las capas a la hora del pintado. La capa con mayor zOrden aparece en el plano más cercano al usuario.</td></tr>
     <tr><td>range</td><td>Indica los niveles de zoom en los que la capa estará visible. Para indicarlo se deben anidar dos etiquetas <code>max</code> y <code>min</code> para indicar el rango. Ej:<br><pre style="overflow-x:auto; white-space:pre;"><code>&lt;range&gt;
     &lt;min&gt;15&lt;/min&gt; 
-    &lt;max&gt;21&lt;/max&gt;
+    &lt;max&gt;23&lt;/max&gt;
 &lt;/range&gt;
 </code></pre></td></tr>
 
@@ -522,7 +522,7 @@ De forma similar a las capas vectoriales, tendremos descriptores distintos en fu
  </sources>
  <zOrder>15</zOrder>
  <range>
-<max>21</max>
+<max>23</max>
 <min>16</min>
  </range>
  </es.jcyl.ita.crtcyl.core.model.RasterLayer>
@@ -677,7 +677,7 @@ Un ejemplo de configuración de una capa que consulta un servicio WMS:
   </sources>
   <zOrder>14</zOrder>
   <range>
-  <max>21</max>
+  <max>23</max>
   <min>0</min>
   </range>
  </es.jcyl.ita.crtcyl.core.model.RasterLayer>
@@ -769,12 +769,12 @@ Este descriptor define:
 
     <range>
       <min>0</min>
-      <max>21</max>
+      <max>23</max>
     </range>
 
     <labelRange>
       <min>0</min>
-      <max>21</max>
+      <max>23</max>
     </labelRange>
 
     <zOrder>0</zOrder>
