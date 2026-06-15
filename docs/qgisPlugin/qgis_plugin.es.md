@@ -31,6 +31,24 @@ Este plugin permite a los equipos **sincronizar datos de campo localmente sin de
 
 ![Inforgrafía](../img/infografia_es.png)
 
+### Video tutorial
+
+Este vídeo muestra el flujo completo de uso de **CartoDruid Device Sync**, desde la instalación hasta la sincronización de datos entre QGIS y dispositivos Android.
+
+En él se explican de forma práctica los siguientes pasos:
+
+- Instalación del plugin en QGIS  
+- Preparación del dispositivo Android (modo desarrollador y depuración USB)  
+- Conexión del dispositivo mediante USB  
+- Configuración inicial del plugin (ADB o MTP)  
+- Configuración del proyecto mediante el asistente de CartoDruid  
+- Sincronización de datos entre QGIS y el dispositivo (subida y descarga)  
+- Trabajo en campo con edición de datos e imágenes georreferenciadas  
+
+🎥 [Ver vídeo tutorial](https://youtu.be/karf6yKF8aU?si=asvQqEQgOi7jkkDw)
+
+Este tutorial resume el flujo de trabajo completo para mantener sincronizados los proyectos GIS entre CartoDruid y QGIS de forma local y eficiente.
+
 ## 11.2 Cómo usarlo
 
 Para cargar el plugin, busca e instala **CartoDruid Device Sync** desde el repositorio de plugins de QGIS.

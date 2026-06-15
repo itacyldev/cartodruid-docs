@@ -19,7 +19,7 @@ Communication is performed via:
 - **ADB (Android Debug Bridge)** as the primary transport protocol, currently working only via **USB cable**.
 - **MTP (Media Transfer Protocol)** as a fallback when ADB is not available.
 
-**Key features:**
+### Key features
 
 - **Automatic detection of CartoDruid projects**: scans device storage to locate projects and generate synchronization settings.
 - **Project configuration synchronization**: copies and updates CartoDruid project configuration files.
@@ -30,6 +30,24 @@ Communication is performed via:
 This plugin enables teams to **synchronize field data locally without relying on cloud services**, allowing multiple technicians to collaborate efficiently through a central office PC.
 
 ![Inforgrafía](../img/infografia.png)
+
+### Video tutorial
+
+This video shows the complete workflow of **CartoDruid Device Sync**, from installation to data synchronization between QGIS and Android devices.
+
+It provides a practical walkthrough of the following steps:
+
+- Installing the plugin in QGIS  
+- Preparing the Android device (developer mode and USB debugging)  
+- Connecting the device via USB  
+- Initial plugin setup (ADB or MTP)  
+- Project configuration using the CartoDruid assistant  
+- Data synchronization between QGIS and the device (upload and download)  
+- Field work with editing of data and georeferenced images  
+
+🎥 **[Watch the tutorial video](https://youtu.be/karf6yKF8aU?si=asvQqEQgOi7jkkDw)**
+
+This tutorial summarizes the full workflow for keeping GIS projects synchronized between CartoDruid and QGIS in a local and efficient way.
 
 ## 11.2 How to use it
 
