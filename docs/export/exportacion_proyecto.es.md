@@ -8,7 +8,7 @@ canonical: https://docs.cartodruid.es/es/latest/export/exportacion_proyecto.es.m
 
 # 12 Exportar tu proyecto CartoDruid
 
-En esta sección se describe cómo exportar un proyecto CartoDruid en formato **.crtd**, permitiendo compartirlo e importarlo en otros dispositivos.
+En esta sección se describe cómo exportar un proyecto CartoDruid en formato **.crtd**. Este formato es un archivo comprimido tipo ZIP, lo que permite compartirlo e importarlo en otros dispositivos.
 
 ## 12.1 Descripción general
 
