@@ -45,7 +45,7 @@ It provides a practical walkthrough of the following steps:
 - Data synchronization between QGIS and the device (upload and download)  
 - Field work with editing of data and georeferenced images  
 
-🎥 **[Watch the tutorial video](https://youtu.be/karf6yKF8aU?si=asvQqEQgOi7jkkDw)**
+🎥 **[Watch the tutorial video](https://www.youtube.com/watch?v=D0GYXt2xtvs)**
 
 This tutorial summarizes the full workflow for keeping GIS projects synchronized between CartoDruid and QGIS in a local and efficient way.
 
